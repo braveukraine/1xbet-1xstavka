@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_filter_authenticator" android:id="@id/filter" android:title="@string/authenticator_filter" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_more" android:id="@id/options" android:title="@string/authenticator_options" app:showAsAction="ifRoom" />
+</menu>

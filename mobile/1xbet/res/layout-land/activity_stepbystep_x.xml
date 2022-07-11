@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?gameWindowBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/tools" layout="@layout/view_casino_toolbar" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.5">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8">
+                        <com.xbet.onexgames.features.stepbystep.common.views.StepByStepStage1RowView android:id="@id/viewRowStage1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <com.xbet.onexgames.features.stepbystep.common.views.StepByStepStage2RowView android:id="@id/viewRowStage2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </LinearLayout>
+                <com.xbet.onexgames.features.stepbystep.common.views.StepByStepPersonView android:layout_gravity="start|bottom|center" android:id="@id/viewPerson" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.xbet.onexgames.features.stepbystep.common.views.StepByStepSecondLifeView android:layout_gravity="end|bottom|center" android:id="@id/viewSecondLife" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="end" android:layout_gravity="end|bottom|center" android:orientation="vertical" android:id="@id/containerGameButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/space_24">
+                    <TextView android:textSize="@dimen/text_14" android:textColor="@color/white" android:gravity="end" android:id="@id/tvSumBet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_4" android:layout_marginEnd="@dimen/space_4" />
+                    <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/btFinishGame" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_4" android:text="@string/resident_finish_game" style="@style/Widget.AppTheme.SolidButton" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_18" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tvChooseFirstStageTitle" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:layout_marginBottom="@dimen/space_8" />
+                <com.xbet.onexgames.features.common.views.CasinoBetView android:layout_gravity="center_vertical" android:id="@id/casinoBetView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="@dimen/space_8" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/progress" android:background="@color/black_15" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</FrameLayout>

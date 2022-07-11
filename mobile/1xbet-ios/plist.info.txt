@@ -1,0 +1,181 @@
+Using USB device `iPhone`
+Agent injected and responds ok!
+Determining environment...
+Running command... `ios plist cat Info.plist`
+{
+    BuildMachineOSBuild = 21C52;
+    CFBundleDevelopmentRegion = en;
+    CFBundleDisplayName = 1xBet;
+    CFBundleExecutable = 1xBet;
+    CFBundleIcons =     {
+        CFBundleAlternateIcons =         {
+            ChampionLeague =             {
+                CFBundleIconFiles =                 (
+                    AppIconChampLeague
+                );
+            };
+            NewYear =             {
+                CFBundleIconFiles =                 (
+                    AppIconNewYear
+                );
+            };
+        };
+        CFBundlePrimaryIcon =         {
+            CFBundleIconFiles =             (
+                AppIcon60x60
+            );
+            CFBundleIconName = AppIcon;
+        };
+    };
+    "CFBundleIcons~ipad" =     {
+        CFBundleAlternateIcons =         {
+            ChampionLeague =             {
+                CFBundleIconFiles =                 (
+                    "AppIconChampLeague-ipad",
+                    "AppIconChampLeague-ipad-pro"
+                );
+            };
+            NewYear =             {
+                CFBundleIconFiles =                 (
+                    "AppIconNewYear-ipad",
+                    "AppIconNewYear-ipad-pro"
+                );
+            };
+        };
+        CFBundlePrimaryIcon =         {
+            CFBundleIconFiles =             (
+                AppIcon60x60,
+                AppIcon76x76
+            );
+            CFBundleIconName = AppIcon;
+        };
+    };
+    CFBundleIdentifier = "1-xbet.publish";
+    CFBundleInfoDictionaryVersion = "6.0";
+    CFBundleName = 1xBet;
+    CFBundlePackageType = APPL;
+    CFBundleShortVersionString = "14.7";
+    CFBundleSupportedPlatforms =     (
+        iPhoneOS
+    );
+    CFBundleURLTypes =     (
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = "xBet.eu";
+            CFBundleURLSchemes =             (
+                xBet
+            );
+        },
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = YandexLoginSDK;
+            CFBundleURLSchemes =             (
+                yx332f80ec21cc4252a47ce8bbf1be0714
+            );
+        },
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = vk5628613;
+            CFBundleURLSchemes =             (
+                vk5628613
+            );
+        },
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = fb523507721130972bet;
+            CFBundleURLSchemes =             (
+                fb523507721130972bet
+            );
+        },
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = ok1248196352;
+            CFBundleURLSchemes =             (
+                ok1248196352
+            );
+        },
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = google;
+            CFBundleURLSchemes =             (
+                "com.googleusercontent.apps.308949454715-tu81mr51ro60n0oukqnsoaf2fjl5lr8f"
+            );
+        },
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = "twitterkit-JkCf2e5AVlhkfJDasmGdUweRW";
+            CFBundleURLSchemes =             (
+                "twitterkit-JkCf2e5AVlhkfJDasmGdUweRW"
+            );
+        }
+    );
+    CFBundleVersion = "14.7.06";
+    DTAppStoreToolsBuild = 13F100;
+    DTCompiler = "com.apple.compilers.llvm.clang.1_0";
+    DTPlatformBuild = 19C51;
+    DTPlatformName = iphoneos;
+    DTPlatformVersion = "15.2";
+    DTSDKBuild = 19C51;
+    DTSDKName = "iphoneos15.2";
+    DTXcode = 1320;
+    DTXcodeBuild = 13C90;
+    FacebookAppID = 523507721130972;
+    FacebookDisplayName = 1xBet;
+    FacebookUrlSchemeSuffix = bet;
+    ITSAppUsesNonExemptEncryption = 0;
+    LSApplicationQueriesSchemes =     (
+        yandexauth,
+        yandexauth2,
+        vk,
+        "vk-share",
+        vkauthorize,
+        fbapi,
+        "fb-messenger-api",
+        fbauth2,
+        fbshareextension,
+        okauth,
+        viber,
+        otpauth,
+        tg
+    );
+    LSRequiresIPhoneOS = 1;
+    MinimumOSVersion = "12.0";
+    NSAppTransportSecurity =     {
+        NSAllowsArbitraryLoads = 1;
+    };
+    NSCameraUsageDescription = NSCameraUsageDescription;
+    NSFaceIDUsageDescription = NSFaceIDUsageDescription;
+    NSLocationWhenInUseUsageDescription = NSLocationWhenInUseUsageDescription;
+    NSPhotoLibraryAddUsageDescription = NSPhotoLibraryAddUsageDescription;
+    NSPhotoLibraryUsageDescription = NSCameraUsageDescription;
+    NSUserTrackingUsageDescription = NSUserTrackingUsageDescription;
+    UIBackgroundModes =     (
+        audio,
+        "remote-notification",
+        voip
+    );
+    UIDeviceFamily =     (
+        1,
+        2
+    );
+    UILaunchStoryboardName = "Launch Screen";
+    UIRequiredDeviceCapabilities =     (
+        arm64
+    );
+    UIRequiresFullScreen = 1;
+    UIStatusBarHidden = 1;
+    UISupportedInterfaceOrientations =     (
+        UIInterfaceOrientationPortrait,
+        UIInterfaceOrientationLandscapeLeft,
+        UIInterfaceOrientationLandscapeRight
+    );
+    "UISupportedInterfaceOrientations~ipad" =     (
+        UIInterfaceOrientationLandscapeLeft,
+        UIInterfaceOrientationLandscapeRight,
+        UIInterfaceOrientationPortrait
+    );
+    UIUserInterfaceStyle = Light;
+    UIViewControllerBasedStatusBarAppearance = 1;
+}
+Asking jobs to stop...
+Unloading objection agent...

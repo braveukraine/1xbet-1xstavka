@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_shimmer_container" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="86.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/item" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="86.0dip">
+        <View android:id="@id/divider" android:background="?divider" android:layout_width="fill_parent" android:layout_height="0.5dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/iv_promocode_shimmer" android:background="@drawable/white_radius" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/margin_16" android:scaleType="center" android:layout_marginStart="@dimen/margin_16" android:backgroundTint="@color/black_15_new" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/tv_promocode_shimmer" android:background="@drawable/rounded_shimmer_item" android:layout_width="176.0dip" android:layout_height="10.0dip" android:layout_marginTop="@dimen/margin_16" android:layout_marginStart="@dimen/margin_8" android:backgroundTint="@color/black_15_new" app:layout_constraintStart_toEndOf="@id/iv_promocode_shimmer" app:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/tv_promocode_sum_shimmer" android:background="@drawable/rounded_shimmer_item" android:layout_width="130.0dip" android:layout_height="10.0dip" android:layout_marginTop="@dimen/margin_4" android:layout_marginStart="@dimen/margin_8" android:backgroundTint="@color/snap_time_picker_black_5" app:layout_constraintStart_toEndOf="@id/iv_promocode_shimmer" app:layout_constraintTop_toBottomOf="@id/tv_promocode_shimmer" />
+        <View android:id="@id/tv_promocode_status" android:background="@drawable/rounded_shimmer_item" android:layout_width="130.0dip" android:layout_height="10.0dip" android:layout_marginTop="@dimen/margin_4" android:layout_marginStart="@dimen/margin_8" android:backgroundTint="@color/snap_time_picker_black_5" app:layout_constraintStart_toEndOf="@id/iv_promocode_shimmer" app:layout_constraintTop_toBottomOf="@id/tv_promocode_sum_shimmer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view" android:layout_width="fill_parent" android:layout_height="126.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</FrameLayout>

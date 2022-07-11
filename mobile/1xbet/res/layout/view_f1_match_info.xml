@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?card_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.xbet.client1.statistic.ui.view.f1.F1MatchInfoView android:id="@id/matchInfo" android:paddingTop="@dimen/half_std_margin" android:paddingBottom="@dimen/half_std_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

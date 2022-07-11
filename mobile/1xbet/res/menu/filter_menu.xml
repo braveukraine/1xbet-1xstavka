@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search" android:id="@id/search" android:visible="false" android:title="@string/search" app:actionViewClass="org.xbet.ui_common.viewcomponents.views.search.SearchMaterialView" app:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/ic_translation_live_disable" android:id="@id/live_translation" android:visible="false" android:title="@string/video_translations" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_filter_clock" android:id="@id/time_filter" android:visible="false" android:title="@string/time_filter" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_calendar_range" android:id="@id/action_date_filter" android:visible="false" android:title="@string/choose_time" app:showAsAction="ifRoom|collapseActionView" />
+    <item android:icon="@drawable/ic_line_live_full" android:id="@id/columns_count_item" android:visible="false" android:title="@string/long_short_filter" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_rules" android:id="@id/bet_rules" android:visible="false" android:title="@string/rules_title" app:showAsAction="ifRoom" />
+</menu>

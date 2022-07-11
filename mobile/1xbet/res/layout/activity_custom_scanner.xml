@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_custom_barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@id/barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:zxing_preview_scaling_strategy="fitXY" app:zxing_use_texture_view="false">
+        <FrameLayout android:padding="@dimen/space_40" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_scanner" />
+            <TextView android:textColor="@color/white" android:gravity="bottom|center" android:paddingBottom="@dimen/space_48" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/auth_qr_text" />
+        </FrameLayout>
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+        <item quantity="one">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">वीडियो को %d सेकंड पीछे ले जाएं</item>
+        <item quantity="one">वीडियो को %d सेकंड पीछे ले जाएं</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d नई सूचनाएं</item>
+        <item quantity="one">%d नई सूचनाएं</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="other">%d घंटे</item>
+        <item quantity="one">1 घंटा</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="other">%d क्षण</item>
+        <item quantity="one">1 क्षण</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="other">%d पल</item>
+        <item quantity="one">1 पल</item>
+    </plurals>
+</resources>

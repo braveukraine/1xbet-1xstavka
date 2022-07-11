@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/til_coupon_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="14.0dip" android:hint="@string/input_coupon_code" android:layout_marginHorizontal="14.0dip" app:errorEnabled="true" app:hintTextColor="?textColorSecondaryNew">
+        <androidx.appcompat.widget.AppCompatEditText android:theme="@style/ThemeOverlay.AppTheme.EditText.New" android:id="@id/et_coupon_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textCursorDrawable="@drawable/primary_cursor_new" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton android:id="@id/btn_load_coupon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" android:text="@string/upload" android:layout_marginHorizontal="@dimen/space_16" style="@style/Widget.AppTheme.SolidButton.New" />
+</LinearLayout>

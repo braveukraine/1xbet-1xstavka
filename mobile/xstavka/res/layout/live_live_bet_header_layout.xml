@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:background="?separatorNew" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <TextView android:textAppearance="?textAppearanceCaptionPrimaryNew" android:textSize="14.0sp" android:layout_gravity="center" android:id="@id/title_bet" android:background="@color/transparent" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:layout_gravity="center" android:background="?separatorNew" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+</LinearLayout>

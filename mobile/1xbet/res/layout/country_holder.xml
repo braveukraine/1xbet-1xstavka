@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/root_container" android:background="@drawable/shape_new_chip_unchecked" android:paddingBottom="@dimen/space_2" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="2.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/country_flag" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/space_8" android:layout_marginTop="@dimen/space_4" android:layout_marginRight="@dimen/space_8" android:layout_marginBottom="@dimen/space_4" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="@dimen/space_8" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dip" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/close_button" android:layout_width="18.0dip" android:layout_height="18.0dip" android:rotation="45.0" android:layout_marginEnd="8.0dip" app:srcCompat="@drawable/ic_office_top_up" />
+    </LinearLayout>
+</LinearLayout>

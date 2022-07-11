@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/annual_report" style="@style/Widget.AppTheme.Toolbar" />
+    <org.xbet.ui_common.viewcomponents.tabs.TabLayoutScrollable android:id="@id/date_tabs" android:background="?primaryColor_to_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/space_2" style="@style/Widget.AppTheme.TabLayout.Light" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/annual_view_pager" android:background="?window_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

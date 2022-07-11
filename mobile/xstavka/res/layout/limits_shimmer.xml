@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?card_activated_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/tv_empty" android:background="@drawable/rounded_shimmer_item" android:layout_width="fill_parent" android:layout_height="13.0dip" android:backgroundTint="?divider" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_view" android:layout_width="fill_parent" android:layout_height="@dimen/match_constraints" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="?card_activated_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

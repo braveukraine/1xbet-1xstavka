@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/game_toolbar" android:background="?transparent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back_games"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/toolbar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.xbet.core.presentation.bonuses.views.CasinoBonusButtonView1 android:id="@id/bonus_button" android:visibility="invisible" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:layout_marginEnd="@dimen/space_24" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/rules_button" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="@dimen/space_8" app:srcCompat="@drawable/ic_info_white" />
+    </LinearLayout>
+</com.google.android.material.appbar.MaterialToolbar>

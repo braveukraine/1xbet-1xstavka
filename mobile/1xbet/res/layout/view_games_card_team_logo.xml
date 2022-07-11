@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/icon_size_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.imageview.RoundCornerImageView android:id="@id/iv_first_logo" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" app:cornerRadiusImageView="@dimen/corner_radius_4" app:srcCompat="@drawable/no_photo" />
+    <org.xbet.ui_common.viewcomponents.imageview.RoundCornerImageView android:id="@id/iv_second_logo" android:visibility="gone" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:layout_marginStart="@dimen/space_12" app:cornerRadiusImageView="@dimen/corner_radius_4" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding_double_half" android:paddingRight="@dimen/padding_double_half" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubtitle2" android:textColor="?secondaryTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double" android:text="@string/promocode" />
+    <EditText android:textColor="?primaryTextColor" android:textColorHint="?secondaryTextColor" android:id="@id/promo_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_promo" android:maxLines="1" android:digits="0123456789qwertzuiopasdfghjklyxcvbnm" android:inputType="textEmailAddress" />
+</LinearLayout>

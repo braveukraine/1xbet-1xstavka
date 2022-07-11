@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/space_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody2Medium" android:gravity="center" android:id="@id/tvDate" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.google.android.flexbox.FlexboxLayout android:gravity="center" android:orientation="horizontal" android:id="@id/stats" android:layout_width="fill_parent" android:layout_height="wrap_content" app:alignContent="center" app:alignItems="center" app:flexWrap="wrap" app:justifyContent="center">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceBody2" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bet_history_bets" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?textAppearanceSubtitle2Bold" android:gravity="end" android:id="@id/tv_stat_second" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_stat_fourth" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?secondaryTextColor" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bet_history_won" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?textAppearanceSubtitle2Bold" android:gravity="end" android:id="@id/tv_stat_fourth" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

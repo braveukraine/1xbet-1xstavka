@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatSpinner android:theme="@style/ThemeOverlay.AppTheme.Spinner" android:gravity="end" android:layout_gravity="end" android:id="@id/accountSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/white" android:layout_gravity="end" android:id="@id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/padding" style="@style/TextAppearance.AppCompat.Medium" />
+</com.google.android.material.appbar.MaterialToolbar>

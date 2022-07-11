@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_favorites" android:paddingTop="@dimen/margin_16" android:paddingBottom="@dimen/margin_16" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/margin_8" android:paddingEnd="@dimen/margin_8" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/error_view" android:background="?contentBackgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/separator" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/root_button_container" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_weight="0.0" app:cardCornerRadius="0.0dip" app:cardElevation="24.0dip">
+        <com.google.android.material.button.MaterialButton android:enabled="false" android:layout_gravity="center" android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="@dimen/padding_double" android:text="@string/confirm" android:stateListAnimator="@null" style="@style/Widget.AppTheme.SolidButton.New" />
+    </com.google.android.material.card.MaterialCardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

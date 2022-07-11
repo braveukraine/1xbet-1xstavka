@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.client1.statistic.ui.view.PinnedFrameLayout android:id="@id/pflToolbarContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar" android:stateListAnimator="@animator/pinned_state_list" android:outlineProvider="bounds">
+        <FrameLayout android:id="@id/flToolbarContent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </org.xbet.client1.statistic.ui.view.PinnedFrameLayout>
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" app:navigationIcon="@drawable/ic_back" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New" />
+    <FrameLayout android:id="@id/statistic_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pflToolbarContainer" android:transitionGroup="true" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/levEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pflToolbarContainer" app:file_name="@string/lottie_no_internet_connection" app:textColor="?secondaryTextColor" app:text_res="@string/check_internet_connection" />
+    <ProgressBar android:id="@id/pbProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+</RelativeLayout>

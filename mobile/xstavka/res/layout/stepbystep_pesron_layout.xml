@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="start|bottom|center" android:id="@id/ivStepByStepSecondLifeImage" android:visibility="invisible" android:layout_width="@dimen/resident_men_extinguisher_size" android:layout_height="@dimen/resident_men_extinguisher_size" android:layout_marginLeft="110.0dip" android:layout_marginBottom="@dimen/padding" android:layout_marginStart="110.0dip" />
+    <ImageView android:layout_gravity="start|bottom|center" android:id="@id/ivResidentMenImage" android:layout_width="@dimen/resident_men_width" android:layout_height="@dimen/resident_men_height" android:layout_marginLeft="@dimen/padding_four" android:layout_marginStart="@dimen/padding_four" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/ticket_you_score_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_marginBottom="@dimen/margin_20" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" layout="@layout/ticket_score_card" />
+            <TextView android:textAppearance="?textAppearanceHeadline6New" android:textColor="?primaryColorNew" android:id="@id/rules_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_8" android:layout_marginStart="@dimen/margin_16" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rules_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_8" android:layout_marginEnd="@dimen/margin_8" />
+            <com.google.android.material.button.MaterialButton android:id="@id/mb_make_bet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_marginBottom="@dimen/margin_24" android:text="Сделать ставку" android:layout_weight="0.0" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" style="@style/Widget.AppTheme.SolidButton.New" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_eight">
+        <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:file_name="@string/lottie_history_empty" app:textColor="?textColorSecondaryNew" app:text_res="@string/participate_actions_and_win" />
+        <com.google.android.material.button.MaterialButton android:enabled="true" android:layout_gravity="bottom" android:id="@id/authorize_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_marginBottom="@dimen/margin_24" android:text="@string/make_login" android:layout_weight="0.0" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" app:layout_constraintBottom_toBottomOf="parent" style="@style/Widget.AppTheme.SolidButton.New" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/mario_run" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/mario_stop_state" />
+    <item android:duration="100" android:drawable="@drawable/mario_go_state" />
+</animation-list>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double_part" android:layout_marginBottom="@dimen/padding_double_part"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:cardCornerRadius="16.0dip" app:cardElevation="0.0dip" style="@style/Widget.AppTheme.CardView.Surface">
+        <org.xbet.ui_common.viewcomponents.imageview.MeasuredImageView android:id="@id/selected_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" app:heightOfWidth="0.5" app:srcCompat="@drawable/upload_photo_icon" />
+    </com.google.android.material.card.MaterialCardView>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/padding_double_half" android:layout_marginEnd="@dimen/padding">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/upload_photo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/upload_photo_icon" android:background="@drawable/primary_circle" android:layout_width="@dimen/icon_size_32" android:layout_height="@dimen/icon_size_32" android:scaleType="centerInside" app:srcCompat="@drawable/download_icon" />
+            <TextView android:textSize="@dimen/text_11" android:textColor="?text_color_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_min" android:text="@string/upload" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/edit_photo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/remove_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/red_circle" android:layout_width="@dimen/icon_size_32" android:layout_height="@dimen/icon_size_32" android:scaleType="centerInside" app:srcCompat="@drawable/remove_icon" />
+                <TextView android:textSize="@dimen/text_11" android:textColor="?text_color_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_min" android:text="@string/remove" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/reload_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/reload_photo_icon" android:background="@drawable/primary_circle" android:layout_width="@dimen/icon_size_32" android:layout_height="@dimen/icon_size_32" android:scaleType="centerInside" app:srcCompat="@drawable/ic_replace" />
+                <TextView android:textSize="@dimen/text_11" android:textColor="?text_color_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_min" android:text="@string/replace" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

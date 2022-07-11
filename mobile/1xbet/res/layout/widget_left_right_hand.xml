@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivCoin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/left_right_hand_coin" />
+    <FrameLayout android:id="@id/handContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom" android:id="@id/ivOpened" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/left_right_hand_opened" />
+        <ImageView android:layout_gravity="start" android:id="@id/ivClosed" android:layout_width="wrap_content" android:layout_height="fill_parent" android:adjustViewBounds="true" app:srcCompat="@drawable/left_right_hand_closed" />
+    </FrameLayout>
+</merge>

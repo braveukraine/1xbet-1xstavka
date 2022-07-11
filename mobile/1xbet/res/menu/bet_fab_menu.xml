@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_stop" android:id="@id/action_stop" android:title="@string/stop" />
+    <item android:icon="@drawable/ic_pin_video" android:id="@id/action_pin" android:title="@string/pin_title_on_off" />
+</menu>

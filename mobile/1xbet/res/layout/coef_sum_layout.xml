@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?card_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/coef_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bet_market_enter_coef">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@id/numbers_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:paddingEnd="80.0dip" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceSubtitle2Bold" android:textColor="?text_color_highlight_white" android:id="@id/plus_button" android:padding="@dimen/space_16" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+            <TextView android:textAppearance="?textAppearanceSubtitle2Bold" android:textColor="?text_color_highlight_white" android:id="@id/minus_button" android:padding="@dimen/space_16" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/red" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

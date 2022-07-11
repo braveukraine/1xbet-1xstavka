@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceSubtitle2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@android:id/text1" android:background="@drawable/bg_tab_betconstructor_sport_selector" android:paddingLeft="@dimen/padding_double_part" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding_double_part" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_4" android:layout_marginRight="@dimen/margin_4" android:elevation="@dimen/elevation_2"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

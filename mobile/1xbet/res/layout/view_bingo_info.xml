@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_gravity="bottom" android:background="@drawable/shadow_reverse" android:paddingTop="@dimen/space_32" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8" app:cardBackgroundColor="?contentBackgroundNew" app:cardCornerRadius="@dimen/corner_radius_16">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" android:layout_marginStart="@dimen/space_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_info_blue_with_gray_bg" />
+            <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textSize="@dimen/text_12" android:id="@id/tv_message" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" android:layout_marginStart="@dimen/space_10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btn_close" app:layout_constraintStart_toEndOf="@id/iv_info" app:layout_constraintTop_toTopOf="parent" />
+            <ImageButton android:id="@id/btn_close" android:background="@null" android:layout_width="@dimen/icon_size_32" android:layout_height="@dimen/icon_size_32" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_close_dialog_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

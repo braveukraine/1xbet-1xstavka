@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root" android:background="?card_background" android:paddingLeft="@dimen/space_24" android:paddingTop="4.0dip" android:paddingRight="@dimen/space_24" android:paddingBottom="@dimen/space_4" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/textView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:layout_weight="1.0" android:layout_marginStart="@dimen/space_4" android:layout_marginEnd="@dimen/space_4" />
+    <RadioButton android:id="@id/time_radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

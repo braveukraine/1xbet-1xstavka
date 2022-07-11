@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/related_game_item_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="114.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/related_game_item_view" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingBottom="@dimen/padding_four" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/gradient" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:textColor="?secondaryTextColor" />
+    <include android:layout_gravity="center" android:id="@id/progress" android:layout_width="40.0dip" android:layout_height="40.0dip" layout="@layout/view_progress_bar" />
+</FrameLayout>

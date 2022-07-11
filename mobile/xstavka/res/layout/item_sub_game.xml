@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:padding="@dimen/padding_double_part" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/favorite_sub_game_icon" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:foregroundGravity="center" app:srcCompat="@drawable/ic_star_unliked" app:tint="?primaryColorNew" />
+</LinearLayout>

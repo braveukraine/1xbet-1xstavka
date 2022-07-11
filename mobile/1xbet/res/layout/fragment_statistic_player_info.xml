@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/player_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" app:navigationIcon="@drawable/ic_back" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New" />
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip">
+            <View android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="-2.0dip" android:elevation="4.0dip" />
+            <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" android:layout_marginStart="@dimen/float_margin_32">
+                <FrameLayout android:layout_width="120.0dip" android:layout_height="120.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/player_photo" android:layout_width="96.0dip" android:layout_height="96.0dip" />
+                    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/player_team_logo" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+                </FrameLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip">
+                    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:id="@id/player_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+                    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/team_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+                    <TextView android:textAppearance="?textAppearanceBody2New" android:id="@id/country_and_role" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceBody2New" android:id="@id/age" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceBody2New" android:id="@id/injury" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <org.xbet.ui_common.viewcomponents.tabs.TabLayoutRectangleScrollable android:id="@id/tab_layout" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" style="@style/Widget.AppTheme.TabLayout.New" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/empty_stub" android:layout="@layout/player_info_empty_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:file_name="@string/lottie_data_error" app:textColor="?secondaryTextColor" app:text_res="@string/line_live_error_response" />
+</FrameLayout>

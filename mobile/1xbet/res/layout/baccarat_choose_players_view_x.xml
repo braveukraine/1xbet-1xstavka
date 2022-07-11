@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:animateLayoutChanges="true" android:layout_marginStart="@dimen/space_4" android:layout_marginEnd="@dimen/space_4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/player_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baccarat_player" style="@style/Widget.AppTheme.CheckBox.Light" />
+    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <CheckBox android:id="@id/tie_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baccarat_tie" style="@style/Widget.AppTheme.CheckBox.Light" />
+    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <CheckBox android:id="@id/banker_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baccarat_banker" style="@style/Widget.AppTheme.CheckBox.Light" />
+</LinearLayout>

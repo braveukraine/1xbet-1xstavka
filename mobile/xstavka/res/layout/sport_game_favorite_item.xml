@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?card_background" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle1New" android:id="@id/tv_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_24" android:layout_marginStart="@dimen/margin_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.669" />
+    <ImageView android:id="@id/image" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:layout_marginEnd="@dimen/margin_16" app:layout_constraintBottom_toBottomOf="@id/tv_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tv_content" app:srcCompat="@drawable/ic_star_liked" app:tint="?primaryColorNew" />
+</androidx.constraintlayout.widget.ConstraintLayout>

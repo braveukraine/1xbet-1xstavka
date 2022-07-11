@@ -1,0 +1,99 @@
+Using USB device `iPhone`
+Agent injected and responds ok!
+Determining environment...
+Running command... `ios plist cat Info.plist`
+{
+    BuildMachineOSBuild = 21C52;
+    CFBundleDevelopmentRegion = en;
+    CFBundleDisplayName = "1x\U0421\U0442\U0430\U0432\U043a\U0430";
+    CFBundleExecutable = 1xStavka;
+    CFBundleIcons =     {
+        CFBundlePrimaryIcon =         {
+            CFBundleIconFiles =             (
+                AppIcon60x60
+            );
+            CFBundleIconName = AppIcon;
+        };
+    };
+    "CFBundleIcons~ipad" =     {
+        CFBundlePrimaryIcon =         {
+            CFBundleIconFiles =             (
+                AppIcon60x60,
+                AppIcon76x76
+            );
+            CFBundleIconName = AppIcon;
+        };
+    };
+    CFBundleIdentifier = "com.bukmakerpub.1xStavka";
+    CFBundleInfoDictionaryVersion = "6.0";
+    CFBundleName = 1xStavka;
+    CFBundlePackageType = APPL;
+    CFBundleShortVersionString = "8.8";
+    CFBundleSupportedPlatforms =     (
+        iPhoneOS
+    );
+    CFBundleURLTypes =     (
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = xStavka;
+            CFBundleURLSchemes =             (
+                xStavka
+            );
+        }
+    );
+    CFBundleVersion = "8.8.06";
+    DTAppStoreToolsBuild = 13F100;
+    DTCompiler = "com.apple.compilers.llvm.clang.1_0";
+    DTPlatformBuild = 19C51;
+    DTPlatformName = iphoneos;
+    DTPlatformVersion = "15.2";
+    DTSDKBuild = 19C51;
+    DTSDKName = "iphoneos15.2";
+    DTXcode = 1320;
+    DTXcodeBuild = 13C90;
+    ITSAppUsesNonExemptEncryption = 0;
+    LSApplicationQueriesSchemes =     (
+        sberpay,
+        otpauth
+    );
+    LSRequiresIPhoneOS = 1;
+    MinimumOSVersion = "12.0";
+    NSAppTransportSecurity =     {
+        NSAllowsArbitraryLoads = 1;
+    };
+    NSCameraUsageDescription = NSCameraUsageDescription;
+    NSFaceIDUsageDescription = NSFaceIDUsageDescription;
+    NSLocationWhenInUseUsageDescription = NSLocationWhenInUseUsageDescription;
+    NSPhotoLibraryAddUsageDescription = NSPhotoLibraryAddUsageDescription;
+    NSPhotoLibraryUsageDescription = NSCameraUsageDescription;
+    NSUserTrackingUsageDescription = NSUserTrackingUsageDescription;
+    UIBackgroundModes =     (
+        audio,
+        "remote-notification",
+        voip
+    );
+    UIDeviceFamily =     (
+        1,
+        2
+    );
+    UILaunchStoryboardName = "Launch Screen";
+    UIRequiredDeviceCapabilities =     (
+        arm64
+    );
+    UIRequiresFullScreen = 1;
+    UIStatusBarHidden = 1;
+    UISupportedInterfaceOrientations =     (
+        UIInterfaceOrientationLandscapeLeft,
+        UIInterfaceOrientationLandscapeRight,
+        UIInterfaceOrientationPortrait
+    );
+    "UISupportedInterfaceOrientations~ipad" =     (
+        UIInterfaceOrientationLandscapeLeft,
+        UIInterfaceOrientationLandscapeRight,
+        UIInterfaceOrientationPortrait
+    );
+    UIUserInterfaceStyle = Light;
+    UIViewControllerBasedStatusBarAppearance = 1;
+}
+Asking jobs to stop...
+Unloading objection agent...

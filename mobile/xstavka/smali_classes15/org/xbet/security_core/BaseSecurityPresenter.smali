@@ -1,0 +1,192 @@
+.class public abstract Lorg/xbet/security_core/BaseSecurityPresenter;
+.super Lorg/xbet/ui_common/moxy/presenters/BasePresenter;
+.source "BaseSecurityPresenter.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<V::",
+        "Lorg/xbet/security_core/BaseSecurityView;",
+        ">",
+        "Lorg/xbet/ui_common/moxy/presenters/BasePresenter<",
+        "TV;>;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0003\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008&\u0018\u0000*\u0008\u0008\u0000\u0010\u0002*\u00020\u00012\u0008\u0012\u0004\u0012\u00028\u00000\u0003B\u000f\u0012\u0006\u0010\u0011\u001a\u00020\u0010\u00a2\u0006\u0004\u0008\u0012\u0010\u0013J\u0008\u0010\u0005\u001a\u00020\u0004H\u0016J\u0008\u0010\u0006\u001a\u00020\u0004H\u0016J\u0008\u0010\u0007\u001a\u00020\u0004H\u0016J\u0008\u0010\u0008\u001a\u00020\u0004H\u0016J\u0008\u0010\t\u001a\u00020\u0004H\u0016J&\u0010\u000e\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\n2\u0014\u0010\r\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u000cH\u0014J\u0008\u0010\u000f\u001a\u00020\u0004H\u0016\u00a8\u0006\u0014"
+    }
+    d2 = {
+        "Lorg/xbet/security_core/BaseSecurityPresenter;",
+        "Lorg/xbet/security_core/BaseSecurityView;",
+        "V",
+        "Lorg/xbet/ui_common/moxy/presenters/BasePresenter;",
+        "Lca0/y;",
+        "onActionButtonClick",
+        "onSecondActionButtonClick",
+        "onBackPressed",
+        "onSubActionButtonClick",
+        "onThirdActionButtonClick",
+        "",
+        "throwable",
+        "Lkotlin/Function1;",
+        "errorHandler",
+        "handleError",
+        "onTokenExpired",
+        "Lorg/xbet/ui_common/router/BaseOneXRouter;",
+        "router",
+        "<init>",
+        "(Lorg/xbet/ui_common/router/BaseOneXRouter;)V",
+        "security_core_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Lorg/xbet/ui_common/router/BaseOneXRouter;)V
+    .locals 0
+    .param p1    # Lorg/xbet/ui_common/router/BaseOneXRouter;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0, p1}, Lorg/xbet/ui_common/moxy/presenters/BasePresenter;-><init>(Lorg/xbet/ui_common/router/BaseOneXRouter;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected handleError(Ljava/lang/Throwable;Lka0/l;)V
+    .locals 2
+    .param p1    # Ljava/lang/Throwable;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Lka0/l;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Throwable;",
+            "Lka0/l<",
+            "-",
+            "Ljava/lang/Throwable;",
+            "Lca0/y;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    instance-of v0, p1, Lcom/xbet/onexcore/data/model/ServerException;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    move-object v0, p1
+
+    check-cast v0, Lcom/xbet/onexcore/data/model/ServerException;
+
+    goto :goto_0
+
+    :cond_0
+    move-object v0, v1
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Lcom/xbet/onexcore/data/model/ServerException;->a()Lcom/xbet/onexcore/data/errors/b;
+
+    move-result-object v1
+
+    :cond_1
+    sget-object v0, Lcom/xbet/onexcore/data/errors/a;->TokenExpiredError:Lcom/xbet/onexcore/data/errors/a;
+
+    if-ne v1, v0, :cond_3
+
+    .line 2
+    invoke-virtual {p0}, Lmoxy/MvpPresenter;->getViewState()Lmoxy/MvpView;
+
+    move-result-object p2
+
+    check-cast p2, Lorg/xbet/security_core/BaseSecurityView;
+
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_2
+
+    const-string p1, ""
+
+    :cond_2
+    invoke-interface {p2, p1}, Lorg/xbet/security_core/BaseSecurityView;->showExpiredTokenError(Ljava/lang/String;)V
+
+    goto :goto_1
+
+    .line 3
+    :cond_3
+    invoke-super {p0, p1, p2}, Lorg/xbet/ui_common/moxy/presenters/BasePresenter;->handleError(Ljava/lang/Throwable;Lka0/l;)V
+
+    :goto_1
+    return-void
+.end method
+
+.method public onActionButtonClick()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onBackPressed()V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lorg/xbet/ui_common/moxy/presenters/BasePresenter;->getRouter()Lorg/xbet/ui_common/router/BaseOneXRouter;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/xbet/ui_common/router/BaseOneXRouter;->exit()V
+
+    return-void
+.end method
+
+.method public onSecondActionButtonClick()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onSubActionButtonClick()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onThirdActionButtonClick()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onTokenExpired()V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lorg/xbet/security_core/BaseSecurityPresenter;->onBackPressed()V
+
+    return-void
+.end method

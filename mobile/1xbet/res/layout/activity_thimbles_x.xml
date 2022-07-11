@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?gameWindowBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+    <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    <RelativeLayout android:orientation="vertical" android:padding="@dimen/space_8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <com.xbet.onexgames.features.thimbles.views.ThimblesWidget android:id="@id/twThimbles" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_above="@id/casinoBetView" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/casinoBetView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+        <androidx.appcompat.widget.AppCompatSpinner android:gravity="end" android:layout_gravity="end" android:id="@id/spGame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" android:backgroundTint="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

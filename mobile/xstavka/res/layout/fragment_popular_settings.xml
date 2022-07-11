@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:navigationIcon="@drawable/ic_back" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/popular_settings_title" style="@style/Widget.AppTheme.Toolbar.New" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/toolbar_height_size">
+        <LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8">
+            <TextView android:textAppearance="?textAppearanceSubtitle2MediumHighlightNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:text="@string/popular_settings_block_title" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" />
+            <androidx.appcompat.widget.SwitchCompat android:gravity="center_vertical" android:id="@id/switch_sports" android:paddingLeft="@dimen/margin_16" android:paddingRight="@dimen/margin_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/menu_item_height" android:text="@string/popular_settings_block_sport" style="@style/Widget.AppTheme.Switch.New" />
+            <androidx.appcompat.widget.SwitchCompat android:gravity="center_vertical" android:id="@id/switch_banners" android:paddingLeft="@dimen/margin_16" android:paddingRight="@dimen/margin_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_8" android:minHeight="@dimen/menu_item_height" android:text="@string/popular_settings_block_banner" style="@style/Widget.AppTheme.Switch.New" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textAppearance="?textAppearanceSubtitle2MediumHighlightNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_marginBottom="@dimen/margin_8" android:text="@string/popular_settings_order_title" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

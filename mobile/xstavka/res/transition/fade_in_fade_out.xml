@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:transitionOrdering="sequential"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fade android:duration="700" android:fadingMode="fade_in" />
+    <fade android:duration="700" android:fadingMode="fade_in" />
+    <fade android:duration="700" android:fadingMode="fade_in" />
+</transitionSet>

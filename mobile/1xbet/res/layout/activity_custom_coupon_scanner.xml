@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/activity_custom_coupon_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@id/coupon_barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:zxing_preview_scaling_strategy="fitXY" app:zxing_use_texture_view="false">
+        <FrameLayout android:padding="@dimen/space_40" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_scanner" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/frame_container" android:background="@drawable/bg_rounded_top_corners_16dp_new" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:backgroundTint="?contentBackgroundNew">
+            <com.google.android.material.button.MaterialButton android:textColor="?solidButtonTextColor" android:layout_gravity="bottom" android:id="@id/cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16" android:text="@string/cancel" android:backgroundTint="@color/solid_button_background_selector_new" app:cornerRadius="8.0dip" />
+        </LinearLayout>
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+</FrameLayout>

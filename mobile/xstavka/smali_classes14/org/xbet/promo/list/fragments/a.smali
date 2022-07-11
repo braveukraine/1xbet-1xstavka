@@ -1,0 +1,34 @@
+.class public final synthetic Lorg/xbet/promo/list/fragments/a;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lorg/xbet/promo/list/fragments/PromoCodeListFragment;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lorg/xbet/promo/list/fragments/PromoCodeListFragment;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lorg/xbet/promo/list/fragments/a;->a:Lorg/xbet/promo/list/fragments/PromoCodeListFragment;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object v0, p0, Lorg/xbet/promo/list/fragments/a;->a:Lorg/xbet/promo/list/fragments/PromoCodeListFragment;
+
+    invoke-static {v0, p1}, Lorg/xbet/promo/list/fragments/PromoCodeListFragment;->sd(Lorg/xbet/promo/list/fragments/PromoCodeListFragment;Landroid/view/View;)V
+
+    return-void
+.end method

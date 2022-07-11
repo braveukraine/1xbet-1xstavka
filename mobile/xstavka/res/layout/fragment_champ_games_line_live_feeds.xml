@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="0.0dip" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New">
+        <TextView android:textAppearance="@style/TextAppearance.AppTheme.New.H6.Medium" android:textColor="?textColorSecondaryNew" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:background="?selectableItemBackground" android:paddingTop="@dimen/padding_half" android:paddingBottom="@dimen/padding_half" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="3" app:autoSizeMaxTextSize="@dimen/text_20" app:autoSizeMinTextSize="@dimen/text_12" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <FrameLayout android:id="@id/container" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

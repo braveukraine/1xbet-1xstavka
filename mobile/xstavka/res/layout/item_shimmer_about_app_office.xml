@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="?primaryColorNew" android:id="@id/tv_about_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:text="@string/about_app_title" android:layout_marginStart="@dimen/margin_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_shimmer_about_app" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_about_app">
+        <include android:id="@id/shimmer_app_version" layout="@layout/item_shimmer_settings" />
+        <include android:id="@id/shimmer_app_info" layout="@layout/item_shimmer_settings" />
+        <include android:id="@id/shimmer_clear_cache" layout="@layout/item_shimmer_settings" />
+    </LinearLayout>
+    <View android:background="?backgroundNew" android:layout_width="wrap_content" android:layout_height="8.0dip" android:layout_marginTop="@dimen/margin_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_shimmer_about_app" />
+</androidx.constraintlayout.widget.ConstraintLayout>

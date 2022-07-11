@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:color="?sns_colorInit" app:sns_stateInit="true" />
+    <item android:color="?sns_colorPending" app:sns_statePending="true" />
+    <item android:color="?sns_colorSuccess" app:sns_stateApproved="true" />
+    <item android:color="?sns_colorRejected" app:sns_stateRejected="true" />
+    <item android:color="?sns_colorProcessing" app:sns_stateProcessing="true" />
+    <item android:color="?sns_colorInit" />
+</selector>

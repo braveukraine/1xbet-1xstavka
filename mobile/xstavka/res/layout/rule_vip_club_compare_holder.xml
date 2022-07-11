@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:gravity="start" android:id="@id/tv_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_platinum" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_platinum" android:layout_width="@dimen/margin_16" android:layout_height="@dimen/margin_16" android:layout_marginEnd="32.0dip" app:layout_constraintBottom_toBottomOf="@id/tv_status" app:layout_constraintEnd_toStartOf="@id/iv_gold" app:layout_constraintTop_toTopOf="@id/tv_status" />
+    <ImageView android:id="@id/iv_gold" android:layout_width="@dimen/margin_16" android:layout_height="@dimen/margin_16" android:layout_marginEnd="32.0dip" app:layout_constraintBottom_toBottomOf="@id/tv_status" app:layout_constraintEnd_toStartOf="@id/iv_silver" app:layout_constraintTop_toTopOf="@id/tv_status" />
+    <ImageView android:id="@id/iv_silver" android:layout_width="@dimen/margin_16" android:layout_height="@dimen/margin_16" app:layout_constraintBottom_toBottomOf="@id/tv_status" app:layout_constraintEnd_toStartOf="@id/gl_margin" app:layout_constraintStart_toStartOf="@id/gl_margin" app:layout_constraintTop_toTopOf="@id/tv_status" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/gl_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.9285" />
+</androidx.constraintlayout.widget.ConstraintLayout>

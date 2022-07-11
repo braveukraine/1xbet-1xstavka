@@ -1,0 +1,38 @@
+.class public final synthetic Lcom/onex/supplib/presentation/j0;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Lj90/l;
+
+
+# instance fields
+.field public final synthetic a:Lcom/onex/supplib/presentation/SuppLibChatPresenter;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/onex/supplib/presentation/SuppLibChatPresenter;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/onex/supplib/presentation/j0;->a:Lcom/onex/supplib/presentation/SuppLibChatPresenter;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcom/onex/supplib/presentation/j0;->a:Lcom/onex/supplib/presentation/SuppLibChatPresenter;
+
+    check-cast p1, Lcom/insystem/testsupplib/data/models/message/SingleMessage;
+
+    invoke-static {v0, p1}, Lcom/onex/supplib/presentation/SuppLibChatPresenter;->I(Lcom/onex/supplib/presentation/SuppLibChatPresenter;Lcom/insystem/testsupplib/data/models/message/SingleMessage;)Lo8/a;
+
+    move-result-object p1
+
+    return-object p1
+.end method

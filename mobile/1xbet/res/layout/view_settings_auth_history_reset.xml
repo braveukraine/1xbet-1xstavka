@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:layout_marginBottom="@dimen/space_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="@dimen/space_16">
+        <ImageView android:id="@id/icon_reset_background" android:background="@drawable/primary_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:backgroundTint="?textColorSecondaryNew" />
+        <ImageView android:layout_gravity="center" android:id="@id/icon_reset" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_logout" app:tint="@color/white_new" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="ltr">
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/reset_session_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_exit_title" />
+        <TextView android:textAppearance="?textAppearanceCaptionNew" android:id="@id/reset_session_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:text="@string/security_exit_description" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/view_progress_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:padding="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/email_code_number" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <org.xbet.ui_common.viewcomponents.layouts.linear.TextInputEditText android:id="@id/email_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24" android:hint="@string/activation_code" android:inputType="number" app:colorEditText="?primaryTextColor" style="@style/Widget.AppTheme.TextInputLayout" />
+        <com.google.android.material.button.MaterialButton android:gravity="center" android:id="@id/send_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24" android:text="@string/send_sms_again" style="@style/Widget.AppTheme.OutlinedButton" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:id="@id/tv_resend_email" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24" android:text="@string/resend_sms_timer_text" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/elevation_4" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/day_express" style="@style/Widget.AppTheme.Toolbar.New" />
+    <org.xbet.ui_common.viewcomponents.tabs.TabLayoutRectangle android:id="@id/events_tl" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:elevation="@dimen/elevation_4" style="@style/Widget.AppTheme.TabLayout.New" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/events_vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

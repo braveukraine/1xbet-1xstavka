@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_showcase_item_container" android:background="?windowSurfaceBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.layouts.linear.ShowcaseTitleView android:id="@id/showcase_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:layout_marginBottom="@dimen/space_8" app:title_text_all_showcase="@string/more" app:title_text_showcase="@string/popular_events" app:type_text_showcase="@string/line" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/showcase_recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8" android:paddingStart="@dimen/space_8" android:paddingEnd="@dimen/space_8" app:layoutManager="org.xbet.ui_common.viewcomponents.recycler.managers.InconsistencyLayoutManager" />
+    <View android:id="@id/showcase_divider" android:background="?popularDividerBackgroundColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</LinearLayout>

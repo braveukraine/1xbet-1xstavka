@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/view_progress_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:padding="@dimen/padding_double" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubtitle1" android:textColor="?textColorPrimaryNew" android:id="@id/sms_code_number" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:id="@id/tv_disable_spam" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:text="@string/disable_spam" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double_half" android:hint="@string/activation_code" style="@style/Widget.AppTheme.TextInputLayout.New">
+            <androidx.appcompat.widget.AppCompatEditText android:theme="@style/ThemeOverlay.AppTheme.EditText.New" android:id="@id/sms_code" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double_half" android:maxLines="1" android:inputType="textNoSuggestions" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton android:gravity="center" android:id="@id/send_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double_half" android:text="@string/send_sms" style="@style/Widget.AppTheme.SolidButton.New.SurfaceLight" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:textColor="?textColorSecondaryNew" android:gravity="center" android:id="@id/tv_resend_sms" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double_half" android:text="@string/resend_sms_timer_text" />
+        <com.google.android.material.button.MaterialButton android:gravity="center" android:id="@id/logout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double_half" android:text="@string/exit_dialog_title" style="@style/Widget.AppTheme.SolidButton.New.SurfaceLight" />
+    </LinearLayout>
+</FrameLayout>

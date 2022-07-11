@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?window_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_tickets" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/error_view" android:background="?window_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:file_name="@string/lottie_data_error" app:text_res="@string/service_is_unavailable" />
+    </FrameLayout>
+</FrameLayout>

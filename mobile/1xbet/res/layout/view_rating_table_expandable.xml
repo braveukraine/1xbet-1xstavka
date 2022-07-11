@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/content" android:background="?contentBackgroundNew" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <org.xbet.ui_common.viewcomponents.layouts.linear.TextInputEditTextNew android:textColor="?primaryTextColor" android:id="@id/date" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/profile_info_season" android:layout_marginEnd="8.0dip" app:colorEditText="?textColorPrimaryNew" style="@style/Widget.AppTheme.TextInputLayout.New" />
+            <org.xbet.ui_common.viewcomponents.layouts.linear.TextInputEditTextNew android:id="@id/stage" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:layout_marginEnd="8.0dip" app:colorEditText="?textColorPrimaryNew" style="@style/Widget.AppTheme.TextInputLayout.New" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

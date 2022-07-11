@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_container" android:background="@color/black_50" android:paddingTop="@dimen/toolbar_height_size" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center" android:background="@drawable/security_qr_code_bg" android:layout_width="216.0dip" android:layout_height="216.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/ivQr" android:layout_width="200.0dip" android:layout_height="200.0dip" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_broken_image" />
+    <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" app:srcCompat="@drawable/ic_close_gallery" />
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="other">%dh</item>
+        <item quantity="one">1h</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="other">%dm</item>
+        <item quantity="one">1m</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="other">%ds</item>
+        <item quantity="one">1s</item>
+    </plurals>
+</resources>

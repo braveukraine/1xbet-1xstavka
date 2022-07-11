@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/onex/supplib/presentation/d1;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Ly80/g;
+
+
+# instance fields
+.field public final synthetic a:Lcom/onex/supplib/presentation/SupportFaqAnswerPresenter;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/onex/supplib/presentation/SupportFaqAnswerPresenter;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/onex/supplib/presentation/d1;->a:Lcom/onex/supplib/presentation/SupportFaqAnswerPresenter;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/onex/supplib/presentation/d1;->a:Lcom/onex/supplib/presentation/SupportFaqAnswerPresenter;
+
+    check-cast p1, Ljava/lang/String;
+
+    invoke-static {v0, p1}, Lcom/onex/supplib/presentation/SupportFaqAnswerPresenter;->a(Lcom/onex/supplib/presentation/SupportFaqAnswerPresenter;Ljava/lang/String;)V
+
+    return-void
+.end method

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Siirry eteenpäin %d sekuntia</item>
+        <item quantity="one">Siirry eteenpäin %d sekunti</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Siirry taaksepäin %d sekuntia</item>
+        <item quantity="one">Siirry taaksepäin %d sekunti</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d uutta ilmoitusta</item>
+        <item quantity="one">%d uusi ilmoitus</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="other">%d h</item>
+        <item quantity="one">1 h</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="other">%d min</item>
+        <item quantity="one">1 min</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="other">%d s</item>
+        <item quantity="one">1 s</item>
+    </plurals>
+</resources>

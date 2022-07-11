@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/ThemeOverlay.AppTheme.EditText.New" android:id="@id/login_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" android:hint="@string/input_login" android:layout_marginHorizontal="@dimen/margin_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.AppTheme.TextInputLayout.New">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/login_field" android:paddingLeft="@dimen/margin_8" android:paddingRight="@dimen/margin_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="20" android:inputType="textNoSuggestions" android:textDirection="locale" android:paddingHorizontal="@dimen/margin_8" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hint_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" android:layout_marginHorizontal="@dimen/margin_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/login_parent">
+        <ImageView android:id="@id/hint_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitCenter" app:layout_constraintEnd_toStartOf="@id/login_hint" app:layout_constraintStart_toStartOf="parent" app:srcCompat="@drawable/ic_appbar_info" app:tint="?textColorSecondaryNew" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:id="@id/login_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_16" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" android:layout_marginHorizontal="@dimen/margin_16" app:layout_constraintTop_toBottomOf="@id/hint_container">
+        <CheckBox android:id="@id/disable_login_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/disable_login_container" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_16">
+            <TextView android:textAppearance="?textAppearanceSubtitle1New" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disable_email_auth" />
+            <TextView android:textAppearance="?textAppearanceCaptionNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:text="@string/login_input_hint" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

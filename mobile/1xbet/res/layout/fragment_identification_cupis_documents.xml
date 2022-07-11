@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/tv_title_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:text="@string/cupis_document_title" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" app:layout_constraintBottom_toTopOf="@id/recycler_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/space_8" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title_text" />
+    <FrameLayout android:id="@id/progress" android:background="@color/black_50" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

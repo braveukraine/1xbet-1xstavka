@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText android:textSize="14.0sp" android:textColor="?text_color_highlight_white" android:textColorHint="?text_color_highlight_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:inputType="numberDecimal" android:imeOptions="actionDone"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

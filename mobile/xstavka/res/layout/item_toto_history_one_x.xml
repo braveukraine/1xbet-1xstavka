@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?card_background" android:padding="@dimen/padding_double" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/number_of_count_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceBody2MediumNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bets_count_" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:id="@id/number_of_count_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/confirmed_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding">
+        <TextView android:textAppearance="?textAppearanceBody2MediumNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirmed_" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:id="@id/confirmed_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

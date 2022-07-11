@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:layout_marginBottom="@dimen/space_8" app:cardBackgroundColor="?contentBackgroundNew" app:cardCornerRadius="8.0dip" app:cardElevation="2.0dip" app:contentPadding="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/registration_type_image" android:background="@drawable/white_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" android:backgroundTint="?primaryColorNew" app:tint="@color/white" />
+        <TextView android:textAppearance="?textAppearanceBody1New" android:textSize="@dimen/text_16" android:textColor="?textColorPrimaryNew" android:id="@id/registration_type_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_16" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

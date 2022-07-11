@@ -1,0 +1,46 @@
+.class public final synthetic Lorg/xbet/games_section/feature/daily_tournament/data/repository/f;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Lj90/l;
+
+
+# static fields
+.field public static final synthetic a:Lorg/xbet/games_section/feature/daily_tournament/data/repository/f;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lorg/xbet/games_section/feature/daily_tournament/data/repository/f;
+
+    invoke-direct {v0}, Lorg/xbet/games_section/feature/daily_tournament/data/repository/f;-><init>()V
+
+    sput-object v0, Lorg/xbet/games_section/feature/daily_tournament/data/repository/f;->a:Lorg/xbet/games_section/feature/daily_tournament/data/repository/f;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lorg/xbet/games_section/feature/daily_tournament/data/model/DailyUserPlaceResponse;
+
+    invoke-static {p1}, Lorg/xbet/games_section/feature/daily_tournament/data/repository/DailyRepository;->b(Lorg/xbet/games_section/feature/daily_tournament/data/model/DailyUserPlaceResponse;)Lorg/xbet/games_section/feature/daily_tournament/data/model/DailyUserPlaceResponse$Value;
+
+    move-result-object p1
+
+    return-object p1
+.end method

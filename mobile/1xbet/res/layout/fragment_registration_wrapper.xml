@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar_registration" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height_size" android:elevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/registration" style="@style/Widget.AppTheme.Toolbar.New" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/header_view_pager" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        <org.xbet.ui_common.viewcomponents.layouts.linear.CircleIndicatorTwoPager android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layoutDirection="ltr" app:ci_animator="@animator/scale_with_alpha" app:ci_drawable="@drawable/circle_primary_new_color" app:ci_drawable_unselected="@drawable/circle_primary_new_color" app:ci_height="4.0dip" app:ci_width="4.0dip" />
+        <FrameLayout android:id="@id/container" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.viewpager.widget.ViewPager android:id="@id/fragment_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/view_progress_bar" />
+</FrameLayout>

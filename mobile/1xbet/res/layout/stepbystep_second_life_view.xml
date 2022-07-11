@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/white" android:gravity="end" android:layout_gravity="bottom" android:id="@id/tvSecondLifeText" android:background="@drawable/rounded_resident_extinguisher_background" android:paddingLeft="@dimen/space_8" android:paddingTop="@dimen/space_4" android:paddingRight="@dimen/space_24" android:paddingBottom="@dimen/space_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-30.0dip" android:layout_marginBottom="@dimen/space_2" android:paddingStart="@dimen/space_8" android:paddingEnd="@dimen/space_24" />
+    <ImageView android:id="@id/ivSecondLifeImage" android:layout_width="@dimen/resident_extinguisher_size" android:layout_height="@dimen/resident_extinguisher_size" />
+</LinearLayout>

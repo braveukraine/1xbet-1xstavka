@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/transparent_new" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iconImageView" android:layout_width="fill_parent" android:layout_height="180.0dip" android:scaleType="fitCenter" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="?textAppearanceHeadline6MediumNew" android:gravity="center" android:id="@id/titleTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_40" android:layout_marginRight="@dimen/space_16" android:textAlignment="center" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iconImageView" />
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="115.0dip" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:overScrollMode="never" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/titleTextView">
+        <TextView android:textAppearance="?textAppearanceBody1New" android:id="@id/descriptionTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center" />
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

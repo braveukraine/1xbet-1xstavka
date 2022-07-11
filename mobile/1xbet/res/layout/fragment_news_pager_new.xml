@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar_news_pager" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@null" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintTop_toBottomOf="@id/toolbar_news_pager">
+        <com.google.android.material.appbar.AppBarLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_gravity="center" android:id="@id/collapsing_toolbar_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <ImageView android:id="@id/iv_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@raw/plug_news" />
+                <org.xbet.promotions.ticket.widgets.TicketStatusView android:layout_gravity="bottom" android:id="@id/ticket_active_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <org.xbet.promotions.ticket.widgets.TicketStatusViewKZ android:layout_gravity="bottom" android:id="@id/ticket_active_text_kz" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <org.xbet.ui_common.viewcomponents.tabs.TabLayoutRectangleScrollable android:id="@id/tl_news_tabLayout" android:background="?contentBackgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:elevation="2.0dip" style="@style/Widget.AppTheme.TabLayout.New" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <org.xbet.ui_common.viewcomponents.viewpager.BaseViewPager android:id="@id/vp_news_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_2" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <org.xbet.promotions.ticket.widgets.TicketConfirmViewNew android:id="@id/ticket_confirm_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

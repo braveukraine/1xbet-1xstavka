@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:background="?contentBackgroundNew" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/containerUserAgreement" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivUserAgreement" android:layout_width="@dimen/space_24" android:layout_height="@dimen/space_24" android:layout_marginTop="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" app:srcCompat="@drawable/ic_info_rules" app:tint="?textColorSecondaryNew" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:ellipsize="end" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/textViewUserAgreement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_agreement" android:lines="1" android:layout_marginStart="@dimen/space_16" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="?separatorNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/containerDisableAuth" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivDisableAuth" android:layout_width="@dimen/space_24" android:layout_height="@dimen/space_24" android:layout_marginTop="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" app:srcCompat="@drawable/ic_auth_power" app:tint="@color/red_soft_new" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:textColor="@color/red_soft_new" android:ellipsize="end" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/textViewDisableAuth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disable_authenticator" android:lines="1" android:layout_marginStart="@dimen/space_16" />
+    </LinearLayout>
+</LinearLayout>

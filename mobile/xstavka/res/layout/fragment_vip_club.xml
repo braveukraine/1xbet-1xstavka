@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:autoMirrored="true" android:elevation="0.0dip" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?controlsBackgroundNew" app:title="@string/vip_club" style="@style/Widget.AppTheme.Toolbar.New" />
+    <FrameLayout android:id="@id/progress" android:background="@color/black_15" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_vip_club" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/empty_view" android:background="?window_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:file_name="@string/lottie_some_error" app:textColor="?secondaryTextColor" app:text_res="@string/data_retrieval_error" />
+</LinearLayout>

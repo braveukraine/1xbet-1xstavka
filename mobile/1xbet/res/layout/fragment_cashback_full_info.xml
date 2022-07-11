@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="?primaryColor_to_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cashback_status_icon" android:layout_width="@dimen/registration_type_icon_size" android:layout_height="@dimen/registration_type_icon_size" android:layout_margin="@dimen/space_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:layout_marginBottom="@dimen/space_8" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/cashback_status_icon" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textAppearance="?textAppearanceSubtitle1Medium" android:textSize="@dimen/text_18" android:textColor="@color/white" android:id="@id/cashback_status_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_experience" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceCaptionMedium" android:textColor="@color/white" android:id="@id/cashback_experience" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/experience" />
+                <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:id="@id/cashback_experience_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_marginStart="@dimen/space_2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_percent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceCaptionMedium" android:textColor="@color/white" android:id="@id/cashback_percent_output" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cashback_with_dots" />
+                <TextView android:textAppearance="?textAppearanceCaptionMedium" android:textColor="@color/white" android:id="@id/cashback_percent_output_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_2" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_all_levels" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

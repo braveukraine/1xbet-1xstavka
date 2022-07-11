@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xbet.ui_common.viewcomponents.layouts.linear.BetSumView android:id="@id/bet_sum_view" android:paddingLeft="@dimen/space_24" android:paddingRight="@dimen/space_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

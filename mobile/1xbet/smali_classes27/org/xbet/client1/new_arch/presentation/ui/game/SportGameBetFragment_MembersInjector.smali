@@ -1,0 +1,394 @@
+.class public final Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;
+.super Ljava/lang/Object;
+.source "SportGameBetFragment_MembersInjector.java"
+
+# interfaces
+.implements Li80/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Li80/b<",
+        "Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final dateFormatterProvider:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Lcom/xbet/onexcore/utils/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final gameUtilsProvider:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Lorg/xbet/ui_common/viewcomponents/recycler/baseline/GameUtilsProvider;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final imageManagerProvider:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Lorg/xbet/ui_common/viewcomponents/recycler/baseline/BaseLineImageManager;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final longTapBetPresenterFactoryProvider:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Lorg/xbet/client1/new_arch/di/longtap/LongTapBetPresenterFactory;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final longTapBetUtilProvider:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Lorg/xbet/client1/new_arch/presentation/ui/util/LongTapBetUtil;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final makeBetDialogsManagerProvider:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Lorg/xbet/client1/makebet/providers/MakeBetDialogsManager;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final makeBetRequestPresenterFactoryProvider:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Lorg/xbet/makebet/request/di/MakeBetRequestPresenterFactory;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final sportGameBetPresenterFactoryProvider:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Lorg/xbet/client1/new_arch/presentation/ui/game/di/SportGameComponent$SportGameBetPresenterFactory;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lo90/a<",
+            "Lorg/xbet/client1/makebet/providers/MakeBetDialogsManager;",
+            ">;",
+            "Lo90/a<",
+            "Lcom/xbet/onexcore/utils/b;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/ui_common/viewcomponents/recycler/baseline/BaseLineImageManager;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/ui_common/viewcomponents/recycler/baseline/GameUtilsProvider;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/client1/new_arch/presentation/ui/util/LongTapBetUtil;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/client1/new_arch/presentation/ui/game/di/SportGameComponent$SportGameBetPresenterFactory;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/client1/new_arch/di/longtap/LongTapBetPresenterFactory;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/makebet/request/di/MakeBetRequestPresenterFactory;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->makeBetDialogsManagerProvider:Lo90/a;
+
+    .line 3
+    iput-object p2, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->dateFormatterProvider:Lo90/a;
+
+    .line 4
+    iput-object p3, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->imageManagerProvider:Lo90/a;
+
+    .line 5
+    iput-object p4, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->gameUtilsProvider:Lo90/a;
+
+    .line 6
+    iput-object p5, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->longTapBetUtilProvider:Lo90/a;
+
+    .line 7
+    iput-object p6, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->sportGameBetPresenterFactoryProvider:Lo90/a;
+
+    .line 8
+    iput-object p7, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->longTapBetPresenterFactoryProvider:Lo90/a;
+
+    .line 9
+    iput-object p8, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->makeBetRequestPresenterFactoryProvider:Lo90/a;
+
+    return-void
+.end method
+
+.method public static create(Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;)Li80/b;
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lo90/a<",
+            "Lorg/xbet/client1/makebet/providers/MakeBetDialogsManager;",
+            ">;",
+            "Lo90/a<",
+            "Lcom/xbet/onexcore/utils/b;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/ui_common/viewcomponents/recycler/baseline/BaseLineImageManager;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/ui_common/viewcomponents/recycler/baseline/GameUtilsProvider;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/client1/new_arch/presentation/ui/util/LongTapBetUtil;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/client1/new_arch/presentation/ui/game/di/SportGameComponent$SportGameBetPresenterFactory;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/client1/new_arch/di/longtap/LongTapBetPresenterFactory;",
+            ">;",
+            "Lo90/a<",
+            "Lorg/xbet/makebet/request/di/MakeBetRequestPresenterFactory;",
+            ">;)",
+            "Li80/b<",
+            "Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v9, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;
+
+    move-object v0, v9
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move-object v6, p5
+
+    move-object/from16 v7, p6
+
+    move-object/from16 v8, p7
+
+    invoke-direct/range {v0 .. v8}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;-><init>(Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;Lo90/a;)V
+
+    return-object v9
+.end method
+
+.method public static injectDateFormatter(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lcom/xbet/onexcore/utils/b;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;->dateFormatter:Lcom/xbet/onexcore/utils/b;
+
+    return-void
+.end method
+
+.method public static injectGameUtilsProvider(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/ui_common/viewcomponents/recycler/baseline/GameUtilsProvider;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;->gameUtilsProvider:Lorg/xbet/ui_common/viewcomponents/recycler/baseline/GameUtilsProvider;
+
+    return-void
+.end method
+
+.method public static injectImageManager(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/ui_common/viewcomponents/recycler/baseline/BaseLineImageManager;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;->imageManager:Lorg/xbet/ui_common/viewcomponents/recycler/baseline/BaseLineImageManager;
+
+    return-void
+.end method
+
+.method public static injectLongTapBetPresenterFactory(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/client1/new_arch/di/longtap/LongTapBetPresenterFactory;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;->longTapBetPresenterFactory:Lorg/xbet/client1/new_arch/di/longtap/LongTapBetPresenterFactory;
+
+    return-void
+.end method
+
+.method public static injectLongTapBetUtil(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/client1/new_arch/presentation/ui/util/LongTapBetUtil;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;->longTapBetUtil:Lorg/xbet/client1/new_arch/presentation/ui/util/LongTapBetUtil;
+
+    return-void
+.end method
+
+.method public static injectMakeBetDialogsManager(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/client1/makebet/providers/MakeBetDialogsManager;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;->makeBetDialogsManager:Lorg/xbet/client1/makebet/providers/MakeBetDialogsManager;
+
+    return-void
+.end method
+
+.method public static injectMakeBetRequestPresenterFactory(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/makebet/request/di/MakeBetRequestPresenterFactory;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;->makeBetRequestPresenterFactory:Lorg/xbet/makebet/request/di/MakeBetRequestPresenterFactory;
+
+    return-void
+.end method
+
+.method public static injectSportGameBetPresenterFactory(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/client1/new_arch/presentation/ui/game/di/SportGameComponent$SportGameBetPresenterFactory;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;->sportGameBetPresenterFactory:Lorg/xbet/client1/new_arch/presentation/ui/game/di/SportGameComponent$SportGameBetPresenterFactory;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic injectMembers(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;
+
+    invoke-virtual {p0, p1}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->injectMembers(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;)V
+
+    return-void
+.end method
+
+.method public injectMembers(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;)V
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->makeBetDialogsManagerProvider:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/xbet/client1/makebet/providers/MakeBetDialogsManager;
+
+    invoke-static {p1, v0}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->injectMakeBetDialogsManager(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/client1/makebet/providers/MakeBetDialogsManager;)V
+
+    .line 3
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->dateFormatterProvider:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/xbet/onexcore/utils/b;
+
+    invoke-static {p1, v0}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->injectDateFormatter(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lcom/xbet/onexcore/utils/b;)V
+
+    .line 4
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->imageManagerProvider:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/xbet/ui_common/viewcomponents/recycler/baseline/BaseLineImageManager;
+
+    invoke-static {p1, v0}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->injectImageManager(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/ui_common/viewcomponents/recycler/baseline/BaseLineImageManager;)V
+
+    .line 5
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->gameUtilsProvider:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/xbet/ui_common/viewcomponents/recycler/baseline/GameUtilsProvider;
+
+    invoke-static {p1, v0}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->injectGameUtilsProvider(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/ui_common/viewcomponents/recycler/baseline/GameUtilsProvider;)V
+
+    .line 6
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->longTapBetUtilProvider:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/xbet/client1/new_arch/presentation/ui/util/LongTapBetUtil;
+
+    invoke-static {p1, v0}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->injectLongTapBetUtil(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/client1/new_arch/presentation/ui/util/LongTapBetUtil;)V
+
+    .line 7
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->sportGameBetPresenterFactoryProvider:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/xbet/client1/new_arch/presentation/ui/game/di/SportGameComponent$SportGameBetPresenterFactory;
+
+    invoke-static {p1, v0}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->injectSportGameBetPresenterFactory(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/client1/new_arch/presentation/ui/game/di/SportGameComponent$SportGameBetPresenterFactory;)V
+
+    .line 8
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->longTapBetPresenterFactoryProvider:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/xbet/client1/new_arch/di/longtap/LongTapBetPresenterFactory;
+
+    invoke-static {p1, v0}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->injectLongTapBetPresenterFactory(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/client1/new_arch/di/longtap/LongTapBetPresenterFactory;)V
+
+    .line 9
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->makeBetRequestPresenterFactoryProvider:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/xbet/makebet/request/di/MakeBetRequestPresenterFactory;
+
+    invoke-static {p1, v0}, Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment_MembersInjector;->injectMakeBetRequestPresenterFactory(Lorg/xbet/client1/new_arch/presentation/ui/game/SportGameBetFragment;Lorg/xbet/makebet/request/di/MakeBetRequestPresenterFactory;)V
+
+    return-void
+.end method

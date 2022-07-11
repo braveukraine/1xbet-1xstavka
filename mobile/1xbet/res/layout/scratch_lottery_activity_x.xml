@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?gameWindowBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+        <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+        <include layout="@layout/scratch_lottery_content_x" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/progress" android:background="@color/black_15" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</FrameLayout>

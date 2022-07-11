@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/padding_double_half" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/password_input_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_pass" app:passwordToggleDrawable="@drawable/asl_password_visibility" app:passwordToggleEnabled="true" app:passwordToggleTint="?text_color_highlight_white">
+        <EditText android:id="@id/password_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/fingerprint_password_length" android:inputType="numberPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

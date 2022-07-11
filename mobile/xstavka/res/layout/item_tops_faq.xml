@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/item_layout" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubtitle1MediumNew" android:ellipsize="end" android:id="@id/question" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24" android:layout_marginBottom="@dimen/margin_24" android:maxLines="2" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" />
+    <View android:layout_gravity="bottom" android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

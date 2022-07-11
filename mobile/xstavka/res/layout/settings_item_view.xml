@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceCaption" android:id="@id/label_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

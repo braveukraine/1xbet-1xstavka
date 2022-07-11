@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_half" android:layout_marginTop="@dimen/padding_half" android:layout_marginRight="@dimen/padding_half" android:layout_marginHorizontal="@dimen/padding_half" app:cardBackgroundColor="?contentBackgroundNew" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_double" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_double" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/padding" android:paddingVertical="@dimen/padding_double">
+        <ImageView android:id="@id/header_icon" android:layout_width="@dimen/padding_double" android:layout_height="@dimen/padding_double" android:src="@drawable/ic_nav_bet_constructor" android:layout_marginEnd="@dimen/padding" app:tint="?textColorSecondaryNew" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1MediumNew" android:gravity="start" android:id="@id/header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

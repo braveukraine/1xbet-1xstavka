@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/item_background_cash_back_level_selected" />
+    <item android:drawable="@drawable/item_background_cash_back_level" />
+</selector>

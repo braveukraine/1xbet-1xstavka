@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/team_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/team" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textAllCaps="true" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/team_icon" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textAllCaps="true" android:layout_marginStart="8.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

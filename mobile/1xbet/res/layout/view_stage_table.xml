@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xbet.client1.statistic.ui.view.StageChampView android:orientation="vertical" android:background="?card_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

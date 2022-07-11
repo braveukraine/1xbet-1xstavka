@@ -1,0 +1,454 @@
+.class final Lua0/a$e;
+.super Lua0/s;
+.source "AbstractChannel.kt"
+
+# interfaces
+.implements Lkotlinx/coroutines/c1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lua0/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "e"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<R:",
+        "Ljava/lang/Object;",
+        "E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lua0/s<",
+        "TE;>;",
+        "Lkotlinx/coroutines/c1;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000d\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0003\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\u0008\u0002\u0018\u0000*\u0004\u0008\u0001\u0010\u0001*\u0004\u0008\u0002\u0010\u00022\u0008\u0012\u0004\u0012\u00028\u00020\u00032\u00020\u0004BT\u0012\u000c\u0010\u0018\u001a\u0008\u0012\u0004\u0012\u00028\u00020\u0017\u0012\u000c\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u0019\u0012$\u0010\u001e\u001a \u0008\u0001\u0012\u0006\u0012\u0004\u0018\u00010\u001c\u0012\n\u0012\u0008\u0012\u0004\u0012\u00028\u00010\u001d\u0012\u0006\u0012\u0004\u0018\u00010\u001c0\u001b\u0012\u0006\u0010 \u001a\u00020\u001f\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008!\u0010\"J#\u0010\t\u001a\u0004\u0018\u00010\u00082\u0006\u0010\u0005\u001a\u00028\u00022\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0006H\u0016\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0017\u0010\u000c\u001a\u00020\u000b2\u0006\u0010\u0005\u001a\u00028\u0002H\u0016\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0014\u0010\u0001\u001a\u00020\u000b2\n\u0010\u000f\u001a\u0006\u0012\u0002\u0008\u00030\u000eH\u0016J\u0008\u0010\u0010\u001a\u00020\u000bH\u0016J%\u0010\u0013\u001a\u0010\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u000b\u0018\u00010\u00112\u0006\u0010\u0005\u001a\u00028\u0002H\u0016\u00a2\u0006\u0004\u0008\u0013\u0010\u0014J\u0008\u0010\u0016\u001a\u00020\u0015H\u0016\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006#"
+    }
+    d2 = {
+        "Lua0/a$e;",
+        "R",
+        "E",
+        "Lua0/s;",
+        "Lkotlinx/coroutines/c1;",
+        "value",
+        "Lkotlinx/coroutines/internal/s$c;",
+        "otherOp",
+        "Lkotlinx/coroutines/internal/h0;",
+        "s",
+        "(Ljava/lang/Object;Lkotlinx/coroutines/internal/s$c;)Lkotlinx/coroutines/internal/h0;",
+        "Lca0/y;",
+        "h",
+        "(Ljava/lang/Object;)V",
+        "Lua0/m;",
+        "closed",
+        "d",
+        "Lkotlin/Function1;",
+        "",
+        "Q",
+        "(Ljava/lang/Object;)Lka0/l;",
+        "",
+        "toString",
+        "Lua0/a;",
+        "channel",
+        "Lkotlinx/coroutines/selects/d;",
+        "select",
+        "Lkotlin/Function2;",
+        "",
+        "Lkotlin/coroutines/d;",
+        "block",
+        "",
+        "receiveMode",
+        "<init>",
+        "(Lua0/a;Lkotlinx/coroutines/selects/d;Lka0/p;I)V",
+        "kotlinx-coroutines-core"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field public final d:Lua0/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lua0/a<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final e:Lkotlinx/coroutines/selects/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlinx/coroutines/selects/d<",
+            "TR;>;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final f:Lka0/p;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lka0/p<",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/d<",
+            "-TR;>;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final g:I
+
+
+# direct methods
+.method public constructor <init>(Lua0/a;Lkotlinx/coroutines/selects/d;Lka0/p;I)V
+    .locals 0
+    .param p1    # Lua0/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Lkotlinx/coroutines/selects/d;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p3    # Lka0/p;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lua0/a<",
+            "TE;>;",
+            "Lkotlinx/coroutines/selects/d<",
+            "-TR;>;",
+            "Lka0/p<",
+            "Ljava/lang/Object;",
+            "-",
+            "Lkotlin/coroutines/d<",
+            "-TR;>;+",
+            "Ljava/lang/Object;",
+            ">;I)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lua0/s;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lua0/a$e;->d:Lua0/a;
+
+    .line 3
+    iput-object p2, p0, Lua0/a$e;->e:Lkotlinx/coroutines/selects/d;
+
+    .line 4
+    iput-object p3, p0, Lua0/a$e;->f:Lka0/p;
+
+    .line 5
+    iput p4, p0, Lua0/a$e;->g:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public Q(Ljava/lang/Object;)Lka0/l;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;)",
+            "Lka0/l<",
+            "Ljava/lang/Throwable;",
+            "Lca0/y;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lua0/a$e;->d:Lua0/a;
+
+    iget-object v0, v0, Lua0/c;->a:Lka0/l;
+
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v1, p0, Lua0/a$e;->e:Lkotlinx/coroutines/selects/d;
+
+    invoke-interface {v1}, Lkotlinx/coroutines/selects/d;->p()Lkotlin/coroutines/d;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Lkotlin/coroutines/d;->getContext()Lkotlin/coroutines/g;
+
+    move-result-object v1
+
+    invoke-static {v0, p1, v1}, Lkotlinx/coroutines/internal/b0;->a(Lka0/l;Ljava/lang/Object;Lkotlin/coroutines/g;)Lka0/l;
+
+    move-result-object p1
+
+    :goto_0
+    return-object p1
+.end method
+
+.method public R(Lua0/m;)V
+    .locals 8
+    .param p1    # Lua0/m;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lua0/m<",
+            "*>;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lua0/a$e;->e:Lkotlinx/coroutines/selects/d;
+
+    invoke-interface {v0}, Lkotlinx/coroutines/selects/d;->o()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    iget v0, p0, Lua0/a$e;->g:I
+
+    if-eqz v0, :cond_2
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_1
+
+    goto :goto_0
+
+    .line 3
+    :cond_1
+    iget-object v2, p0, Lua0/a$e;->f:Lka0/p;
+
+    sget-object v0, Lua0/j;->b:Lua0/j$b;
+
+    iget-object p1, p1, Lua0/m;->d:Ljava/lang/Throwable;
+
+    invoke-virtual {v0, p1}, Lua0/j$b;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lua0/j;->b(Ljava/lang/Object;)Lua0/j;
+
+    move-result-object v3
+
+    iget-object p1, p0, Lua0/a$e;->e:Lkotlinx/coroutines/selects/d;
+
+    invoke-interface {p1}, Lkotlinx/coroutines/selects/d;->p()Lkotlin/coroutines/d;
+
+    move-result-object v4
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x4
+
+    const/4 v7, 0x0
+
+    invoke-static/range {v2 .. v7}, Lva0/a;->e(Lka0/p;Ljava/lang/Object;Lkotlin/coroutines/d;Lka0/l;ILjava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 4
+    :cond_2
+    iget-object v0, p0, Lua0/a$e;->e:Lkotlinx/coroutines/selects/d;
+
+    invoke-virtual {p1}, Lua0/m;->W()Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1}, Lkotlinx/coroutines/selects/d;->q(Ljava/lang/Throwable;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public d()V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lkotlinx/coroutines/internal/s;->K()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lua0/a$e;->d:Lua0/a;
+
+    invoke-virtual {v0}, Lua0/a;->R()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public h(Ljava/lang/Object;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lua0/a$e;->f:Lka0/p;
+
+    .line 2
+    iget v1, p0, Lua0/a$e;->g:I
+
+    const/4 v2, 0x1
+
+    if-ne v1, v2, :cond_0
+
+    sget-object v1, Lua0/j;->b:Lua0/j$b;
+
+    invoke-virtual {v1, p1}, Lua0/j$b;->c(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lua0/j;->b(Ljava/lang/Object;)Lua0/j;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :cond_0
+    move-object v1, p1
+
+    .line 3
+    :goto_0
+    iget-object v2, p0, Lua0/a$e;->e:Lkotlinx/coroutines/selects/d;
+
+    invoke-interface {v2}, Lkotlinx/coroutines/selects/d;->p()Lkotlin/coroutines/d;
+
+    move-result-object v2
+
+    .line 4
+    invoke-virtual {p0, p1}, Lua0/a$e;->Q(Ljava/lang/Object;)Lka0/l;
+
+    move-result-object p1
+
+    .line 5
+    invoke-static {v0, v1, v2, p1}, Lva0/a;->c(Lka0/p;Ljava/lang/Object;Lkotlin/coroutines/d;Lka0/l;)V
+
+    return-void
+.end method
+
+.method public s(Ljava/lang/Object;Lkotlinx/coroutines/internal/s$c;)Lkotlinx/coroutines/internal/h0;
+    .locals 0
+    .param p2    # Lkotlinx/coroutines/internal/s$c;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;",
+            "Lkotlinx/coroutines/internal/s$c;",
+            ")",
+            "Lkotlinx/coroutines/internal/h0;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object p1, p0, Lua0/a$e;->e:Lkotlinx/coroutines/selects/d;
+
+    invoke-interface {p1, p2}, Lkotlinx/coroutines/selects/d;->n(Lkotlinx/coroutines/internal/s$c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lkotlinx/coroutines/internal/h0;
+
+    return-object p1
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "ReceiveSelect@"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {p0}, Lkotlinx/coroutines/q0;->b(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x5b
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lua0/a$e;->e:Lkotlinx/coroutines/selects/d;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ",receiveMode="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lua0/a$e;->g:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x5d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

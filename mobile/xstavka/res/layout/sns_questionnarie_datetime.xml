@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/sns_margin_small" android:paddingBottom="@dimen/sns_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sumsub.sns.core.widget.SNSSubtitle1TextView android:id="@id/sns_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="@dimen/sns_margin_medium" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.sumsub.sns.core.widget.SNSSubtitle1TextView android:id="@id/sns_required" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_required_field" app:layout_constraintEnd_toEndOf="@id/sns_title" app:layout_constraintTop_toTopOf="@id/sns_title" app:sns_textColor="?colorOnError" />
+    <com.sumsub.sns.core.widget.SNSSubtitle2TextView android:id="@id/sns_description" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_title" />
+    <com.sumsub.sns.core.widget.SNSDateTimeInputLayout android:id="@id/sns_data_datetime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_tiny" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_description" style="@style/Widget.SNSDateTimeInputLayout">
+        <com.sumsub.sns.core.widget.SNSTextInputEditText android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.SNSTextEdit" />
+    </com.sumsub.sns.core.widget.SNSDateTimeInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

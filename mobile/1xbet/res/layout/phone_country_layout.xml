@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="?window_background" android:paddingLeft="@dimen/space_8" android:paddingTop="@dimen/space_4" android:paddingRight="@dimen/space_8" android:paddingBottom="@dimen/space_4" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/country_icon_view" android:background="@drawable/ic_no_country" android:padding="1.0px" android:layout_width="@dimen/phone_edit_text_icon_size" android:layout_height="@dimen/phone_edit_text_icon_size" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2" android:id="@id/country_name_view" android:paddingLeft="@dimen/space_4" android:paddingRight="@dimen/space_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2" android:id="@id/country_code_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:cardBackgroundColor="?card_activated_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?card_background" android:layout_width="@dimen/padding_zero" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/cashback_status_icon" android:layout_width="@dimen/registration_type_icon_size" android:layout_height="@dimen/registration_type_icon_size" android:layout_marginStart="@dimen/padding" />
+            <TextView android:textAppearance="?textAppearanceSubtitle1Medium" android:id="@id/cashback_status_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="@dimen/padding_zero" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_half">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_experience" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?textAppearanceCaptionMedium" android:id="@id/cashback_experience" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/experience" android:layout_marginStart="@dimen/padding" />
+                    <TextView android:textAppearance="?textAppearanceCaptionMedium" android:textColor="?primaryTextColor" android:id="@id/cashback_experience_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding">
+                    <TextView android:textAppearance="?textAppearanceCaptionMedium" android:id="@id/cashback_percent_output" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cashback_with_dots" android:layout_marginStart="@dimen/padding" />
+                    <TextView android:textAppearance="?textAppearanceCaptionMedium" android:textColor="?primaryTextColor" android:id="@id/cashback_percent_output_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_coefficient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding">
+                    <TextView android:textAppearance="?textAppearanceCaptionMedium" android:id="@id/cashback_coefficient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coefficient_with_dots_new" android:layout_marginStart="@dimen/padding" />
+                    <TextView android:textAppearance="?textAppearanceCaptionMedium" android:textColor="?primaryTextColor" android:id="@id/cashback_percent_coefficient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_withdrawal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?textAppearanceCaptionMedium" android:id="@id/cashback_withdrawal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cashback_withdrawal_with_dots" android:layout_marginStart="@dimen/padding" />
+                    <TextView android:textAppearance="?textAppearanceCaptionMedium" android:textColor="?primaryTextColor" android:id="@id/cashback_withdrawal_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

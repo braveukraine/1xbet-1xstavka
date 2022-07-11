@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xbet.onexgames.features.luckycard.views.LuckyCardWidget android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/casinoBetView" />
+    <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/casinoBetView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+    <com.xbet.onexgames.features.luckycard.views.LuckyCardChoiceView android:id="@id/choiceView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

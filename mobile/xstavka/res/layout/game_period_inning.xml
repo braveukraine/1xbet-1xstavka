@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="20.0dip" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="70.0dip" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="120.0dip" />
+    <ImageView android:id="@id/iv_inning_one" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="2.0dip" app:layout_constraintBottom_toBottomOf="@id/line_2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/line_1" app:srcCompat="@drawable/ic_serve_white" />
+    <ImageView android:id="@id/iv_inning_two" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="2.0dip" app:layout_constraintBottom_toBottomOf="@id/line_3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/line_2" app:srcCompat="@drawable/ic_serve_white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

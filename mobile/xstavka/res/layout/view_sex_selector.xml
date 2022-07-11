@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/man" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" android:layout_marginEnd="4.0dip">
+        <ImageView android:id="@id/iv_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_gender_man" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="?primaryTextColor" android:gravity="center" android:id="@id/tv_man" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/man" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/woman" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" android:layout_marginStart="4.0dip">
+        <ImageView android:id="@id/iv_woman" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_gender_woman" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="?primaryTextColor" android:gravity="center" android:id="@id/tv_woman" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/woman" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

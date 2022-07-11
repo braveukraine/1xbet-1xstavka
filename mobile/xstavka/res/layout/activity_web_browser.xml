@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.webview.FixedWebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+    <include android:id="@id/web_progress" layout="@layout/view_progress_bar" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:id="@id/cl_error_data" android:background="?contentBackgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line_error_data_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.192" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/line_error_data_left" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.198" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/line_error_data_right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.8" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line_error_data_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.51" />
+        <ImageView android:id="@id/iv_error_data" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/line_error_data_bottom" app:layout_constraintEnd_toEndOf="@id/line_error_data_right" app:layout_constraintStart_toStartOf="@id/line_error_data_left" app:layout_constraintTop_toBottomOf="@id/line_error_data_top" app:srcCompat="@drawable/ic_get_data_error" />
+        <TextView android:textAppearance="?textAppearanceBody2MediumPrimaryNew" android:textSize="22.0sp" android:gravity="center" android:id="@id/tv_error_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_error_data" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:file_name="@string/lottie_some_error" app:textColor="?secondaryTextColor" app:text_res="@string/data_retrieval_error" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar_new" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New" />
+        <include layout="@layout/include_shadow" />
+    </LinearLayout>
+</FrameLayout>

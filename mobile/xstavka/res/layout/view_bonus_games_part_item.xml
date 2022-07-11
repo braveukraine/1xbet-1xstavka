@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_bonus_points"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/fl_games" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" app:alignContent="stretch" app:alignItems="stretch" app:flexDirection="row" app:flexWrap="wrap" app:justifyContent="flex_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/divider">
+        <TextView android:textAppearance="?textAppearanceBody1New" android:textSize="@dimen/text_14" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_for_games_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/for_games_title" app:layout_constraintBottom_toTopOf="@id/divider" app:layout_constraintStart_toStartOf="parent" />
+        <com.turturibus.slot.gifts.common.ui.views.GameChipView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.turturibus.slot.gifts.common.ui.views.GameChipView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.turturibus.slot.gifts.common.ui.views.GameChipView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.turturibus.slot.gifts.common.ui.views.GameChipView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.google.android.flexbox.FlexboxLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

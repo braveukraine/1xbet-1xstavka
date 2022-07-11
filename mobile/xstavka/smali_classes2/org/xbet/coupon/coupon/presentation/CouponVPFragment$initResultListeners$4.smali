@@ -1,0 +1,157 @@
+.class final Lorg/xbet/coupon/coupon/presentation/CouponVPFragment$initResultListeners$4;
+.super Lkotlin/jvm/internal/q;
+.source "CouponVPFragment.kt"
+
+# interfaces
+.implements Lka0/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;->initResultListeners()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/q;",
+        "Lka0/l<",
+        "Landroid/os/Bundle;",
+        "Lca0/y;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
+    }
+    d2 = {
+        "Landroid/os/Bundle;",
+        "result",
+        "Lca0/y;",
+        "invoke",
+        "(Landroid/os/Bundle;)V",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;
+
+
+# direct methods
+.method constructor <init>(Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/xbet/coupon/coupon/presentation/CouponVPFragment$initResultListeners$4;->this$0:Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/q;-><init>(I)V
+
+    return-void
+.end method
+
+.method public static synthetic a(Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;)V
+    .locals 0
+
+    invoke-static {p0}, Lorg/xbet/coupon/coupon/presentation/CouponVPFragment$initResultListeners$4;->invoke$lambda-0(Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;)V
+
+    return-void
+.end method
+
+.method private static final invoke$lambda-0(Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;->onExpandBottomSheetRequest()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Landroid/os/Bundle;
+
+    invoke-virtual {p0, p1}, Lorg/xbet/coupon/coupon/presentation/CouponVPFragment$initResultListeners$4;->invoke(Landroid/os/Bundle;)V
+
+    sget-object p1, Lca0/y;->a:Lca0/y;
+
+    return-object p1
+.end method
+
+.method public final invoke(Landroid/os/Bundle;)V
+    .locals 4
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const-string v0, "RESULT_OK"
+
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string v0, "RESULT_KEYBOARD_WAS_OPEN"
+
+    .line 3
+    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 4
+    new-instance p1, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v0
+
+    invoke-direct {p1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    iget-object v0, p0, Lorg/xbet/coupon/coupon/presentation/CouponVPFragment$initResultListeners$4;->this$0:Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;
+
+    new-instance v1, Lorg/xbet/coupon/coupon/presentation/c;
+
+    invoke-direct {v1, v0}, Lorg/xbet/coupon/coupon/presentation/c;-><init>(Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;)V
+
+    const-wide/16 v2, 0x1f4
+
+    invoke-virtual {p1, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    iget-object p1, p0, Lorg/xbet/coupon/coupon/presentation/CouponVPFragment$initResultListeners$4;->this$0:Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;
+
+    invoke-virtual {p1}, Lorg/xbet/coupon/coupon/presentation/CouponVPFragment;->onExpandBottomSheetRequest()V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method

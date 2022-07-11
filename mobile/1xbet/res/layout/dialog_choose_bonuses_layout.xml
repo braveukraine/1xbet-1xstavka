@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/choose_bonus_dialog_parent" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_bonuses" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/space_16" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toTopOf="@id/btn_accept_bonus" app:layout_constraintHeight_default="wrap" app:layout_constraintTop_toTopOf="parent" />
+    <Button android:layout_gravity="center" android:id="@id/btn_accept_bonus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:layout_marginBottom="@dimen/space_8" android:text="@string/allow" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintWidth_percent="0.9111" style="@style/Widget.AppTheme.SolidButton.New" />
+</androidx.constraintlayout.widget.ConstraintLayout>

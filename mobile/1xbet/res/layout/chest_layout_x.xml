@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/parent_frame_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/chest_backside_wood" />
+    <ImageView android:id="@id/metal_backside" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/chest_backside_metal" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/multiplier_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:translationY="30.0dip" android:scaleX="0.5" android:scaleY="0.5">
+        <ImageView android:layout_gravity="center" android:id="@id/multiplier_background" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="100.0sp" android:textStyle="bold" android:layout_gravity="center" android:id="@id/multiplier_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationX="5.0dip" android:translationY="-5.0dip" />
+    </FrameLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/chest_bottom_wood" />
+    <ImageView android:id="@id/metal_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/chest_bottom_metal" />
+    <FrameLayout android:id="@id/chest_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/chest_top_wood" />
+        <ImageView android:id="@id/metal_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/chest_top_metal" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/full_face_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" app:srcCompat="@drawable/full_face_key" />
+</FrameLayout>

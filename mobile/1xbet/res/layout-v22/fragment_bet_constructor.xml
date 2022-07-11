@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/betconstructor" style="@style/Widget.AppTheme.Toolbar.New" />
+    <org.xbet.feature.betconstructor.presentation.ui.fragment.NonSwipeableViewPager android:id="@id/nested_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/make_bet_container" android:background="@drawable/bg_bottom_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_8" app:layout_constraintBottom_toBottomOf="parent">
+        <com.google.android.material.button.MaterialButton android:id="@id/btn_make_bet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" android:text="@string/make_bet" android:layout_marginHorizontal="@dimen/space_16" android:layout_marginVertical="@dimen/space_16" app:backgroundTint="?callToActionBgNew" style="@style/Widget.AppTheme.SolidButton.New" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_trending_up" android:id="@id/statistic_item" android:title="@string/statistic" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_verify" android:id="@id/verify_item" android:title="@string/pf_bet_check" app:showAsAction="always" />
+    <item android:id="@id/pay_out_item" android:title="@string/pay_out_from_account" app:showAsAction="collapseActionView" />
+    <item android:id="@id/pay_in_item" android:title="@string/refill_account" app:showAsAction="collapseActionView" />
+</menu>

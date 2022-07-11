@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_quick_bet" android:id="@id/quick_bet" android:title="@string/quick_bet" app:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/ic_sport_game_filter_inactive" android:id="@id/filter" android:title="@string/filter" app:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/ic_expand" android:id="@id/expand" android:title="@string/expand_all_title" app:actionViewClass="androidx.appcompat.view.menu.ExpandedMenuView" app:showAsAction="always|collapseActionView" />
+</menu>

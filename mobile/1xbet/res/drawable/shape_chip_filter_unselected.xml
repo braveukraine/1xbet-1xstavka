@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/browser_actions_divider_color" />
+            <corners android:radius="26.0dip" />
+        </shape>
+    </item>
+    <item android:left="1.0dip" android:right="1.0dip" android:bottom="@dimen/chip_shadow_size">
+        <shape android:shape="rectangle">
+            <solid android:color="?contentBackgroundNew" />
+            <corners android:radius="32.0dip" />
+        </shape>
+    </item>
+</layer-list>

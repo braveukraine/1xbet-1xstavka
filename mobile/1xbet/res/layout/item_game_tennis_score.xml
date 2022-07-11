@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/game_column" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/space_2">
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:textSize="@dimen/text_10" android:layout_gravity="center_horizontal" android:id="@id/first_column_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tennis_game_column" android:maxLines="1" />
+        <TextView android:textAppearance="?textAppearanceBody2New" android:gravity="center" android:id="@id/game_first" android:background="@drawable/tennis_score_cell" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:layout_marginTop="@dimen/space_4" />
+        <TextView android:textAppearance="?textAppearanceBody2New" android:gravity="center" android:id="@id/game_second" android:background="@drawable/tennis_score_cell" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:layout_marginTop="@dimen/space_4" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/period_column" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/space_2">
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:textSize="@dimen/text_10" android:layout_gravity="center_horizontal" android:id="@id/period" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody2New" android:gravity="center" android:id="@id/period_first" android:background="@drawable/tennis_score_cell" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:layout_marginTop="@dimen/space_4" />
+        <TextView android:textAppearance="?textAppearanceBody2New" android:gravity="center" android:id="@id/period_second" android:background="@drawable/tennis_score_cell" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:layout_marginTop="@dimen/space_4" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:textSize="@dimen/text_10" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_tennis_column" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:gravity="center" android:id="@id/total_first" android:background="@drawable/tennis_score_cell" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:layout_marginTop="@dimen/space_4" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:gravity="center" android:id="@id/total_second" android:background="@drawable/tennis_score_cell" android:layout_width="@dimen/game_icon_size" android:layout_height="@dimen/game_icon_size" android:layout_marginTop="@dimen/space_4" />
+    </LinearLayout>
+</LinearLayout>

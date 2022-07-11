@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xbet.ui_common.viewcomponents.imageview.RoundCornerImageView android:id="@id/ivBanner" android:layout_width="340.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" app:cornerRadiusImageView="@dimen/corner_radius_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

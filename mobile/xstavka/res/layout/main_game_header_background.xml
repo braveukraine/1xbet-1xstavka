@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xbet.client1.new_arch.presentation.ui.game.customview.CollapsingConstraintLayout android:id="@id/collapsing_header_layout" android:background="?darkBackgroundNew" android:layout_width="fill_parent" android:layout_height="@dimen/collapsing_header_height" app:collapsing_height="@dimen/collapsing_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_game_bg" android:layout_width="fill_parent" android:layout_height="@dimen/collapsing_header_height" android:scaleType="centerCrop" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/bottom_gradient" android:layout_width="fill_parent" android:layout_height="66.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</org.xbet.client1.new_arch.presentation.ui.game.customview.CollapsingConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody2New" android:textSize="@dimen/text_12" android:textStyle="normal" android:id="@id/operator_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/operator_language" android:layout_marginStart="@dimen/space_2" />
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardElevation="0.0dip" app:cardUseCompatPadding="true" style="@style/Widget.AppTheme.CardView.Surface">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/choice_container" android:padding="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/lock_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_lock_change_language" android:layout_marginStart="@dimen/space_8" app:layout_constraintBottom_toBottomOf="@id/name" app:layout_constraintEnd_toStartOf="@id/name" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/name" />
+            <TextView android:textAppearance="?textAppearanceSubtitle1New" android:textSize="@dimen/text_18" android:layout_gravity="center" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_8" app:layout_constraintBottom_toBottomOf="@id/arrow_image" app:layout_constraintEnd_toStartOf="@id/arrow_image" app:layout_constraintStart_toEndOf="@id/lock_image" app:layout_constraintTop_toTopOf="@id/arrow_image" />
+            <ImageView android:id="@id/arrow_image" android:layout_width="@dimen/padding_triple" android:layout_height="@dimen/padding_triple" android:layout_margin="@dimen/space_8" android:src="@drawable/ic_arrow_expand" android:rotation="270.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/name" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

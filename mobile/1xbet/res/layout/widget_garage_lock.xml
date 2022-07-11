@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivBoltLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/garage_bolt" />
+    <ImageView android:id="@id/ivBoltRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:scaleX="-1.0" app:srcCompat="@drawable/garage_bolt" />
+    <ImageView android:id="@id/ivLock" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/garage_lock" />
+    <ImageView android:id="@id/ivRing1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/garage_ring" />
+    <ImageView android:id="@id/ivRing2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/garage_ring" />
+    <ImageView android:id="@id/ivKey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" app:srcCompat="@drawable/garage_key" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="2.0dip" android:insetRight="2.0dip" android:insetTop="4.0dip" android:insetBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/abc_control_inset_material" />
+        <solid android:color="@color/card_background" />
+        <padding android:left="4.0dip" android:top="2.0dip" android:right="4.0dip" android:bottom="2.0dip" />
+    </shape>
+</inset>

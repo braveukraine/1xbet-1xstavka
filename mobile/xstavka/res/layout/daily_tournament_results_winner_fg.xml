@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/chip_recycler_view" android:background="?contentBackgroundNew" android:paddingTop="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/daily_winner_header_fg" />
+        <View android:id="@id/daily_winner_divider" android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <FrameLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="top" android:id="@id/empty_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" app:file_name="@string/lottie_history_empty" app:textColor="?secondaryTextColor" app:text_res="@string/please_wait" />
+            <View android:layout_gravity="top" android:id="@id/daily_winner_shadow" android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_gravity="top" android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

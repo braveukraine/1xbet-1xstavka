@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_double_half" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/padding_double" android:paddingEnd="@dimen/padding_double"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle1" android:textColor="?textColorPrimaryNew" android:id="@id/tvHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tfa_hint" />
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/Widget.AppTheme.TextInputLayout.New" android:id="@id/input_et_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double_half" android:hint="@string/enter_code" style="@style/Widget.AppTheme.TextInputLayout.New">
+        <androidx.appcompat.widget.AppCompatEditText android:theme="@style/ThemeOverlay.AppTheme.EditText.New" android:id="@id/etCode" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textNoSuggestions" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_four">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginEnd="@dimen/padding_double" app:srcCompat="@drawable/ic_info_grey" app:tint="?controlsBackgroundNew" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:textColor="?textColorSecondaryNew" android:textColorHighlight="?textColorSecondaryNew" android:textColorLink="?primaryColorNew" android:id="@id/tvSupport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tfa_support_enter_code" />
+    </LinearLayout>
+</LinearLayout>

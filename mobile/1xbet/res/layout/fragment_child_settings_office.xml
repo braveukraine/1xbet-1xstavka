@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:orientation="vertical" android:id="@id/nsv_settings_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_settings_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <include android:id="@id/layout_security" layout="@layout/item_security_office" />
+                <include android:id="@id/layout_bet_settings" layout="@layout/item_bet_settings_office" />
+                <include android:id="@id/layout_app_settings" layout="@layout/item_app_settings_office" />
+                <include android:id="@id/layout_additional" layout="@layout/item_additional_office" />
+                <include android:id="@id/layout_about_app" layout="@layout/item_about_app_office" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_shimmer_settings_content" android:background="?contentBackgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/layout_shimmer_security" layout="@layout/item_shimmer_security_office" />
+                <include android:id="@id/layout_shimmer_bet_settings" layout="@layout/item_shimmer_bet_settings_office" />
+                <include android:id="@id/layout_shimmer_app_settings" layout="@layout/item_shimmer_app_settings_office" />
+                <include android:id="@id/layout_shimmer_additional" layout="@layout/item_shimmer_additional_office" />
+                <include android:id="@id/layout_shimmer_about_app" layout="@layout/item_shimmer_about_app_office" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_error_info" android:background="?backgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.xbet.ui_common.viewcomponents.layouts.constraint.ErrorInfoView android:id="@id/error_info_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

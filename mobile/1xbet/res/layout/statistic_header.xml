@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" android:stretchColumns="0" android:shrinkColumns="0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableRow android:gravity="center_vertical" android:id="@id/header_row">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow android:gravity="center_vertical" android:id="@id/first_team_row" android:layout_marginTop="@dimen/space_4">
+        <ImageView android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="@dimen/space_16" app:srcCompat="@drawable/ic_command_arrow" app:tint="?primaryColor" />
+    </TableRow>
+    <TableRow android:gravity="center_vertical" android:id="@id/second_team_row" android:layout_marginTop="@dimen/space_4">
+        <ImageView android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="@dimen/space_16" app:srcCompat="@drawable/ic_command_arrow" app:tint="?primaryColorLight" />
+    </TableRow>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.client1.presentation.view.bet.header.BetHeaderMultiView android:id="@id/header_view" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/content_cs" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/header_view" />
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:transitionName="toolbar" android:elevation="@dimen/elevation_4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:titleTextColor="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New" />
+</androidx.constraintlayout.widget.ConstraintLayout>

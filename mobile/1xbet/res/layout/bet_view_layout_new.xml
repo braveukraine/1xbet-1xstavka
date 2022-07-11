@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/space_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:backgroundTint="?contentBackgroundNew"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/container" android:background="@drawable/bg_rounded_corners_8dp" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="?backgroundNew">
+        <TextView android:textAppearance="?textAppearanceBody2New" android:textColor="?textColorSecondaryNew" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bet_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:drawablePadding="@dimen/space_4" android:layout_weight="1.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+        <ImageView android:id="@id/iv_track" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="@dimen/space_4" app:srcCompat="@drawable/ic_eye_white" app:tint="?textColorPrimaryNew" />
+        <ImageView android:id="@id/iv_blocked" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="@dimen/space_4" app:srcCompat="@drawable/ic_lock_bet" app:tint="?textColorPrimaryNew" />
+        <TextView android:textAppearance="?textAppearanceBody2BoldNew" android:textColor="?textColorPrimaryNew" android:gravity="center" android:layout_gravity="center" android:id="@id/coefficient_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawablePadding="@dimen/space_4" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bottom_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/mazzetti_black_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/mazzetti_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/edit_bet" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:text="-1" android:inputType="numberDecimal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/close_bet" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/close_bet" android:background="@drawable/mazzetti_circle_gray" android:layout_width="0.0dip" android:layout_height="0.0dip" android:tint="#ffffffff" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_close" />
+</androidx.constraintlayout.widget.ConstraintLayout>

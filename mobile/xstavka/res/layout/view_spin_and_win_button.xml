@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/btn_spin_and_win" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/btn_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/btn_up_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/text_20" android:textStyle="normal" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/coefficent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" app:layout_constraintBottom_toTopOf="@id/guideline_v" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_v" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="1.0" />
+    <TextView android:textSize="@dimen/text_18" android:textStyle="normal" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:fontFamily="sans-serif-medium" app:layout_constraintBottom_toBottomOf="@id/btn_image" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_v" />
+</androidx.constraintlayout.widget.ConstraintLayout>

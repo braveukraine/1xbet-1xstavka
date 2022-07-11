@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?gameWindowBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+    <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_above="@id/head_tail_picker_x" android:layout_below="@id/tools">
+            <com.xbet.onexgames.features.headsortails.views.CoinView android:id="@id/coin_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_above="@id/head_tail_picker_x" android:layout_below="@id/tools" />
+            <androidx.appcompat.widget.AppCompatSpinner android:theme="@style/ThemeOverlay.AppTheme.Spinner" android:gravity="end" android:layout_gravity="end" android:id="@id/spinner_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.xbet.onexgames.features.headsortails.views.HeadsOrTailsPicker android:id="@id/head_tail_picker_x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/numberPicker" android:layout_centerHorizontal="true" />
+            <com.xbet.onexgames.features.common.views.NumberPicker android:layout_gravity="center" android:id="@id/numberPicker" android:visibility="invisible" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_above="@id/play" android:layout_centerHorizontal="true" app:np_max="10" app:np_min="0" app:np_orientation="horizontal" app:np_textColor="@color/white" app:np_textSize="@dimen/text_18" app:np_wrapSelectorWheel="false" />
+            <LinearLayout android:layout_gravity="center" android:id="@id/buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <Button android:layout_gravity="center" android:id="@id/play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_button" />
+                <Button android:layout_gravity="center" android:id="@id/withdraw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdraw" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/casinoBetView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="@dimen/space_8" app:maxWidth="@dimen/casino_bet_view_max_width" />
+</LinearLayout>

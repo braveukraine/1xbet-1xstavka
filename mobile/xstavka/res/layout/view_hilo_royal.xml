@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.28" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.72" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.81" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/spins" android:paddingTop="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" app:layout_constraintBottom_toTopOf="@id/guideline3" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/guideline4">
+        <com.xbet.onexgames.features.slots.onerow.common.views.OneRowSpinCardView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.xbet.onexgames.features.slots.onerow.common.views.OneRowSpinCardView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.xbet.onexgames.features.slots.onerow.common.views.OneRowSpinCardView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.xbet.onexgames.features.slots.onerow.common.views.OneRowSpinCardView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/frame" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" app:layout_constraintBottom_toTopOf="@id/guideline1" app:layout_constraintLeft_toLeftOf="@id/spins" app:layout_constraintRight_toRightOf="@id/spins" app:layout_constraintTop_toBottomOf="@id/guideline2" app:srcCompat="@drawable/hilo_frame" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" app:layout_constraintBottom_toTopOf="@id/guideline4" app:layout_constraintLeft_toLeftOf="@id/spins" app:layout_constraintRight_toRightOf="@id/spins">
+        <include android:id="@id/above_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/hilo_top_slot_view" />
+        <include android:id="@id/above_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/hilo_top_slot_view" />
+        <include android:id="@id/above_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/hilo_top_slot_view" />
+        <include android:id="@id/above_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/hilo_top_slot_view" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" app:layout_constraintLeft_toLeftOf="@id/spins" app:layout_constraintRight_toRightOf="@id/spins" app:layout_constraintTop_toBottomOf="@id/guideline3">
+        <include android:id="@id/bottom_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/hilo_below_slot_view" />
+        <include android:id="@id/bottom_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/hilo_below_slot_view" />
+        <include android:id="@id/bottom_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/hilo_below_slot_view" />
+        <include android:id="@id/bottom_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/hilo_below_slot_view" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?gameWindowBackgroundColor" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+    <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.xbet.onexgames.features.rockpaperscissors.views.RockPaperScissorsGameView android:id="@id/game_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="-56.0dip" android:layout_above="@id/radioGroup" />
+        <Button android:textColor="@color/white" android:id="@id/coefButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_half" android:text="@string/coefficients" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/Widget.AppTheme.TextButton" />
+        <RadioGroup android:id="@id/radioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/casinoBetView" android:layout_alignStart="@id/casinoBetView" android:layout_alignEnd="@id/casinoBetView">
+            <RadioButton android:layout_gravity="start" android:id="@id/stone" android:paddingTop="@dimen/float_margin_8" android:paddingBottom="@dimen/float_margin_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stone" android:layout_weight="1.0" android:textAlignment="viewStart" android:paddingStart="8.0dip" style="@style/Widget.AppTheme.RadioButton.Light" />
+            <RadioButton android:layout_gravity="start" android:id="@id/scissors" android:paddingTop="@dimen/float_margin_8" android:paddingBottom="@dimen/float_margin_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scissors" android:layout_weight="1.0" android:textAlignment="viewStart" android:paddingStart="8.0dip" style="@style/Widget.AppTheme.RadioButton.Light" />
+            <RadioButton android:layout_gravity="start" android:id="@id/paper" android:paddingTop="@dimen/float_margin_8" android:paddingBottom="@dimen/float_margin_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/paper" android:layout_weight="1.0" android:textAlignment="viewStart" android:paddingStart="8.0dip" style="@style/Widget.AppTheme.RadioButton.Light" />
+        </RadioGroup>
+        <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/casinoBetView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:maxWidth="@dimen/casino_bet_view_max_width" />
+    </RelativeLayout>
+</LinearLayout>

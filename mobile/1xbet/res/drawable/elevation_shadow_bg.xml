@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="top" android:left="16.0dip" android:right="16.0dip">
+        <shape android:shape="rectangle">
+            <size android:height="22.0dip" />
+            <gradient android:startColor="@color/black_15_new" android:endColor="#00000000" android:angle="90.0" android:type="linear" android:centerColor="@color/black_15_new" />
+        </shape>
+    </item>
+    <item android:gravity="center|left|top">
+        <shape android:shape="rectangle">
+            <size android:height="22.0dip" android:width="16.0dip" />
+            <gradient android:startColor="@color/black_15_new" android:endColor="#00000000" android:angle="0.0" android:type="radial" android:centerX="1.0" android:centerY="1.0" android:gradientRadius="22.0dip" android:centerColor="@color/black_15_new" />
+        </shape>
+    </item>
+    <item android:gravity="center|right|top">
+        <shape android:shape="rectangle">
+            <size android:height="22.0dip" android:width="16.0dip" />
+            <gradient android:startColor="@color/black_15_new" android:endColor="#00000000" android:angle="0.0" android:type="radial" android:centerX="0.0" android:centerY="1.0" android:gradientRadius="22.0dip" android:centerColor="@color/black_15_new" />
+        </shape>
+    </item>
+    <item android:top="6.0dip">
+        <shape android:shape="rectangle">
+            <solid android:color="?contentBackgroundNew" />
+            <corners android:topLeftRadius="16.0dip" android:topRightRadius="16.0dip" />
+        </shape>
+    </item>
+</layer-list>

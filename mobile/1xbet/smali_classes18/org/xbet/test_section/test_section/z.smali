@@ -1,0 +1,36 @@
+.class public final synthetic Lorg/xbet/test_section/test_section/z;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Ly80/g;
+
+
+# instance fields
+.field public final synthetic a:Lorg/xbet/test_section/test_section/TestSectionPresenter;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lorg/xbet/test_section/test_section/TestSectionPresenter;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lorg/xbet/test_section/test_section/z;->a:Lorg/xbet/test_section/test_section/TestSectionPresenter;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lorg/xbet/test_section/test_section/z;->a:Lorg/xbet/test_section/test_section/TestSectionPresenter;
+
+    check-cast p1, Lr90/x;
+
+    invoke-static {v0, p1}, Lorg/xbet/test_section/test_section/TestSectionPresenter;->h(Lorg/xbet/test_section/test_section/TestSectionPresenter;Lr90/x;)V
+
+    return-void
+.end method

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip" app:contentInsetStartWithNavigation="0.0dip" app:title="@string/favorites_name" style="@style/Widget.AppTheme.Toolbar.New">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/toolbar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?textAppearanceHeadline6MediumNew" android:textColor="?textColorSecondaryNew" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorites_name" android:layout_marginStart="@dimen/margin_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <ImageView android:id="@id/delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_delete_basket_new" android:layout_marginEnd="@dimen/margin_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <org.xbet.ui_common.viewcomponents.views.BalanceView android:id="@id/balanceView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_4" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/toolbar_title" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <FrameLayout android:id="@id/fl_track_coefs" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="28.0dip" android:layout_marginEnd="@dimen/margin_10" app:layout_constraintEnd_toStartOf="@id/delete" app:layout_constraintTop_toTopOf="@id/toolbar_title">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nav_drawer_icon_last_action" app:tint="?textColorSecondaryNew" />
+                <org.xbet.ui_common.viewcomponents.layouts.frame.CircleCounterView android:layout_gravity="end|bottom|center" android:id="@id/track_counter" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <org.xbet.ui_common.viewcomponents.tabs.TabLayoutRectangle android:id="@id/favorite_tab_layout" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip" style="@style/Widget.AppTheme.TabLayout.New" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/favorite_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_games_all_new" android:id="@id/all_games" android:title="@string/all_games" />
+    <item android:icon="@drawable/ic_one_x_promo" android:id="@id/promo" android:visible="false" android:title="@string/promo" />
+    <item android:icon="@drawable/ic_cash_back" android:id="@id/cash_back" android:visible="false" android:title="@string/cashback" />
+    <item android:icon="@drawable/ic_star_filled" android:id="@id/favorites" android:title="@string/favorites_name" />
+</menu>

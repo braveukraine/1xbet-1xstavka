@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_bet_bottom_game" android:enabled="true" android:id="@id/action_game" android:title="@string/pf_game" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_bet_bottom_statistic" android:enabled="true" android:id="@id/action_statistic" android:title="@string/statistic" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_bet_bottom_video" android:enabled="true" android:id="@id/action_video" android:title="@string/video" app:iconTint="@color/white" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_bet_bottom_zone" android:enabled="true" android:id="@id/action_zone" android:title="@string/zone" app:iconTint="@color/white" app:showAsAction="ifRoom" />
+</menu>

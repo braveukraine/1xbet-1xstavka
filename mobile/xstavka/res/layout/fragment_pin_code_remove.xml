@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/confirmation" style="@style/Widget.AppTheme.Toolbar.New" />
+    <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2MediumHighlightNew" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_pin_code_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_pin_code" android:lines="2" />
+    <org.xbet.ui_common.viewcomponents.views.AnimatingPasswordTextView android:id="@id/tv_animated_pin_code" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:background="?textColorSecondaryNew" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <org.xbet.ui_common.viewcomponents.views.NumberKeyboardView android:layout_gravity="center" android:id="@id/number_keyboard_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fingerprint_enabled="false" />
+    </LinearLayout>
+    <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/main_game_header_background" />
+    <View android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="18.0dip" app:layout_constraintBottom_toBottomOf="@id/toolbar" />
+    <View android:id="@id/tab_fake_view" android:background="@drawable/main_game_tabs_bg" android:layout_width="fill_parent" android:layout_height="@dimen/game_tab_height" app:layout_constraintTop_toBottomOf="@id/line1" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/tab_fake_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

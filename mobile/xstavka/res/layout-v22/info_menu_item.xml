@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" android:layout_marginHorizontal="@dimen/margin_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/itemIcon" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:id="@id/itemTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" android:layout_marginHorizontal="@dimen/margin_16" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View android:id="@id/divider" android:background="@color/separator_new_opacity_30" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

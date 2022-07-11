@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cases_image_size">110.0dip</dimen>
+    <item type="dimen" name="cases_item_image_bottom">0.7</item>
+    <dimen name="cases_padding">8.0dip</dimen>
+    <dimen name="cases_present_text_size">12.0sp</dimen>
+    <item type="dimen" name="cases_top_items_bottom">0.215</item>
+    <dimen name="filter_button_text_size">14.0sp</dimen>
+    <dimen name="fruit_cocktail_coeffs_text_size">22.0sp</dimen>
+    <dimen name="fruit_cocktail_slot_padding">12.0dip</dimen>
+    <dimen name="fruit_cocktail_start_text_size">16.0sp</dimen>
+    <dimen name="jackpot_text_size">14.0sp</dimen>
+    <dimen name="keno_margin_size">8.0dip</dimen>
+    <item type="dimen" name="keno_table_view_bottom">0.666</item>
+    <dimen name="lucky_slot_main_text_size">12.0sp</dimen>
+    <item type="dimen" name="lucky_slot_slots_end">0.876</item>
+    <item type="dimen" name="lucky_slot_slots_start">0.124</item>
+    <dimen name="lucky_slot_sum_text_size">16.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_text_size">12.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_x20_text_size">10.0sp</dimen>
+    <dimen name="nine_view_label_size">20.0sp</dimen>
+    <dimen name="resident_men_extinguisher_size">50.0dip</dimen>
+    <dimen name="resident_men_height">180.0dip</dimen>
+    <dimen name="resident_men_width">120.0dip</dimen>
+    <dimen name="resident_safe_height">97.0dip</dimen>
+    <dimen name="resident_safe_width">80.0dip</dimen>
+    <dimen name="tw__login_btn_text_size">18.0sp</dimen>
+    <dimen name="weekly_reward_margin_bottom">50.0dip</dimen>
+    <dimen name="weekly_reward_margin_top">40.0dip</dimen>
+    <item type="dimen" name="coin_c">3.0</item>
+    <dimen name="coin_size">300.0px</dimen>
+</resources>

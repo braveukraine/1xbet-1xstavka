@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16" android:maxWidth="368.0dip" android:minWidth="352.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivShowcaseBanner" android:background="?window_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@raw/plug_news" />
+    <LinearLayout android:gravity="start|center" android:layout_gravity="start|bottom|center" android:orientation="horizontal" android:id="@id/banner_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="@dimen/padding_one_half">
+        <View android:background="?primaryColorLight" android:layout_width="@dimen/space_4" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="start|center" android:orientation="vertical" android:background="@color/black_50" android:paddingLeft="@dimen/space_8" android:paddingTop="@dimen/space_2" android:paddingRight="@dimen/space_8" android:paddingBottom="@dimen/space_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_8" android:paddingEnd="@dimen/space_8">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvShowcaseText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:minLines="1" android:maxEms="15" android:textAlignment="gravity" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvShowcaseDescr" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="2" android:minLines="1" android:maxEms="15" android:textAlignment="gravity" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

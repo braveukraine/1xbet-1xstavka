@@ -1,0 +1,291 @@
+.class public final Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;
+.super Ljava/lang/Object;
+.source "PushTokenRepository.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository$WhenMappings;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\r\u001a\u00020\u000c\u00a2\u0006\u0004\u0008\u000f\u0010\u0010J\u0016\u0010\u0006\u001a\u00020\u00052\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002H\u0002J\u0016\u0010\u0007\u001a\u00020\u00052\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002H\u0002J\u0006\u0010\t\u001a\u00020\u0008J\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u00030\nR\u0014\u0010\r\u001a\u00020\u000c8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\r\u0010\u000e\u00a8\u0006\u0011"
+    }
+    d2 = {
+        "Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;",
+        "",
+        "Lg90/w;",
+        "",
+        "emitter",
+        "Lca0/y;",
+        "requestGooglePushToken",
+        "requestHuaweiPushToken",
+        "Lfj/a;",
+        "getMobileServiceType",
+        "Lg90/v;",
+        "getPushToken",
+        "Landroid/content/Context;",
+        "context",
+        "Landroid/content/Context;",
+        "<init>",
+        "(Landroid/content/Context;)V",
+        "app_xstavkaRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final context:Landroid/content/Context;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+    .param p1    # Landroid/content/Context;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;->context:Landroid/content/Context;
+
+    return-void
+.end method
+
+.method public static synthetic a(Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;Lg90/w;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;->getPushToken$lambda-0(Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;Lg90/w;)V
+
+    return-void
+.end method
+
+.method public static synthetic b(Ljava/lang/Throwable;)Lg90/z;
+    .locals 0
+
+    invoke-static {p0}, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;->getPushToken$lambda-1(Ljava/lang/Throwable;)Lg90/z;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final getPushToken$lambda-0(Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;Lg90/w;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;->getMobileServiceType()Lfj/a;
+
+    move-result-object v0
+
+    sget-object v1, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v0
+
+    aget v0, v1, v0
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    invoke-direct {p0, p1}, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;->requestHuaweiPushToken(Lg90/w;)V
+
+    goto :goto_0
+
+    .line 3
+    :cond_1
+    invoke-direct {p0, p1}, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;->requestGooglePushToken(Lg90/w;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method private static final getPushToken$lambda-1(Ljava/lang/Throwable;)Lg90/z;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 2
+    sget-object p0, Lkotlin/jvm/internal/l0;->a:Lkotlin/jvm/internal/l0;
+
+    invoke-static {p0}, Lorg/xbet/ui_common/utils/ExtensionsKt;->getEMPTY(Lkotlin/jvm/internal/l0;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lg90/v;->F(Ljava/lang/Object;)Lg90/v;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private final requestGooglePushToken(Lg90/w;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lg90/w<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/google/firebase/messaging/FirebaseMessaging;->f()Lcom/google/firebase/messaging/FirebaseMessaging;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/google/firebase/messaging/FirebaseMessaging;->i()Lcom/google/android/gms/tasks/Task;
+
+    move-result-object v0
+
+    new-instance v1, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/a;
+
+    invoke-direct {v1, p1}, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/a;-><init>(Lg90/w;)V
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/tasks/Task;->g(Lcom/google/android/gms/tasks/OnSuccessListener;)Lcom/google/android/gms/tasks/Task;
+
+    return-void
+.end method
+
+.method private final requestHuaweiPushToken(Lg90/w;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lg90/w<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lv2/e;
+
+    invoke-direct {v0}, Lv2/e;-><init>()V
+
+    iget-object v1, p0, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;->context:Landroid/content/Context;
+
+    invoke-virtual {v0, v1}, Lv2/e;->a(Landroid/content/Context;)Lv2/d;
+
+    move-result-object v0
+
+    const-string v1, "client/app_id"
+
+    invoke-interface {v0, v1}, Lv2/d;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;->context:Landroid/content/Context;
+
+    invoke-static {v1}, Lcom/huawei/hms/aaid/HmsInstanceId;->getInstance(Landroid/content/Context;)Lcom/huawei/hms/aaid/HmsInstanceId;
+
+    move-result-object v1
+
+    const-string v2, "HCM"
+
+    .line 3
+    invoke-virtual {v1, v0, v2}, Lcom/huawei/hms/aaid/HmsInstanceId;->getToken(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 4
+    invoke-interface {p1, v0}, Lg90/w;->onSuccess(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getMobileServiceType()Lfj/a;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;->context:Landroid/content/Context;
+
+    invoke-static {v0}, Lorg/xbet/starter/ui/starter/StarterActivityKt;->getLocalMobileService(Landroid/content/Context;)Lfj/a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getPushToken()Lg90/v;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lg90/v<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    new-instance v0, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/b;
+
+    invoke-direct {v0, p0}, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/b;-><init>(Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/PushTokenRepository;)V
+
+    invoke-static {v0}, Lg90/v;->h(Lg90/y;)Lg90/v;
+
+    move-result-object v0
+
+    .line 2
+    sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+
+    const-wide/16 v2, 0xa
+
+    invoke-virtual {v0, v2, v3, v1}, Lg90/v;->T(JLjava/util/concurrent/TimeUnit;)Lg90/v;
+
+    move-result-object v0
+
+    sget-object v1, Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/c;->a:Lorg/xbet/client1/new_arch/xbet/features/subscriptions/repositories/c;
+
+    .line 3
+    invoke-virtual {v0, v1}, Lg90/v;->J(Lj90/l;)Lg90/v;
+
+    move-result-object v0
+
+    .line 4
+    invoke-static {}, Lio/reactivex/schedulers/a;->c()Lg90/u;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lg90/v;->H(Lg90/u;)Lg90/v;
+
+    move-result-object v0
+
+    return-object v0
+.end method

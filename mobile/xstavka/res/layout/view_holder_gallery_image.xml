@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/image_with_pick" android:layout_width="@dimen/bottom_sheet_holder_side" android:layout_height="@dimen/bottom_sheet_holder_side" android:layout_margin="@dimen/padding_half"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/gallery_image" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/pick_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

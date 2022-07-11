@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="?primaryColorNew" android:id="@id/title_reg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24" android:layout_marginBottom="@dimen/margin_16" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

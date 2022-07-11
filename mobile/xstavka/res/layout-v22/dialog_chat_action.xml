@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:paddingTop="@dimen/padding_double_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_double" android:paddingEnd="@dimen/padding_double"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/selectCamera" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_chat_camera" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:ellipsize="end" android:gravity="start" android:paddingLeft="@dimen/padding_double" android:paddingRight="@dimen/padding_double" android:paddingBottom="@dimen/padding_double_half" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_action_camera" android:lines="1" android:paddingHorizontal="@dimen/padding_double" />
+    </LinearLayout>
+    <View android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/padding_double" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/selectFile" android:paddingBottom="@dimen/padding_double_half" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_chat_gallery" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:ellipsize="end" android:gravity="start" android:paddingLeft="@dimen/padding_double" android:paddingRight="@dimen/padding_double" android:paddingBottom="@dimen/padding_double_half" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/open_gallery" android:lines="1" android:paddingHorizontal="@dimen/padding_double" />
+    </LinearLayout>
+</LinearLayout>

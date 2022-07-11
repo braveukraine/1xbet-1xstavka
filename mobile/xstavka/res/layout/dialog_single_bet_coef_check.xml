@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle1Medium" android:textSize="@dimen/text_18" android:id="@id/tvTitle" android:padding="@dimen/padding_double" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coef_change_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/v_divider" android:background="?divider" android:layout_width="0.0dip" android:layout_height="1.0dip" android:elevation="2.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+    <RadioGroup android:orientation="vertical" android:id="@id/rgCoefChange" android:padding="@dimen/padding_double" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTitle">
+        <RadioButton android:textSize="@dimen/text_16" android:textColor="@color/secondary_radio_button_text_selector" android:id="@id/rbConfirmAny" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RadioButton android:textSize="@dimen/text_16" android:textColor="@color/secondary_radio_button_text_selector" android:id="@id/rbAcceptAny" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RadioButton android:textSize="@dimen/text_16" android:textColor="@color/secondary_radio_button_text_selector" android:id="@id/rbAcceptIncrease" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

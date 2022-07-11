@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceCaptionNew" android:id="@id/tv_caption" android:layout_width="@dimen/match_constraints" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8" android:textAlignment="viewStart" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/tv_description" android:layout_width="@dimen/match_constraints" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_caption" />
+    <View android:id="@id/divider" android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/space_8" android:layout_marginBottom="@dimen/space_8" app:layout_constraintTop_toBottomOf="@id/tv_description" />
+</androidx.constraintlayout.widget.ConstraintLayout>

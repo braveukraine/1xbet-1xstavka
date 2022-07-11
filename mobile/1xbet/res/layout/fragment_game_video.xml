@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/main_game_video_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/video_container" android:layout_width="wrap_content" android:layout_height="@dimen/main_game_video_height" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Widget.AppTheme.CardView.New.HalfDark">
+        <org.xbet.client1.presentation.view.video.VideoGameView android:id="@id/game_video_view" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/auth_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/lock_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lock" app:layout_constraintBottom_toTopOf="@id/text_alert" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/gray_light" android:gravity="center_horizontal" android:id="@id/text_alert" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/video_auth_alert" android:fontFamily="sans-serif" app:layout_constraintBottom_toTopOf="@id/btn_auth" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/lock_icon" />
+            <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/btn_auth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/make_login" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_alert" style="@style/Widget.AppTheme.SolidButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:id="@id/game_video_progress" android:background="@color/black_50" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

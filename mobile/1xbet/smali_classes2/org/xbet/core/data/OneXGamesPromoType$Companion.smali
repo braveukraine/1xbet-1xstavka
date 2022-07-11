@@ -1,0 +1,128 @@
+.class public final Lorg/xbet/core/data/OneXGamesPromoType$Companion;
+.super Ljava/lang/Object;
+.source "OneXGamesPromoType.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/xbet/core/data/OneXGamesPromoType;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006\u00a8\u0006\u0007"
+    }
+    d2 = {
+        "Lorg/xbet/core/data/OneXGamesPromoType$Companion;",
+        "",
+        "()V",
+        "fromActionId",
+        "Lorg/xbet/core/data/OneXGamesPromoType;",
+        "id",
+        "",
+        "core_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
+    .locals 0
+
+    invoke-direct {p0}, Lorg/xbet/core/data/OneXGamesPromoType$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final fromActionId(I)Lorg/xbet/core/data/OneXGamesPromoType;
+    .locals 0
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    packed-switch p1, :pswitch_data_0
+
+    .line 1
+    :pswitch_0
+    sget-object p1, Lorg/xbet/core/data/OneXGamesPromoType;->UNKNOWN:Lorg/xbet/core/data/OneXGamesPromoType;
+
+    goto :goto_0
+
+    .line 2
+    :pswitch_1
+    sget-object p1, Lorg/xbet/core/data/OneXGamesPromoType;->WEEKLY_REWARD:Lorg/xbet/core/data/OneXGamesPromoType;
+
+    goto :goto_0
+
+    .line 3
+    :pswitch_2
+    sget-object p1, Lorg/xbet/core/data/OneXGamesPromoType;->DAILY_TOURNAMENT:Lorg/xbet/core/data/OneXGamesPromoType;
+
+    goto :goto_0
+
+    .line 4
+    :pswitch_3
+    sget-object p1, Lorg/xbet/core/data/OneXGamesPromoType;->JACKPOT:Lorg/xbet/core/data/OneXGamesPromoType;
+
+    goto :goto_0
+
+    .line 5
+    :pswitch_4
+    sget-object p1, Lorg/xbet/core/data/OneXGamesPromoType;->BINGO:Lorg/xbet/core/data/OneXGamesPromoType;
+
+    goto :goto_0
+
+    .line 6
+    :pswitch_5
+    sget-object p1, Lorg/xbet/core/data/OneXGamesPromoType;->DAILY_QUEST:Lorg/xbet/core/data/OneXGamesPromoType;
+
+    goto :goto_0
+
+    .line 7
+    :pswitch_6
+    sget-object p1, Lorg/xbet/core/data/OneXGamesPromoType;->BONUS:Lorg/xbet/core/data/OneXGamesPromoType;
+
+    goto :goto_0
+
+    .line 8
+    :pswitch_7
+    sget-object p1, Lorg/xbet/core/data/OneXGamesPromoType;->LUCKY_WHEEL:Lorg/xbet/core/data/OneXGamesPromoType;
+
+    :goto_0
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x3
+        :pswitch_7
+        :pswitch_6
+        :pswitch_0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+    .end packed-switch
+.end method

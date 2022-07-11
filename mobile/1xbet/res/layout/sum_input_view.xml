@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/sumInputLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/sumEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:digits="0,1,2,3,4,5,6,7,8,9" android:inputType="numberDecimal" android:paddingEnd="40.0dip" app:backgroundTint="?divider" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textAppearance="?textAppearanceHeadline5" android:textSize="@dimen/text_22" android:layout_gravity="end" android:id="@id/sumCurrency" android:padding="@dimen/space_16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/space_8" android:paddingRight="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <TextView android:textAppearance="?textAppearanceBody2" android:gravity="start" android:id="@id/minValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" />
+        <TextView android:gravity="end" android:id="@id/maxValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

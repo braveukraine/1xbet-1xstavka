@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/baccarat_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baccarat_your_bet" android:fontFamily="sans-serif-medium" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding" android:layout_marginEnd="@dimen/padding">
+            <TextView android:textSize="@dimen/baccarat_text_size" android:textColor="@color/white" android:id="@id/player_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/baccarat_text_size" android:textColor="@color/white" android:id="@id/banker_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/baccarat_text_size" android:textColor="@color/white" android:id="@id/tie_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

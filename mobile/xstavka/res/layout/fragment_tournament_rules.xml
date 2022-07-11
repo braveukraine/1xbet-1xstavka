@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?card_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_tournament_data" android:background="?card_background" android:paddingBottom="@dimen/padding_double_half" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/match_constraints" android:overScrollMode="ifContentScrolls" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/divider" android:background="?divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <View android:layout_gravity="top" android:id="@id/shadow_view" android:background="@drawable/shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

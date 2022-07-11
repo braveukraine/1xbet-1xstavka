@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="0.0dip" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/results" style="@style/Widget.AppTheme.Toolbar.New" />
+        <LinearLayout android:orientation="vertical" android:id="@id/auth_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/padding_eight">
+            <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/auth_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:file_name="@string/lottie_history_empty" app:textColor="?textColorSecondaryNew" app:text_res="@string/participate_actions_and_win" />
+            <com.google.android.material.button.MaterialButton android:enabled="true" android:layout_gravity="bottom" android:id="@id/authorize_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double" android:layout_marginBottom="@dimen/padding_double_half" android:text="@string/login_to" android:layout_weight="0.0" android:layout_marginStart="@dimen/padding_double" android:layout_marginEnd="@dimen/padding_double" app:layout_constraintBottom_toBottomOf="parent" style="@style/Widget.AppTheme.SolidButton.New" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/chip_recycler_view" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_12" />
+        <com.turturibus.gamesui.features.common.views.PinnedFrameLayout android:id="@id/table_header" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/pinned_state_list">
+            <include android:id="@id/items_header" layout="@layout/item_ticket_winner_header" />
+        </com.turturibus.gamesui.features.common.views.PinnedFrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/shadow" android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/empty_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:file_name="@string/lottie_history_empty" app:textColor="?textColorSecondaryNew" app:text_res="@string/data_retrieval_error" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

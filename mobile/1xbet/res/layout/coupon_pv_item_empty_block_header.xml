@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?groupBackgroundNew" style="@style/Widget.AppTheme.CardView.New"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:ellipsize="end" android:id="@id/tv_block" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/space_16" android:maxLines="1" android:elevation="2.0dip" />
+        <org.xbet.ui_common.viewcomponents.views.TicketDivider android:id="@id/ticket_divider" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="2.0dip" app:ticketBottomBackgroundColor="?groupBackgroundNew" app:ticketDividerColor="?separatorNew" app:ticketDividerWidth="1.0px" app:ticketTopBackgroundColor="?groupBackgroundNew" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/content" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New" />
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/chip_recycler_view" android:background="?backgroundNew" android:paddingLeft="@dimen/margin_8" android:paddingTop="@dimen/margin_8" android:paddingRight="@dimen/margin_8" android:paddingBottom="@dimen/margin_8" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_8" android:paddingVertical="@dimen/margin_8" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingTop="@dimen/margin_6" android:paddingBottom="@dimen/margin_6" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toBottomOf="parent" />
+            <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:file_name="@string/lottie_some_error" app:textColor="?textColorSecondaryNew" app:text_res="@string/data_retrieval_error" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:id="@id/partners_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_empty_promocodes" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:srcCompat="@drawable/ic_empty_promocodes" />
+                <TextView android:textAppearance="?textAppearanceBody2New" android:gravity="center" android:id="@id/tv_empty_promocodes_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_double" android:layout_marginTop="@dimen/padding_double" android:layout_marginRight="@dimen/padding_double" android:text="@string/partners_empty_promocodes_text" android:layout_marginHorizontal="@dimen/padding_double" app:layout_constraintTop_toBottomOf="@id/iv_empty_promocodes" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/loading_container" android:background="?backgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.xbet.ui_common.viewcomponents.layouts.frame.ProgressBarWithSendClock android:layout_gravity="center" android:id="@id/iv_loader" android:layout_width="60.0dip" android:layout_height="60.0dip" app:isAnimation="true" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

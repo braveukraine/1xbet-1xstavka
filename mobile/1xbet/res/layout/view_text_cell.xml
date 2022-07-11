@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle2Medium" android:textColor="@color/white" android:gravity="center" android:id="@id/cellText" android:background="@drawable/coeff_back" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_4" android:layout_marginBottom="@dimen/space_4" android:includeFontPadding="false" android:paddingStart="@dimen/space_2" android:paddingEnd="@dimen/space_2" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="@dimen/space_4" />
+</FrameLayout>

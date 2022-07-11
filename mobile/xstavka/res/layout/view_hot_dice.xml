@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.core.presentation.common.DiceImageView android:id="@id/hot_dice_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.3" android:scaleX="0.6" android:scaleY="0.6" android:layout_marginEnd="@dimen/padding" app:layout_constraintEnd_toStartOf="@id/hot_dice_2" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <org.xbet.core.presentation.common.DiceImageView android:id="@id/hot_dice_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.3" android:scaleX="0.6" android:scaleY="0.6" android:layout_marginStart="@dimen/padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/hot_dice_1" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

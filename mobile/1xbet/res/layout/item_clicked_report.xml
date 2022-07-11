@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton android:textSize="@dimen/text_18" android:id="@id/download_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16" android:text="@string/save_report" android:textAllCaps="false" app:backgroundTint="@color/transparent" app:icon="@drawable/ic_download" app:iconGravity="textStart" app:iconPadding="@dimen/space_8" app:iconTint="@null" style="@style/Widget.AppTheme.OutlinedButton" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="?primaryTextColor" android:id="@id/message_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_double" android:fontFamily="sans-serif" android:letterSpacing="0.02" />
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_double" android:layout_marginTop="@dimen/padding" android:layout_marginRight="@dimen/padding_double" android:hint="@string/enter_your_answer" android:layout_marginStart="@dimen/padding_double" android:layout_marginEnd="@dimen/padding_double">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/answer_field" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textNoSuggestions" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

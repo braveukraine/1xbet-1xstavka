@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundNew" android:paddingLeft="@dimen/margin_4" android:paddingRight="@dimen/margin_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/margin_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view" android:paddingTop="@dimen/margin_8" android:paddingBottom="@dimen/padding_double_half" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/live_top_title" android:paddingBottom="@dimen/padding_double_half" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

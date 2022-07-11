@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/back_view_top" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/back_view_bottom" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_weight="0.75" />
+    <FrameLayout android:id="@id/back_view_bottom" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/back_view_top" app:layout_constraintVertical_weight="0.25" />
+    <ImageView android:id="@id/cards" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/cards" android:scaleType="fitCenter" android:adjustViewBounds="true" android:translationZ="@dimen/space_2" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

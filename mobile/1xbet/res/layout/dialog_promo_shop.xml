@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?card_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="24.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceHeadline6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/player_info_purchase" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/linearLayout5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?textAppearanceCaption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/type" />
+                    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?primaryTextColor" android:id="@id/namePromoDialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                    <TextView android:textAppearance="?textAppearanceCaption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/information" />
+                    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?primaryTextColor" android:id="@id/descPromo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?primaryTextColor" android:id="@id/infoNoPoints" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/promo_purchase_error" />
+                    <org.xbet.client1.presentation.view.other.ThemedNumberPicker android:layout_gravity="center_horizontal" android:id="@id/pickerShop" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sd_ll_wait_shop" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/linearLayout5" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@android:style/Widget.DeviceDefault.ProgressBar" />
+                    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/white" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waiting_answer" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layoutWithOkCancelButtons" android:background="?card_background" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:id="@id/cancelBtn" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="8.0dip" android:text="@string/cancel" android:layout_alignParentTop="true" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/getPromoCode" style="@style/Widget.AppTheme.TextButton" />
+        <com.google.android.material.button.MaterialButton android:id="@id/getPromoCode" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="8.0dip" android:text="@string/ok" android:layout_alignParentTop="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" style="@style/Widget.AppTheme.TextButton" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layoutWithUnderstandButton" android:background="?card_background" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:id="@id/understandButton" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="8.0dip" android:text="@string/ok" android:layout_alignParentTop="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" style="@style/Widget.AppTheme.TextButton" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/splash_background_new" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/app_logo" android:layout_width="250.0dip" android:layout_height="wrap_content" android:adjustViewBounds="true" app:layout_constraintBottom_toTopOf="@id/preload_status_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/start_application_logo_new" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaptionNew" android:textColor="@color/white_new" android:id="@id/app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" app:layout_constraintEnd_toEndOf="@id/app_logo" app:layout_constraintTop_toBottomOf="@id/app_logo" />
+        <org.xbet.starter.ui.view.PreloadStatusView android:id="@id/preload_status_view" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/partnerView" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/app_logo" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/partnerView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/guideline" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_percent="0.9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/alert_fragment_container" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

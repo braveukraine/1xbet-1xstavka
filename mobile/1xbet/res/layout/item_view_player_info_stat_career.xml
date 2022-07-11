@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="@dimen/space_16" android:paddingTop="@dimen/space_4" android:paddingRight="@dimen/space_16" android:paddingBottom="@dimen/space_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:gravity="start" android:id="@id/key" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

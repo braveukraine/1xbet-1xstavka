@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:state_pinned="true">
+        <objectAnimator android:duration="@integer/rapid_animation" android:valueTo="4.0dip" android:propertyName="translationZ" />
+    </item>
+    <item app:state_pinned="false">
+        <objectAnimator android:duration="@integer/rapid_animation" android:valueTo="0.0dip" android:propertyName="translationZ" />
+    </item>
+</selector>

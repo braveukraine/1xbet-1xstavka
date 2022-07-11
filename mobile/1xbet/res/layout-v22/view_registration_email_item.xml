@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xbet.registration.registration.ui.registration.FieldIndicator android:id="@id/email_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:layout_marginHorizontal="@dimen/space_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.layouts.linear.TextInputEditTextNew android:theme="@style/Widget.AppTheme.TextInputLayout.New.Primary" android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email" android:inputType="textEmailAddress" app:needSpaceFilter="true" />
+</org.xbet.registration.registration.ui.registration.FieldIndicator>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height_size" android:elevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/promo_daily_quest" style="@style/Widget.AppTheme.Toolbar.New" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/info" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:layout_marginEnd="@dimen/space_16" app:layout_constraintBottom_toBottomOf="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/toolbar" app:srcCompat="@drawable/ic_info_cashback" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?contentBackgroundNew" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@color/transparent_new" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_gravity="center" android:id="@id/collapsing_toolbar" android:background="@color/transparent_new" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+                <LinearLayout android:orientation="horizontal" android:id="@id/toolbar_content_layout" android:background="@drawable/background_round_black_15" android:padding="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_8" android:layout_marginRight="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" app:layout_collapseMode="parallax" app:layout_collapseParallaxMultiplier="0.7">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cashback" />
+                    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textSize="@dimen/text_12" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/daily_quest_title" android:layout_marginStart="@dimen/space_10" />
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:background="@drawable/background_top_round_window" android:paddingBottom="@dimen/space_8" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="false" />
+        </androidx.core.widget.NestedScrollView>
+        <FrameLayout android:id="@id/progress_view" android:background="@color/black_15" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        </FrameLayout>
+        <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:id="@id/lottie_error" android:background="?window_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:file_name="@string/lottie_data_error" app:text_res="@string/data_retrieval_error" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

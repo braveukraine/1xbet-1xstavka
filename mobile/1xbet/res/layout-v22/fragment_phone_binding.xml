@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:id="@id/sms_code_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/binding_phone_send_sms_new" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:gravity="center" android:id="@id/tv_disable_spam" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:text="@string/disable_spam" />
+        <org.xbet.ui_common.viewcomponents.layouts.frame.DualPhoneChoiceMaskViewNew android:id="@id/phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:layout_marginBottom="@dimen/space_8" android:layout_marginVertical="@dimen/space_8" />
+        <Button android:id="@id/logout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24" android:text="@string/exit_dialog_title" style="@style/Widget.AppTheme.OutlinedButton" />
+    </LinearLayout>
+</FrameLayout>

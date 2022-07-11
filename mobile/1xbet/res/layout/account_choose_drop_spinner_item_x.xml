@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?card_background" android:padding="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_16" android:textColor="?primaryTextColor" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="?secondaryTextColor" android:id="@id/tvBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

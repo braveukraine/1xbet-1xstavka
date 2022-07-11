@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?gameWindowBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+    <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tools" android:layout_alignParentEnd="true" />
+    <com.xbet.onexgames.features.common.views.cards.DeckView android:id="@id/deck_cards_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" app:card_hand_you="false" app:card_height="@dimen/baccarat_card_size" />
+    <RelativeLayout android:gravity="center" android:id="@id/bottom_container" android:focusable="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.xbet.onexgames.features.luckycard.views.LuckyCardWidget android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/choose_players_view" />
+        <com.xbet.onexgames.features.baccarat.views.BaccaratChoosePlayersView android:id="@id/choose_players_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/casinoBetView" android:layout_centerHorizontal="true" />
+        <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/casinoBetView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:maxWidth="@dimen/casino_bet_view_max_width" />
+    </RelativeLayout>
+    <com.xbet.onexgames.features.baccarat.views.BaccaratSelectedPlayersView android:id="@id/selected_players_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/cards_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:id="@id/banker_counter_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4" android:text="@string/baccarat_banker_score" />
+        <com.xbet.onexgames.features.baccarat.views.BaccaratCardHandView android:id="@id/opponent_cards_view" android:layout_width="fill_parent" android:layout_height="@dimen/baccarat_card_size" app:card_clicked_you="false" app:card_hand_you="true" app:card_height="@dimen/baccarat_card_size" />
+        <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:id="@id/player_counter_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4" android:text="@string/baccarat_player_score" />
+        <com.xbet.onexgames.features.baccarat.views.BaccaratCardHandView android:id="@id/your_cards_view" android:layout_width="fill_parent" android:layout_height="@dimen/baccarat_card_size" app:card_clicked_you="false" app:card_hand_you="true" app:card_height="@dimen/baccarat_card_size" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_view_padding">2.0dip</dimen>
+    <dimen name="baccarat_field_offset">100.0dip</dimen>
+    <dimen name="baccarat_text_size">14.0sp</dimen>
+    <dimen name="banners_margin">180.0dip</dimen>
+    <dimen name="cases_image_size">110.0dip</dimen>
+    <item type="dimen" name="cases_item_image_bottom">0.7</item>
+    <dimen name="cases_padding">8.0dip</dimen>
+    <dimen name="cases_present_text_size">12.0sp</dimen>
+    <item type="dimen" name="cases_top_items_bottom">0.215</item>
+    <dimen name="filter_button_text_size">12.0sp</dimen>
+    <dimen name="float_margin_16">4.0dip</dimen>
+    <dimen name="float_margin_32">8.0dip</dimen>
+    <dimen name="float_margin_8">2.0dip</dimen>
+    <dimen name="fruit_cocktail_coeffs_text_size">22.0sp</dimen>
+    <dimen name="fruit_cocktail_slot_padding">12.0dip</dimen>
+    <dimen name="fruit_cocktail_start_text_size">16.0sp</dimen>
+    <dimen name="jackpot_text_size">12.0sp</dimen>
+    <dimen name="lottery_header_margin">4.0dip</dimen>
+    <dimen name="lottie_empty_size">140.0dip</dimen>
+    <dimen name="lottie_empty_text_size">16.0sp</dimen>
+    <dimen name="lucky_slot_main_text_size">12.0sp</dimen>
+    <item type="dimen" name="lucky_slot_slots_end">0.876</item>
+    <item type="dimen" name="lucky_slot_slots_start">0.124</item>
+    <dimen name="lucky_slot_sum_text_size">16.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_text_size">12.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_x20_text_size">10.0sp</dimen>
+    <dimen name="memory_view_margin">8.0dip</dimen>
+    <dimen name="nine_view_label_size">14.0sp</dimen>
+    <dimen name="nine_view_margin">4.0dip</dimen>
+    <dimen name="resident_extinguisher_size">75.0dip</dimen>
+    <dimen name="resident_men_extinguisher_size">40.0dip</dimen>
+    <dimen name="resident_men_height">150.0dip</dimen>
+    <dimen name="resident_men_width">100.0dip</dimen>
+    <dimen name="resident_safe_height">72.0dip</dimen>
+    <dimen name="resident_safe_width">60.0dip</dimen>
+    <dimen name="ticket_action_view_width">190.0dip</dimen>
+    <item type="dimen" name="wheel_margin">0.1</item>
+    <dimen name="wheel_selector_margin">2.0dip</dimen>
+    <item type="dimen" name="coin_c">1.0</item>
+    <dimen name="coin_size">100.0px</dimen>
+    <dimen name="games_text_padding">2.0dip</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/container_image" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_gravity="start|center|top" android:id="@id/ivRibbon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="60.0dip" android:adjustViewBounds="true" android:elevation="11.0dip" />
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="?backgroundNew" app:cardElevation="10.0dip" style="@style/Widget.AppTheme.CardView.New.SquareBottomCorners">
+                <org.xbet.ui_common.viewcomponents.imageview.MeasuredImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:heightOfWidth="0.6" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:ellipsize="end" android:id="@id/title" android:paddingTop="@dimen/space_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="@dimen/space_8" app:layout_constraintEnd_toStartOf="@id/favorite" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/container_image" />
+        <TextView android:textAppearance="?textAppearanceBody1New" android:textSize="@dimen/text_12" android:ellipsize="end" android:id="@id/description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8" android:lines="1" android:layout_marginStart="@dimen/space_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/favorite" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+        <ImageView android:id="@id/favorite" android:layout_width="@dimen/space_24" android:layout_height="@dimen/space_24" android:layout_margin="@dimen/space_8" android:scaleType="centerInside" android:elevation="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/container_image" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

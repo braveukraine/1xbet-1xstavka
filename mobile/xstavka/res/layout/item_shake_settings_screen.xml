@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_double"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="@dimen/padding_double_part" android:layout_marginBottom="@dimen/padding_double_part" android:scaleType="center" />
+    <TextView android:textAppearance="?textAppearanceSubtitle1New" android:id="@id/tv_screen_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_double" android:layout_marginRight="@dimen/padding_double" android:layout_weight="1.0" android:textAlignment="viewStart" />
+    <RadioButton android:id="@id/rb_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppTheme.RadioButton.New" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+    <ImageView android:id="@id/backgroundIv" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    <com.xbet.onexgames.features.promo.lottery.views.LotteryView android:id="@id/lottery" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/casinoBetView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" app:layout_constraintBottom_toBottomOf="parent" app:maxWidth="@dimen/casino_bet_view_max_width" />
+    <FrameLayout android:id="@id/boughtContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+</androidx.constraintlayout.widget.ConstraintLayout>

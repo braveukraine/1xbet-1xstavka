@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.tabs.TabLayoutRectangleScrollable android:id="@id/tab_layout_fields" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.AppTheme.TabLayout.New" />
+    <org.xbet.client1.new_arch.util.ui.WrapContentHeightViewPager android:id="@id/view_pager_fields" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

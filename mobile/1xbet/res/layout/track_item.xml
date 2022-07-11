@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceCaption" android:textColor="@color/text_color_secondary" android:gravity="center" android:orientation="horizontal" android:id="@id/text_track" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawablePadding="@dimen/space_4" android:paddingStart="@dimen/space_8" android:paddingEnd="@dimen/space_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/sport_game_info_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content_layout" android:background="@drawable/sport_game_card_bg" android:layout_width="fill_parent" android:layout_height="@dimen/sport_game_info_item_height" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingBottom="@dimen/space_4" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/v_footer" android:layout_width="fill_parent" android:layout_height="@dimen/footer_gradient_height" app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_data" />
+</FrameLayout>

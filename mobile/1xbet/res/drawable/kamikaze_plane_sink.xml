@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/kamikaze_plane_sink_1" />
+    <item android:duration="150" android:drawable="@drawable/kamikaze_plane_sink_2" />
+    <item android:duration="100" android:drawable="@drawable/kamikaze_plane_sink_3" />
+    <item android:duration="50" android:drawable="@drawable/kamikaze_plane_sink_4" />
+    <item android:duration="100" android:drawable="@android:color/transparent" />
+</animation-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?contentBackgroundNew" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_background" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" android:layout_marginHorizontal="@dimen/margin_16" app:srcCompat="@drawable/primary_circle" app:tint="?backgroundNew" />
+        <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_security_phone_number" app:tint="?primaryColorNew" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_16" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_4">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/state_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" app:srcCompat="@drawable/ic_security_state_false" />
+            <TextView android:textAppearance="?textAppearanceCaptionNew" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_level_title_high" android:layout_marginStart="@dimen/margin_8" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.switchmaterial.SwitchMaterial android:layout_gravity="center_vertical" android:id="@id/item_switch" android:background="@color/transparent" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_16" style="@style/Widget.AppTheme.Switch.New" />
+</LinearLayout>

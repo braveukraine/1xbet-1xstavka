@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:padding="@dimen/padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxHeight="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/ivShadow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:adjustViewBounds="true" android:maxHeight="200.0dip" android:alpha="0.6" />
+    <ImageView android:layout_gravity="center" android:id="@id/ivBullet" android:layout_width="wrap_content" android:layout_height="fill_parent" android:adjustViewBounds="true" android:maxHeight="200.0dip" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/shape_chip_filter" android:paddingTop="@dimen/padding_half_min" android:paddingBottom="@dimen/padding_half_min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_double" android:paddingEnd="@dimen/padding_half_min"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:id="@id/textViewChipName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <ImageView android:id="@id/imageViewClose" android:layout_width="@dimen/menu_icon_size" android:layout_height="@dimen/menu_icon_size" android:layout_marginStart="@dimen/padding" app:srcCompat="@drawable/ic_close_item" app:tint="?controlsBackgroundNew" />
+</LinearLayout>

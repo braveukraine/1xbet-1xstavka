@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sumsub.sns.core.widget.SNSBackgroundView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/sns_margin_medium_small" android:paddingEnd="@dimen/sns_margin_medium_small">
+        <com.sumsub.sns.core.widget.SNSImageView android:id="@id/sns_error_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.4" app:layout_constraintVertical_chainStyle="packed" app:srcCompat="@drawable/sns_ic_error_robot" />
+        <ImageButton android:id="@id/sns_primary_button" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.8" app:srcCompat="@drawable/sns_ic_error_refresh" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.sumsub.sns.core.widget.SNSBackgroundView>

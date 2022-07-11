@@ -1,0 +1,175 @@
+.class public final Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;
+.super Ljava/lang/Object;
+.source "NewMenuTipsRepositoryImpl.kt"
+
+# interfaces
+.implements Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepository;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl$Companion;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0018\u0000 \u000f2\u00020\u0001:\u0001\u000fB!\u0008\u0007\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\u0008\u0012\u0006\u0010\u000c\u001a\u00020\u000b\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u000e\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002H\u0016R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0006\u0010\u0007R\u0014\u0010\t\u001a\u00020\u00088\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\t\u0010\n\u00a8\u0006\u0010"
+    }
+    d2 = {
+        "Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;",
+        "Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepository;",
+        "",
+        "Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModel;",
+        "getTipsList",
+        "Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipDataSource;",
+        "newMenuTipDataSource",
+        "Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipDataSource;",
+        "Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModelMapper;",
+        "newMenuTipModelMapper",
+        "Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModelMapper;",
+        "Lzi/b;",
+        "appSettingsManager",
+        "<init>",
+        "(Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipDataSource;Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModelMapper;Lzi/b;)V",
+        "Companion",
+        "app_prodRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl$Companion;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static final RU_LANGUAGE:Ljava/lang/String; = "ru"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final appSettingsManager:Lzi/b;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final newMenuTipDataSource:Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipDataSource;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final newMenuTipModelMapper:Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModelMapper;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl$Companion;-><init>(Lkotlin/jvm/internal/h;)V
+
+    sput-object v0, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;->Companion:Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl$Companion;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipDataSource;Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModelMapper;Lzi/b;)V
+    .locals 0
+    .param p1    # Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipDataSource;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModelMapper;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p3    # Lzi/b;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;->newMenuTipDataSource:Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipDataSource;
+
+    .line 3
+    iput-object p2, p0, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;->newMenuTipModelMapper:Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModelMapper;
+
+    .line 4
+    iput-object p3, p0, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;->appSettingsManager:Lzi/b;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getTipsList()Ljava/util/List;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModel;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;->newMenuTipModelMapper:Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModelMapper;
+
+    .line 2
+    iget-object v1, p0, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;->newMenuTipDataSource:Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipDataSource;
+
+    invoke-virtual {v1}, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipDataSource;->getTipsList()Ljava/util/List;
+
+    move-result-object v1
+
+    .line 3
+    iget-object v2, p0, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;->appSettingsManager:Lzi/b;
+
+    invoke-interface {v2}, Lzi/b;->getLang()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "ru"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/p;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    .line 4
+    iget-object v3, p0, Lorg/xbet/client1/new_arch/repositories/new_menu_tips/NewMenuTipsRepositoryImpl;->appSettingsManager:Lzi/b;
+
+    invoke-interface {v3}, Lzi/b;->isNightModeEnabled()Z
+
+    move-result v3
+
+    .line 5
+    invoke-virtual {v0, v1, v2, v3}, Lorg/xbet/client1/new_arch/domain/new_menu_tips/NewMenuTipModelMapper;->invoke(Ljava/util/List;ZZ)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method

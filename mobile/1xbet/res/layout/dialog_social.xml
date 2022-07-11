@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:paddingBottom="@dimen/space_24" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:paddingTop="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/gr_qr" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/btn_qr" android:layout_width="@dimen/space_40" android:layout_height="@dimen/space_40" android:layout_marginStart="@dimen/space_24" app:srcCompat="@drawable/qr_icon" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1Medium" android:id="@id/qrText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qr" android:paddingStart="@dimen/space_24" android:paddingEnd="@dimen/space_24" />
+    </LinearLayout>
+</LinearLayout>

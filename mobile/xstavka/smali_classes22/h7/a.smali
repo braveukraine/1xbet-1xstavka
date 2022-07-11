@@ -1,0 +1,34 @@
+.class public final synthetic Lh7/a;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+
+
+# instance fields
+.field public final synthetic a:Lh7/b;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lh7/b;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lh7/a;->a:Lh7/b;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 1
+
+    iget-object v0, p0, Lh7/a;->a:Lh7/b;
+
+    invoke-static {v0, p1}, Lh7/b;->a(Lh7/b;Landroid/animation/ValueAnimator;)V
+
+    return-void
+.end method

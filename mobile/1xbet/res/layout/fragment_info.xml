@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height_size" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/info" style="@style/Widget.AppTheme.Toolbar.New" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="?backgroundNew" android:paddingBottom="@dimen/space_24" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

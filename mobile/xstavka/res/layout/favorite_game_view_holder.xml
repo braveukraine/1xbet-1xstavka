@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/card_layout" android:background="?card_background" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_double" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" />
+            <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/subtitle_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/notifications_icon" android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:paddingRight="8.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="40.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/ic_notifications_none" />
+        <ImageView android:layout_gravity="center" android:id="@id/favorite_icon" android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:paddingRight="8.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="40.0dip" android:layout_height="48.0dip" android:layout_marginEnd="@dimen/padding" app:srcCompat="@drawable/ic_star_liked" />
+    </LinearLayout>
+    <View android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

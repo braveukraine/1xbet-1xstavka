@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xbet.registration.registration.ui.registration.FieldIndicator android:id="@id/phone_number_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:layout_marginHorizontal="@dimen/space_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.xbet.ui_common.viewcomponents.layouts.frame.DualPhoneChoiceMaskViewNew android:id="@id/phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</org.xbet.registration.registration.ui.registration.FieldIndicator>

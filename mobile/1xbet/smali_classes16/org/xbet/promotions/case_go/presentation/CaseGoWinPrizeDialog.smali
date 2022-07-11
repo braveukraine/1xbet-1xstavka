@@ -1,0 +1,717 @@
+.class public final Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;
+.super Lorg/xbet/ui_common/moxy/dialogs/BaseBottomSheetDialogFragment;
+.source "CaseGoWinPrizeDialog.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog$Companion;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lorg/xbet/ui_common/moxy/dialogs/BaseBottomSheetDialogFragment<",
+        "Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u0010\u0018\u0000 &2\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001&B\u0007\u00a2\u0006\u0004\u0008#\u0010$B\u0019\u0008\u0016\u0012\u0006\u0010\u0012\u001a\u00020\u0008\u0012\u0006\u0010\u0016\u001a\u00020\u0008\u00a2\u0006\u0004\u0008#\u0010%J\u0008\u0010\u0004\u001a\u00020\u0003H\u0016J\u0008\u0010\u0005\u001a\u00020\u0003H\u0016J\u0008\u0010\u0007\u001a\u00020\u0006H\u0014J\u0008\u0010\t\u001a\u00020\u0008H\u0014J\u0008\u0010\n\u001a\u00020\u0006H\u0014R+\u0010\u0012\u001a\u00020\u00082\u0006\u0010\u000b\u001a\u00020\u00088B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u000c\u0010\r\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R+\u0010\u0016\u001a\u00020\u00082\u0006\u0010\u000b\u001a\u00020\u00088B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0013\u0010\r\u001a\u0004\u0008\u0014\u0010\u000f\"\u0004\u0008\u0015\u0010\u0011R\"\u0010\u0018\u001a\u00020\u00178\u0006@\u0006X\u0087.\u00a2\u0006\u0012\n\u0004\u0008\u0018\u0010\u0019\u001a\u0004\u0008\u001a\u0010\u001b\"\u0004\u0008\u001c\u0010\u001dR\u001b\u0010\"\u001a\u00020\u00028TX\u0094\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u001e\u0010\u001f\u001a\u0004\u0008 \u0010!\u00a8\u0006\'"
+    }
+    d2 = {
+        "Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;",
+        "Lorg/xbet/ui_common/moxy/dialogs/BaseBottomSheetDialogFragment;",
+        "Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;",
+        "",
+        "parentLayoutId",
+        "attrColorBackground",
+        "Lr90/x;",
+        "inject",
+        "",
+        "title",
+        "initViews",
+        "<set-?>",
+        "imageUrl$delegate",
+        "Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;",
+        "getImageUrl",
+        "()Ljava/lang/String;",
+        "setImageUrl",
+        "(Ljava/lang/String;)V",
+        "imageUrl",
+        "prizeTitle$delegate",
+        "getPrizeTitle",
+        "setPrizeTitle",
+        "prizeTitle",
+        "Lorg/xbet/ui_common/providers/ImageManagerProvider;",
+        "imageManagerProvider",
+        "Lorg/xbet/ui_common/providers/ImageManagerProvider;",
+        "getImageManagerProvider",
+        "()Lorg/xbet/ui_common/providers/ImageManagerProvider;",
+        "setImageManagerProvider",
+        "(Lorg/xbet/ui_common/providers/ImageManagerProvider;)V",
+        "binding$delegate",
+        "Lkotlin/properties/c;",
+        "getBinding",
+        "()Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;",
+        "binding",
+        "<init>",
+        "()V",
+        "(Ljava/lang/String;Ljava/lang/String;)V",
+        "Companion",
+        "promotions_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+.end annotation
+
+
+# static fields
+.field static final synthetic $$delegatedProperties:[Lea0/i;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[",
+            "Lea0/i<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final BUNDLE_IMAGE_URL_KEY:Ljava/lang/String; = "BUNDLE_IMAGE_URL_KEY"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static final BUNDLE_PRIZE_TITLE_KEY:Ljava/lang/String; = "BUNDLE_PRIZE_TITLE_KEY"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final Companion:Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog$Companion;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static final TAG:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# instance fields
+.field public _$_findViewCache:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Integer;",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final binding$delegate:Lkotlin/properties/c;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public imageManagerProvider:Lorg/xbet/ui_common/providers/ImageManagerProvider;
+
+.field private final imageUrl$delegate:Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final prizeTitle$delegate:Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 6
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [Lea0/i;
+
+    .line 1
+    new-instance v1, Lkotlin/jvm/internal/v;
+
+    const-class v2, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;
+
+    const-string v3, "imageUrl"
+
+    const-string v4, "getImageUrl()Ljava/lang/String;"
+
+    const/4 v5, 0x0
+
+    invoke-direct {v1, v2, v3, v4, v5}, Lkotlin/jvm/internal/v;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    invoke-static {v1}, Lkotlin/jvm/internal/i0;->e(Lkotlin/jvm/internal/u;)Lea0/h;
+
+    move-result-object v1
+
+    aput-object v1, v0, v5
+
+    .line 2
+    new-instance v1, Lkotlin/jvm/internal/v;
+
+    const-class v2, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;
+
+    const-string v3, "prizeTitle"
+
+    const-string v4, "getPrizeTitle()Ljava/lang/String;"
+
+    invoke-direct {v1, v2, v3, v4, v5}, Lkotlin/jvm/internal/v;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    invoke-static {v1}, Lkotlin/jvm/internal/i0;->e(Lkotlin/jvm/internal/u;)Lea0/h;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    .line 3
+    new-instance v1, Lkotlin/jvm/internal/b0;
+
+    const-class v2, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;
+
+    const-string v3, "binding"
+
+    const-string v4, "getBinding()Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;"
+
+    invoke-direct {v1, v2, v3, v4, v5}, Lkotlin/jvm/internal/b0;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    invoke-static {v1}, Lkotlin/jvm/internal/i0;->g(Lkotlin/jvm/internal/a0;)Lea0/k;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    sput-object v0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->$$delegatedProperties:[Lea0/i;
+
+    new-instance v0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog$Companion;-><init>(Lkotlin/jvm/internal/h;)V
+
+    sput-object v0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->Companion:Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog$Companion;
+
+    .line 4
+    const-class v0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->TAG:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 4
+
+    .line 1
+    new-instance v0, Ljava/util/LinkedHashMap;
+
+    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
+
+    iput-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->_$_findViewCache:Ljava/util/Map;
+
+    invoke-direct {p0}, Lorg/xbet/ui_common/moxy/dialogs/BaseBottomSheetDialogFragment;-><init>()V
+
+    .line 2
+    new-instance v0, Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+
+    const-string v1, "BUNDLE_IMAGE_URL_KEY"
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x2
+
+    invoke-direct {v0, v1, v2, v3, v2}, Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;-><init>(Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/h;)V
+
+    iput-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->imageUrl$delegate:Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+
+    .line 3
+    new-instance v0, Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+
+    const-string v1, "BUNDLE_PRIZE_TITLE_KEY"
+
+    invoke-direct {v0, v1, v2, v3, v2}, Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;-><init>(Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/h;)V
+
+    iput-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->prizeTitle$delegate:Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+
+    .line 4
+    sget-object v0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog$binding$2;->INSTANCE:Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog$binding$2;
+
+    invoke-static {p0, v0}, Lorg/xbet/ui_common/viewcomponents/ViewBindingDelegateKt;->fragmentViewBindingInflate(Landroidx/fragment/app/Fragment;Lz90/l;)Lkotlin/properties/c;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->binding$delegate:Lkotlin/properties/c;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 5
+    invoke-direct {p0}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;-><init>()V
+
+    .line 6
+    invoke-direct {p0, p1}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->setImageUrl(Ljava/lang/String;)V
+
+    .line 7
+    invoke-direct {p0, p2}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->setPrizeTitle(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static synthetic A3(Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->initViews$lambda-0(Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static final synthetic access$getTAG$cp()Ljava/lang/String;
+    .locals 1
+
+    sget-object v0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->TAG:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method private final getImageUrl()Ljava/lang/String;
+    .locals 3
+
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->imageUrl$delegate:Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+
+    sget-object v1, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->$$delegatedProperties:[Lea0/i;
+
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, p0, v1}, Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;->getValue(Landroidx/fragment/app/Fragment;Lea0/i;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private final getPrizeTitle()Ljava/lang/String;
+    .locals 3
+
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->prizeTitle$delegate:Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+
+    sget-object v1, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->$$delegatedProperties:[Lea0/i;
+
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, p0, v1}, Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;->getValue(Landroidx/fragment/app/Fragment;Lea0/i;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static final initViews$lambda-0(Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;Landroid/view/View;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;->dismissAllowingStateLoss()V
+
+    return-void
+.end method
+
+.method private final setImageUrl(Ljava/lang/String;)V
+    .locals 3
+
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->imageUrl$delegate:Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+
+    sget-object v1, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->$$delegatedProperties:[Lea0/i;
+
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, p0, v1, p1}, Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;->setValue(Landroidx/fragment/app/Fragment;Lea0/i;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method private final setPrizeTitle(Ljava/lang/String;)V
+    .locals 3
+
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->prizeTitle$delegate:Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;
+
+    sget-object v1, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->$$delegatedProperties:[Lea0/i;
+
+    const/4 v2, 0x1
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, p0, v1, p1}, Lorg/xbet/ui_common/kotlin/delegates/android/BundleString;->setValue(Landroidx/fragment/app/Fragment;Lea0/i;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public _$_clearFindViewByIdCache()V
+    .locals 1
+
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->_$_findViewCache:Ljava/util/Map;
+
+    invoke-interface {v0}, Ljava/util/Map;->clear()V
+
+    return-void
+.end method
+
+.method public _$_findCachedViewById(I)Landroid/view/View;
+    .locals 2
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->_$_findViewCache:Ljava/util/Map;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/View;
+
+    if-nez v1, :cond_1
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :cond_1
+    :goto_0
+    return-object v1
+.end method
+
+.method public attrColorBackground()I
+    .locals 1
+
+    sget v0, Lorg/xbet/promotions/R$attr;->contentBackgroundNew:I
+
+    return v0
+.end method
+
+.method protected getBinding()Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;
+    .locals 3
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 2
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->binding$delegate:Lkotlin/properties/c;
+
+    sget-object v1, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->$$delegatedProperties:[Lea0/i;
+
+    const/4 v2, 0x2
+
+    aget-object v1, v1, v2
+
+    invoke-interface {v0, p0, v1}, Lkotlin/properties/c;->getValue(Ljava/lang/Object;Lea0/i;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getBinding()Lz0/a;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->getBinding()Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getImageManagerProvider()Lorg/xbet/ui_common/providers/ImageManagerProvider;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->imageManagerProvider:Lorg/xbet/ui_common/providers/ImageManagerProvider;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method protected initViews()V
+    .locals 4
+
+    .line 1
+    invoke-virtual {p0}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->getImageManagerProvider()Lorg/xbet/ui_common/providers/ImageManagerProvider;
+
+    move-result-object v0
+
+    invoke-direct {p0}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->getImageUrl()Ljava/lang/String;
+
+    move-result-object v1
+
+    sget v2, Lorg/xbet/promotions/R$drawable;->skin_placeholder:I
+
+    invoke-virtual {p0}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->getBinding()Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;
+
+    move-result-object v3
+
+    iget-object v3, v3, Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;->ivPrize:Landroid/widget/ImageView;
+
+    invoke-interface {v0, v1, v2, v3}, Lorg/xbet/ui_common/providers/ImageManagerProvider;->loadImage(Ljava/lang/String;ILandroid/widget/ImageView;)V
+
+    .line 2
+    invoke-virtual {p0}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->getBinding()Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;->tvPrizeTitle:Landroid/widget/TextView;
+
+    invoke-direct {p0}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->getPrizeTitle()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 3
+    invoke-virtual {p0}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->getBinding()Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lorg/xbet/promotions/databinding/DialogCaseGoWinPrizeBinding;->btnContinue:Lcom/google/android/material/button/MaterialButton;
+
+    new-instance v1, Lorg/xbet/promotions/case_go/presentation/l;
+
+    invoke-direct {v1, p0}, Lorg/xbet/promotions/case_go/presentation/l;-><init>(Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;)V
+
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    return-void
+.end method
+
+.method protected inject()V
+    .locals 7
+
+    .line 1
+    invoke-static {}, Lorg/xbet/promotions/case_go/di/DaggerCaseGoComponent;->factory()Lorg/xbet/promotions/case_go/di/CaseGoComponent$Factory;
+
+    move-result-object v0
+
+    .line 2
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
+
+    move-result-object v1
+
+    .line 3
+    instance-of v2, v1, Lorg/xbet/ui_common/di/HasComponentDependencies;
+
+    const-string v3, "Can not find dependencies provider for "
+
+    if-eqz v2, :cond_1
+
+    .line 4
+    check-cast v1, Lorg/xbet/ui_common/di/HasComponentDependencies;
+
+    invoke-interface {v1}, Lorg/xbet/ui_common/di/HasComponentDependencies;->getDependencies()Ljava/lang/Object;
+
+    move-result-object v2
+
+    instance-of v2, v2, Lorg/xbet/promotions/case_go/di/CaseGoDependencies;
+
+    if-eqz v2, :cond_0
+
+    .line 5
+    invoke-interface {v1}, Lorg/xbet/ui_common/di/HasComponentDependencies;->getDependencies()Ljava/lang/Object;
+
+    move-result-object v1
+
+    const-string v2, "null cannot be cast to non-null type org.xbet.promotions.case_go.di.CaseGoDependencies"
+
+    invoke-static {v1, v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    check-cast v1, Lorg/xbet/promotions/case_go/di/CaseGoDependencies;
+
+    .line 6
+    new-instance v2, Lorg/xbet/promotions/case_go/di/CaseGoMainModule;
+
+    const/4 v3, 0x3
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    invoke-direct {v2, v4, v5, v3, v5}, Lorg/xbet/promotions/case_go/di/CaseGoMainModule;-><init>(ILjava/lang/String;ILkotlin/jvm/internal/h;)V
+
+    .line 7
+    new-instance v3, Lorg/xbet/promotions/case_go/di/CaseGoChildModule;
+
+    const/4 v6, 0x1
+
+    invoke-direct {v3, v4, v6, v5}, Lorg/xbet/promotions/case_go/di/CaseGoChildModule;-><init>(IILkotlin/jvm/internal/h;)V
+
+    .line 8
+    invoke-interface {v0, v1, v2, v3}, Lorg/xbet/promotions/case_go/di/CaseGoComponent$Factory;->create(Lorg/xbet/promotions/case_go/di/CaseGoDependencies;Lorg/xbet/promotions/case_go/di/CaseGoMainModule;Lorg/xbet/promotions/case_go/di/CaseGoChildModule;)Lorg/xbet/promotions/case_go/di/CaseGoComponent;
+
+    move-result-object v0
+
+    .line 9
+    invoke-interface {v0, p0}, Lorg/xbet/promotions/case_go/di/CaseGoComponent;->inject(Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;)V
+
+    return-void
+
+    .line 10
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 11
+    :cond_1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public synthetic onDestroyView()V
+    .locals 0
+
+    invoke-super {p0}, Lorg/xbet/ui_common/moxy/dialogs/BaseBottomSheetDialogFragment;->onDestroyView()V
+
+    invoke-virtual {p0}, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->_$_clearFindViewByIdCache()V
+
+    return-void
+.end method
+
+.method public parentLayoutId()I
+    .locals 1
+
+    sget v0, Lorg/xbet/promotions/R$id;->parent:I
+
+    return v0
+.end method
+
+.method public final setImageManagerProvider(Lorg/xbet/ui_common/providers/ImageManagerProvider;)V
+    .locals 0
+    .param p1    # Lorg/xbet/ui_common/providers/ImageManagerProvider;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    iput-object p1, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoWinPrizeDialog;->imageManagerProvider:Lorg/xbet/ui_common/providers/ImageManagerProvider;
+
+    return-void
+.end method
+
+.method protected title()Ljava/lang/String;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    sget v0, Lorg/xbet/promotions/R$string;->congratulations:I
+
+    invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

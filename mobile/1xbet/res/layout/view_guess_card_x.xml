@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="24.0dip" android:layout_weight="1.0">
+        <com.xbet.onexgames.features.guesscard.views.PokerCardView android:layout_gravity="center" android:id="@id/left_card" android:layout_width="@dimen/guess_card_width" android:layout_height="@dimen/guess_card_height" app:layout_constraintHorizontal_bias="0.7" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/guideline26" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="24.0dip" android:layout_weight="1.0">
+        <com.xbet.onexgames.features.guesscard.views.PokerCardView android:layout_gravity="center" android:id="@id/right_card" android:layout_width="@dimen/guess_card_width" android:layout_height="@dimen/guess_card_height" app:layout_constraintHorizontal_bias="0.3" app:layout_constraintLeft_toLeftOf="@id/guideline26" app:layout_constraintRight_toRightOf="parent" />
+    </FrameLayout>
+</LinearLayout>

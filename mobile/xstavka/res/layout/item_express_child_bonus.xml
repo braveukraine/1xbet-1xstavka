@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.xbet.ui_common.viewcomponents.views.TicketDividerWithShadowLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:translationZ="@dimen/margin_8" />
+    <LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:paddingTop="@dimen/padding_min" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" android:layout_marginStart="@dimen/margin_8" android:layout_marginEnd="@dimen/margin_8" android:elevation="@dimen/elevation_2">
+        <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_8" android:maxLines="1" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_rounded_corners_new" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceCaptionNew" android:layout_gravity="center|left" android:id="@id/tv_coef_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:layout_gravity="center|right" android:id="@id/tv_coef" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

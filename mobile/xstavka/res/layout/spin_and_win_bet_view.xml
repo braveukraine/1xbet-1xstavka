@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/backgroundImageView" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/crystal_status_background" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/current_state_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding" app:autoSizeMaxTextSize="14.0sp" app:autoSizeStepGranularity="2.0sp" app:autoSizeTextType="uniform" app:layout_constraintBottom_toTopOf="@id/bets_scroll_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView android:id="@id/bets_scroll_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/padding_half" android:layout_marginBottom="@dimen/padding_half" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/current_state_text_view">
+        <LinearLayout android:orientation="vertical" android:id="@id/bet_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

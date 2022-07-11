@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xbet.client1.statistic.ui.view.PinnedFrameLayout android:id="@id/pflToolbarContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/pinned_state_list" android:outlineProvider="bounds"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New" />
+        <FrameLayout android:id="@id/flToolbarContent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</org.xbet.client1.statistic.ui.view.PinnedFrameLayout>

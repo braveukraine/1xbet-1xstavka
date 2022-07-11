@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/space_24" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/promo_empty" />
+    <TextView android:textAppearance="?textAppearanceSubtitle1New" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_8" android:layout_marginRight="@dimen/space_16" android:layout_marginBottom="@dimen/space_8" android:text="@string/one_x_bonuses_empty_bonus_title" />
+    <TextView android:textAppearance="?textAppearanceBody2New" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:layout_marginBottom="@dimen/space_24" android:text="@string/bonuses_placeholder_description" />
+</LinearLayout>

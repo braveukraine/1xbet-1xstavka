@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sumsub.sns.core.widget.SNSSubtitle2TextView android:id="@id/sns_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sns_margin_small" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/sns_editor_layout" app:layout_constraintHorizontal_weight="0.37" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/sns_editor_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sns_margin_small" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="0.63" app:layout_constraintStart_toEndOf="@id/sns_label" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.SNSTextView.EditorLayout">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/sns_editor" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.SNSTextView.Edit" />
+    </com.google.android.material.textfield.TextInputLayout>
+</merge>

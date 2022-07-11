@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/recycler_container" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_18" android:textColor="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_double" android:text="@string/my_bonuses" android:fontFamily="sans-serif-medium" android:textAlignment="center" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingBottom="@dimen/padding_double" android:visibility="visible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/selected_recycler_view" android:paddingBottom="@dimen/padding_double" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

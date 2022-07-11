@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="banners_margin">236.0dip</dimen>
+    <dimen name="captcha_height">60.0dip</dimen>
+    <dimen name="captcha_item_size">56.0dip</dimen>
+    <dimen name="cases_image_size">90.0dip</dimen>
+    <item type="dimen" name="cases_item_image_bottom">0.64</item>
+    <dimen name="cases_padding">2.0dip</dimen>
+    <dimen name="cases_present_text_size">8.0sp</dimen>
+    <item type="dimen" name="cases_top_items_bottom">0.32</item>
+    <dimen name="filter_button_text_size">12.0sp</dimen>
+    <dimen name="float_margin_16">16.0dip</dimen>
+    <dimen name="float_margin_32">32.0dip</dimen>
+    <dimen name="float_margin_8">8.0dip</dimen>
+    <dimen name="fruit_cocktail_coeffs_text_size">22.0sp</dimen>
+    <dimen name="fruit_cocktail_slot_padding">6.0dip</dimen>
+    <dimen name="fruit_cocktail_start_text_size">10.0sp</dimen>
+    <dimen name="keno_cell_text_size">10.0sp</dimen>
+    <dimen name="keno_margin_size">4.0dip</dimen>
+    <item type="dimen" name="keno_table_view_bottom">0.615</item>
+    <item type="dimen" name="keno_table_view_top">0.23</item>
+    <dimen name="lottery_header_margin">8.0dip</dimen>
+    <dimen name="lucky_slot_main_text_size">10.0sp</dimen>
+    <item type="dimen" name="lucky_slot_slots_end">0.82</item>
+    <item type="dimen" name="lucky_slot_slots_start">0.18</item>
+    <dimen name="lucky_slot_sum_text_size">14.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_text_size">8.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_x20_text_size">6.0sp</dimen>
+    <dimen name="memory_view_margin">16.0dip</dimen>
+    <dimen name="nine_view_label_size">20.0sp</dimen>
+    <dimen name="nine_view_margin">8.0dip</dimen>
+    <dimen name="ticket_action_view_width">190.0dip</dimen>
+    <dimen name="tw__login_btn_drawable_padding">5.0dip</dimen>
+    <dimen name="tw__login_btn_height">40.0dip</dimen>
+    <dimen name="tw__login_btn_left_padding">10.0dip</dimen>
+    <dimen name="tw__login_btn_right_padding">15.0dip</dimen>
+    <dimen name="tw__login_btn_text_size">16.0sp</dimen>
+    <dimen name="weekly_reward_margin_bottom">32.0dip</dimen>
+    <dimen name="weekly_reward_margin_top">16.0dip</dimen>
+    <item type="dimen" name="coin_c">1.7</item>
+    <dimen name="coin_size">200.0px</dimen>
+    <dimen name="games_text_padding">12.0dip</dimen>
+    <dimen name="lucky_slot_win_lines_padding">2.0dip</dimen>
+</resources>

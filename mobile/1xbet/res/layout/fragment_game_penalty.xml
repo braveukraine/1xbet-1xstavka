@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/sport_game_info_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content_layout" android:background="@drawable/sport_game_card_bg" android:layout_width="fill_parent" android:layout_height="@dimen/sport_game_info_item_height" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/line_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" app:layout_constraintLeft_toLeftOf="@id/line_2" app:layout_constraintRight_toRightOf="@id/line_2" app:layout_constraintTop_toTopOf="parent" />
+        <ScrollView android:id="@id/flex_scroll" android:layout_width="fill_parent" android:layout_height="94.0dip" app:layout_constraintBottom_toBottomOf="parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/penalty_info" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_data" />
+</FrameLayout>

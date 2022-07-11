@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/domino_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xbet.onexgames.features.domino.views.DominoTableView android:id="@id/table" android:layout_width="fill_parent" android:layout_height="fill_parent" app:bone_height="56.0dip" />
+    <com.xbet.onexgames.features.domino.views.DominoHandView android:id="@id/opponent_hand" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:bone_height="56.0dip" />
+    <com.xbet.onexgames.features.domino.views.DominoHandView android:id="@id/your_hand" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:bone_height="56.0dip" app:you_hand="true" />
+    <ImageView android:layout_gravity="bottom|center|left" android:id="@id/left_button" android:background="?primaryColor" android:layout_width="28.0dip" android:layout_height="28.0dip" android:elevation="2.0dip" app:srcCompat="@drawable/ic_keyboard_arrow_left" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/right_button" android:background="?primaryColor" android:layout_width="28.0dip" android:layout_height="28.0dip" android:elevation="2.0dip" app:srcCompat="@drawable/ic_keyboard_arrow_right" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/use_case_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/info_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:layout_gravity="bottom|center" android:id="@id/take" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_half" android:text="@string/domino_take_from_market" style="@style/Widget.AppTheme.SolidButton" />
+        <Button android:layout_gravity="bottom|center" android:id="@id/skip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_half" android:text="@string/skip" style="Widget.AppTheme.SolidButton" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/market" android:background="?primaryColorDark" android:layout_width="fill_parent" android:layout_height="40.0dip" android:fontFamily="sans-serif-medium" android:elevation="2.0dip" />
+</FrameLayout>

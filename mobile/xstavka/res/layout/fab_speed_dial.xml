@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/touch_guard" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="vertical" android:id="@id/fabs_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/menu_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end" android:id="@id/fab_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_add" app:fabSize="normal" app:tint="@color/white" app:useCompatPadding="true" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/empty_container_with_button" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?textAppearanceBody1New" android:gravity="center" android:id="@id/tv_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_8" android:text="@string/no_events_with_current_parameters" app:layout_constraintBottom_toBottomOf="@id/guideline" app:layout_constraintEnd_toEndOf="@id/btn_update" app:layout_constraintStart_toStartOf="@id/btn_update" />
+        <Button android:textAppearance="?textAppearanceSubtitle1New" android:textSize="@dimen/text_18" android:id="@id/btn_update" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:text="@string/refresh_data" android:textAllCaps="false" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline" style="@style/Widget.AppTheme.SolidButton.New" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_percent="0.3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

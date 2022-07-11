@@ -1,0 +1,69 @@
+.class public final Lib0/e$c;
+.super Lokio/d;
+.source "RealCall.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lib0/e;-><init>(Lokhttp3/z;Lokhttp3/b0;Z)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0003\u001a\u00020\u0002H\u0014\u00a8\u0006\u0004"
+    }
+    d2 = {
+        "ib0/e$c",
+        "Lokio/d;",
+        "Lca0/y;",
+        "x",
+        "okhttp"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x4,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic m:Lib0/e;
+
+
+# direct methods
+.method constructor <init>(Lib0/e;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lib0/e$c;->m:Lib0/e;
+
+    invoke-direct {p0}, Lokio/d;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected x()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lib0/e$c;->m:Lib0/e;
+
+    invoke-virtual {v0}, Lib0/e;->cancel()V
+
+    return-void
+.end method

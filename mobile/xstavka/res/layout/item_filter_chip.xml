@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/chip_layout" android:background="@drawable/shape_chip_filter_unchecked" android:paddingTop="@dimen/padding_half_min" android:paddingBottom="@dimen/padding_half_min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_8" android:paddingStart="@dimen/padding_double" android:paddingEnd="@dimen/padding_double" android:layout_marginEnd="@dimen/margin_8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:gravity="center" android:id="@id/chip_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</FrameLayout>

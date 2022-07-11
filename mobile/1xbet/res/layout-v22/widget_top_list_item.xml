@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/space_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:layout_marginHorizontal="@dimen/space_4">
+            <ImageView android:id="@id/match_logo_view" android:layout_width="@dimen/widget_logo_sport_size" android:layout_height="@dimen/widget_logo_sport_size" android:tint="@color/white_new" />
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/white_new" android:ellipsize="end" android:id="@id/match_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:lines="1" android:layout_weight="1.0" android:fontFamily="@font/roboto_regular" android:layout_marginHorizontal="@dimen/space_16" />
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/white_new" android:id="@id/counter_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/roboto_regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/space_4">
+                <ImageView android:id="@id/team_first_logo_view" android:layout_width="@dimen/widget_logo_size" android:layout_height="@dimen/widget_logo_size" />
+                <TextView android:textSize="@dimen/text_12" android:textColor="@color/white_new" android:gravity="center" android:id="@id/team_first_name" android:paddingLeft="@dimen/widget_logo_sport_size" android:paddingRight="@dimen/widget_logo_sport_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:fontFamily="@font/roboto_regular" android:paddingHorizontal="@dimen/widget_logo_sport_size" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_20" android:textColor="@color/white_new" android:gravity="center" android:id="@id/score_view" android:background="@drawable/rounded_score_widget_bg" android:paddingLeft="@dimen/space_8" android:paddingTop="@dimen/space_2" android:paddingRight="@dimen/space_8" android:paddingBottom="@dimen/space_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:fontFamily="@font/roboto_bold" android:paddingHorizontal="@dimen/space_8" android:paddingVertical="@dimen/space_2" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/space_4">
+                <ImageView android:id="@id/team_second_logo_view" android:layout_width="@dimen/widget_logo_size" android:layout_height="34.0dip" />
+                <TextView android:textSize="@dimen/text_12" android:textColor="@color/white_new" android:gravity="center" android:id="@id/team_second_name" android:paddingLeft="@dimen/widget_logo_sport_size" android:paddingRight="@dimen/widget_logo_sport_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:fontFamily="@font/roboto_regular" android:paddingHorizontal="@dimen/widget_logo_sport_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

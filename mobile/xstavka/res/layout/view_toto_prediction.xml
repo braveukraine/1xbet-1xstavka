@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/prediction_root" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/corner_radius_8" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_12" android:gravity="center" android:id="@id/toto_prediction_header" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.AppTheme.New.Caption" />
+</androidx.cardview.widget.CardView>

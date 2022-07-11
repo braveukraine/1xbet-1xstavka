@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:padding="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="72.0dip" android:maxHeight="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/key_background" android:padding="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/key_top" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="bottom" android:id="@id/key_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search" android:id="@id/search" android:visible="true" android:title="@string/search" app:actionLayout="@layout/view_no_hint_icon_search_view" app:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/ic_multiselect" android:id="@id/multiselect" android:visible="false" android:title="@string/multiselect" app:showAsAction="ifRoom|collapseActionView" />
+    <item android:icon="@drawable/ic_translation_live_disable" android:id="@id/stream" android:visible="false" android:title="@string/video_translations" app:showAsAction="ifRoom|collapseActionView" />
+    <item android:icon="@drawable/ic_line_live_short_new" android:id="@id/switch_games_mode" android:visible="false" android:title="@string/long_short_filter" app:showAsAction="always" />
+</menu>

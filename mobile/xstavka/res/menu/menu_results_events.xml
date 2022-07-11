@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search" android:id="@id/search" android:title="@string/search" app:actionViewClass="org.xbet.ui_common.viewcomponents.views.search.SearchMaterialView" app:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/ic_collapse_all_white" android:id="@id/action_expand" android:title="@string/collapse_all_title" app:showAsAction="ifRoom|collapseActionView" />
+    <item android:icon="@drawable/ic_calendar_range" android:id="@id/action_date_filter" android:title="@string/choose_time" app:showAsAction="ifRoom|collapseActionView" />
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="?backgroundNew" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/padding" android:paddingVertical="@dimen/padding">
+        <TextView android:textAppearance="?textAppearanceBody2New" android:ellipsize="end" android:id="@id/bet_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="@dimen/padding_half" android:layout_weight="1.0" android:layout_marginEnd="@dimen/padding" app:drawableTint="?textColorSecondaryNew" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:gravity="center" android:layout_gravity="center" android:id="@id/coefficient_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/padding_half" app:drawableTint="?textColorSecondaryNew" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

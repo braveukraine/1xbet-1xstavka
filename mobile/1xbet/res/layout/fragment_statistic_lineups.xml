@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/view_stub_single" android:layout="@layout/view_stub_field_single" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" />
+        <ViewStub android:id="@id/view_stub_multi" android:layout="@layout/view_stub_field_multi" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" />
+        <LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <org.xbet.ui_common.viewcomponents.tabs.TabLayoutFixed android:id="@id/tab_layout" android:layout_width="fill_parent" app:tabRippleColor="@null" style="@style/Widget.AppTheme.TabLayout.New" />
+            <View android:id="@id/divider" android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:nestedScrollingEnabled="true" app:layout_constraintBottom_toTopOf="@id/frame" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/phone_layout" android:padding="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textAppearance="?textAppearanceSubtitle1New" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8" android:text="@string/support_hints" />
+            <org.xbet.ui_common.viewcomponents.layouts.frame.DualPhoneChoiceMaskViewNew android:id="@id/phone_field" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/message_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/callback_subject" style="@style/Widget.AppTheme.TextInputLayout.New.Primary">
+                <com.google.android.material.textfield.TextInputEditText android:theme="@style/ThemeOverlay.AppTheme.EditText.New" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textNoSuggestions" style="@style/Widget.AppTheme.EditText.New" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/frame" android:background="?card_background" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <Button android:enabled="false" android:id="@id/request_callback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:layout_marginBottom="@dimen/space_24" android:text="@string/support_get_call" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" style="@style/Widget.AppTheme.SolidButton.New" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

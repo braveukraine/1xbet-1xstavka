@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/lucky_card_chose_text" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.xbet.core.presentation.views.cards.LuckyCardButton android:id="@id/spades" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <org.xbet.core.presentation.views.cards.LuckyCardButton android:id="@id/clubs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <org.xbet.core.presentation.views.cards.LuckyCardButton android:id="@id/diamonds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <org.xbet.core.presentation.views.cards.LuckyCardButton android:id="@id/hearts" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.xbet.core.presentation.views.cards.LuckyCardButton android:id="@id/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <org.xbet.core.presentation.views.cards.LuckyCardButton android:id="@id/red" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

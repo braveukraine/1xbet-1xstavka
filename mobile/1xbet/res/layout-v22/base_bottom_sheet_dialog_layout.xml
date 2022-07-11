@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bottom_sheet_corner_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/top_view" android:background="@drawable/bg_bottom_sheet_top_view" android:layout_width="30.0dip" android:layout_height="3.0dip" android:layout_marginTop="@dimen/space_8" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2BoldNew" android:textSize="@dimen/text_18" android:gravity="center" android:id="@id/tv_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" />
+    <TextView android:textAppearance="?textAppearanceBody1New" android:textSize="@dimen/text_14" android:textColor="?textColorSecondaryNew" android:gravity="center" android:id="@id/tv_sub_title" android:paddingLeft="@dimen/space_16" android:paddingRight="@dimen/space_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_20" android:layout_marginTop="@dimen/space_8" android:layout_marginRight="@dimen/space_20" android:layout_marginHorizontal="@dimen/space_20" android:paddingHorizontal="@dimen/space_16" />
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_6" />
+</LinearLayout>

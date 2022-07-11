@@ -1,0 +1,79 @@
+.class final synthetic Lcom/onex/data/info/banners/repository/a1$b;
+.super Lkotlin/jvm/internal/b0;
+.source "BannersRepositoryImpl.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/onex/data/info/banners/repository/a1;->F(IZLjava/lang/String;ILjava/lang/String;)Lg90/v;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1000
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final a:Lcom/onex/data/info/banners/repository/a1$b;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/onex/data/info/banners/repository/a1$b;
+
+    invoke-direct {v0}, Lcom/onex/data/info/banners/repository/a1$b;-><init>()V
+
+    sput-object v0, Lcom/onex/data/info/banners/repository/a1$b;->a:Lcom/onex/data/info/banners/repository/a1$b;
+
+    return-void
+.end method
+
+.method constructor <init>()V
+    .locals 4
+
+    const-class v0, Lcom/xbet/onexuser/domain/entity/j;
+
+    const-string v1, "idCountry"
+
+    const-string v2, "getIdCountry()Ljava/lang/String;"
+
+    const/4 v3, 0x0
+
+    invoke-direct {p0, v0, v1, v2, v3}, Lkotlin/jvm/internal/b0;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    check-cast p1, Lcom/xbet/onexuser/domain/entity/j;
+
+    invoke-virtual {p1}, Lcom/xbet/onexuser/domain/entity/j;->x()Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method

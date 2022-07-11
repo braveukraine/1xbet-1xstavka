@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/gameRootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/onex_holder_game_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/gradient_top_layout" android:layout_width="fill_parent" android:layout_height="56.0dip" android:scaleType="fitXY" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/jackpot_gradient" />
+    <FrameLayout android:id="@id/onex_holder_options_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <FrameLayout android:id="@id/bet_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/onex_holder_options_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <FrameLayout android:id="@id/onex_holder_bet_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/onex_holder_instant_bet_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/onex_holder_end_game_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/onex_holder_balance_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/game_holder_toolbar" />
+    <FrameLayout android:id="@id/info_container" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_margin="@dimen/padding_double" android:paddingStart="60.0dip" android:paddingEnd="60.0dip" app:layout_constraintBottom_toTopOf="@id/bet_layout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/info_text" android:background="@drawable/background_game_snackbar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/onex_holder_bonus_free_game_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.appbar.MaterialToolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/game_holder_toolbar" android:background="?transparent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back_games">
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/toolbar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.xbet.core.presentation.bonus.CasinoBonusButtonView1 android:id="@id/bonus_button" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="@dimen/margin_24" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/rules_button" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="@dimen/padding" app:srcCompat="@drawable/ic_info_white" />
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+</androidx.constraintlayout.widget.ConstraintLayout>

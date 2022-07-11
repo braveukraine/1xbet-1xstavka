@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="126.0dip" android:width="65.0dip" android:viewportWidth="65.0" android:viewportHeight="126.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#fffffaee" android:pathData="M10,125.5C4.8,125.5 0.5,121.2 0.5,116L0.5,10C0.5,4.8 4.8,0.5 10,0.5L55,0.5C60.2,0.5 64.5,4.8 64.5,10L64.5,116C64.5,121.2 60.2,125.5 55,125.5L10,125.5Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#fff0ead8" android:pathData="M55,1C60,1 64,5 64,10L64,116C64,121 60,125 55,125L10,125C5,125 1,121 1,116L1,10C1,5 5,1 10,1L55,1ZM55,0L10,0C4.5,0 0,4.5 0,10L0,116C0,121.5 4.5,126 10,126L55,126C60.5,126 65,121.5 65,116L65,10C65,4.5 60.5,0 55,0Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#ffaf9f7e" android:pathData="M12,8L12,12L8,12L8,8L12,8ZM14,6L6,6L6,14L14,14L14,6Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#ffaf9f7e" android:pathData="M57,8L57,12L53,12L53,8L57,8ZM59,6L51,6L51,14L59,14L59,6Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#ffaf9f7e" android:pathData="M12,114L12,118L8,118L8,114L12,114ZM14,112L6,112L6,120L14,120L14,112Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#ffaf9f7e" android:pathData="M57,114L57,118L53,118L53,114L57,114ZM59,112L51,112L51,120L59,120L59,112Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#ffaf9f7e" android:pathData="M49,16L49,110L16,110L16,16L49,16ZM51,14L14,14L14,112L51,112L51,14Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#ffaf9f7e" android:pathData="M44,8L44,20L44,22L46,22L57,22L57,104L46,104L44,104L44,106L44,118L21,118L21,106L21,104L19,104L8,104L8,22L19,22L21,22L21,20L21,8L44,8ZM46,6L19,6L19,20L6,20L6,106L19,106L19,120L46,120L46,106L59,106L59,20L46,20L46,6Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

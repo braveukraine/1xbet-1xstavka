@@ -1,0 +1,99 @@
+.class public final Lcom/xbet/onexgames/features/gamesmania/views/GamesManiaMapView$b;
+.super Ljava/lang/Object;
+.source "GamesManiaMapView.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xbet/onexgames/features/gamesmania/views/GamesManiaMapView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u0006\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0002\u0008\u001e\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u00081\u00102R\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u0003\u0010\u0004R\u0014\u0010\u0005\u001a\u00020\u00028\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u0005\u0010\u0004R\u0014\u0010\u0007\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u0007\u0010\u0008R\u0014\u0010\t\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\t\u0010\u0008R\u0014\u0010\n\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\n\u0010\u0008R\u0014\u0010\u000b\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u000b\u0010\u0008R\u0014\u0010\u000c\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u000c\u0010\u0008R\u0014\u0010\u000e\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u000e\u0010\u000fR\u0014\u0010\u0010\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u0010\u0010\u000fR\u0014\u0010\u0011\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u0011\u0010\u000fR\u0014\u0010\u0013\u001a\u00020\u00128\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u0013\u0010\u0014R\u0014\u0010\u0016\u001a\u00020\u00158\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u0016\u0010\u0017R\u0014\u0010\u0018\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u0018\u0010\u000fR\u0014\u0010\u0019\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u0019\u0010\u000fR\u0014\u0010\u001a\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u001a\u0010\u000fR\u0014\u0010\u001b\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u001b\u0010\u000fR\u0014\u0010\u001c\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u001c\u0010\u0008R\u0014\u0010\u001d\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u001d\u0010\u0008R\u0014\u0010\u001e\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u001e\u0010\u0008R\u0014\u0010\u001f\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u001f\u0010\u0008R\u0014\u0010 \u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008 \u0010\u0008R\u0014\u0010!\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008!\u0010\u0008R\u0014\u0010\"\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\"\u0010\u000fR\u0014\u0010#\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008#\u0010\u0008R\u0014\u0010$\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008$\u0010\u0008R\u0014\u0010%\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008%\u0010\u000fR\u0014\u0010&\u001a\u00020\r8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008&\u0010\u000fR\u0014\u0010\'\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\'\u0010\u0008R\u0014\u0010(\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008(\u0010\u0008R\u0014\u0010)\u001a\u00020\u00068\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008)\u0010\u0008R\u0014\u0010*\u001a\u00020\u00128\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008*\u0010\u0014R\u0014\u0010+\u001a\u00020\u00128\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008+\u0010\u0014R\u0014\u0010,\u001a\u00020\u00128\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008,\u0010\u0014R\u0014\u0010-\u001a\u00020\u00128\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008-\u0010\u0014R\u0014\u0010.\u001a\u00020\u00128\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008.\u0010\u0014R\u0014\u0010/\u001a\u00020\u00128\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008/\u0010\u0014R\u0014\u00100\u001a\u00020\u00128\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u00080\u0010\u0014\u00a8\u00063"
+    }
+    d2 = {
+        "Lcom/xbet/onexgames/features/gamesmania/views/GamesManiaMapView$b;",
+        "",
+        "",
+        "BONUS",
+        "Ljava/lang/String;",
+        "DEFAULT",
+        "",
+        "DIALOG_HEIGHT_OF_CELL_SIZE_BONUS",
+        "F",
+        "DIALOG_HEIGHT_OF_CELL_SIZE_BONUS_WIGH_GAME_NAME",
+        "DIALOG_HEIGHT_OF_CELL_SIZE_DEFAULT",
+        "DIALOG_WIDTH_OF_CELL_SIZE_BONUS",
+        "DIALOG_WIDTH_OF_CELL_SIZE_DEFAULT",
+        "",
+        "END_STEP_APPEARANCE_ICON_ANIM",
+        "I",
+        "END_STEP_DISAPPEARANCE_ICON_ANIM",
+        "HALF_CELL",
+        "",
+        "ICON_ALPHA_COEF",
+        "D",
+        "",
+        "ICON_ANIM_DELAY",
+        "J",
+        "MIN_ALPHA",
+        "OPACITY",
+        "START_STEP_APPEARANCE_ICON_ANIM",
+        "START_STEP_DISAPPEARANCE_ICON_ANIM",
+        "START_Y_BONUS_TEXT_FIRST_LINE_COEF_OF_DIALOG_HEIGHT",
+        "START_Y_BONUS_TEXT_SECOND_LINE_COEF_OF_TEXT_SIZE",
+        "START_Y_ICON_COEF_OF_DIALOG_HEIGHT",
+        "START_Y_WIN_TEXT_COEF_OF_BONUS_DIALOG_HEIGHT",
+        "START_Y_WIN_TEXT_COEF_OF_DIALOG_HEIGHT",
+        "START_Y_WIN_TEXT_SECOND_LINE_COEF_OF_DIALOG_HEIGHT",
+        "STEPS_IN_ONE_CELL",
+        "STROKE_WIDTH_ACTIVE_CELL",
+        "STROKE_WIDTH_NOACTIVE_CELL",
+        "TABLE_COLUMNS_AMOUNT",
+        "TABLE_ROWS_AMOUNT",
+        "TEXT_SIZE_COEF_OF_DIALOG_WIDTH",
+        "TEXT_SIZE_DIALOG_DEFAULT",
+        "TEXT_SIZE_OF_CELL",
+        "WIN_COEF_HALF",
+        "WIN_COEF_ONE_AND_HALF",
+        "WIN_COEF_X1",
+        "WIN_COEF_X2",
+        "WIN_COEF_X3",
+        "WIN_COEF_X4",
+        "WIN_COEF_X5",
+        "<init>",
+        "()V",
+        "games_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/xbet/onexgames/features/gamesmania/views/GamesManiaMapView$b;-><init>()V
+
+    return-void
+.end method

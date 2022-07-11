@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xbet.ui_common.viewcomponents.views.search.SearchMaterialViewNew android:layout_width="fill_parent" android:layout_height="wrap_content" app:iconifiedByDefault="false" app:queryHint="@string/search_by_events" app:searchHintIcon="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <requestFocus />
+</org.xbet.ui_common.viewcomponents.views.search.SearchMaterialViewNew>

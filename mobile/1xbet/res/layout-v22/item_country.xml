@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/background_rectangle_radius_32" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:backgroundTint="?contentBackgroundNew" android:layout_marginHorizontal="@dimen/space_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.imageview.RoundCornerImageView android:id="@id/image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="@dimen/space_4" app:cornerRadiusImageView="12.0dip" />
+    <TextView android:textAppearance="@style/TextAppearance.AppTheme.New.Subtitle2" android:gravity="center_vertical" android:id="@id/text" android:padding="@dimen/space_4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/close" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/space_6" android:layout_width="30.0dip" android:layout_height="30.0dip" android:contentDescription="@null" app:srcCompat="@drawable/ic_close" app:tint="?controlsBackgroundNew" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_toto_history_new" android:id="@id/toto_list" android:title="@string/toto_list" app:showAsAction="ifRoom" />
+</menu>

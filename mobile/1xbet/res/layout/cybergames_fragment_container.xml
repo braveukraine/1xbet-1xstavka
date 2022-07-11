@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_4" app:menu="@menu/cyber_games_menu" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/cyber_sport" style="@style/Widget.AppTheme.Toolbar.New" />
+    <org.xbet.ui_common.viewcomponents.tabs.TabLayoutRectangleScrollable android:id="@id/tabLayout" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_4" style="@style/Widget.AppTheme.TabLayout.New" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragmentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

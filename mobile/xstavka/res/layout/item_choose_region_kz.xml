@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/region_item_root" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding_double" android:layout_marginEnd="@dimen/padding_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/rb_region_check" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/tv_region_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/tv_region_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RadioButton android:id="@id/rb_region_check" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/padding_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

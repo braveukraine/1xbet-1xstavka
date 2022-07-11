@@ -1,0 +1,164 @@
+.class public final Lorg/xbet/data/betting/coupon/mappers/BetZipMapper;
+.super Ljava/lang/Object;
+.source "BetZipMapper.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0007\u0008\u0007\u00a2\u0006\u0002\u0010\u0002J\u0011\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0086\u0002\u00a8\u0006\u0007"
+    }
+    d2 = {
+        "Lorg/xbet/data/betting/coupon/mappers/BetZipMapper;",
+        "",
+        "()V",
+        "invoke",
+        "Lcom/xbet/zip/model/zip/BetZip;",
+        "loadCouponEventModel",
+        "Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;",
+        "betting_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;)Lcom/xbet/zip/model/zip/BetZip;
+    .locals 34
+    .param p1    # Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getType()J
+
+    move-result-wide v1
+
+    .line 2
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getCoef()D
+
+    move-result-wide v3
+
+    .line 3
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getGroupId()J
+
+    move-result-wide v5
+
+    .line 4
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getParam()F
+
+    move-result v7
+
+    .line 5
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getGameId()J
+
+    move-result-wide v18
+
+    .line 6
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getBlock()Z
+
+    move-result v9
+
+    .line 7
+    new-instance v12, Lcom/xbet/zip/model/zip/BetPlayerZip;
+
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getPlayerId()J
+
+    move-result-wide v10
+
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getPlayerName()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v12, v10, v11, v0}, Lcom/xbet/zip/model/zip/BetPlayerZip;-><init>(JLjava/lang/String;)V
+
+    .line 8
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getPlayerId()J
+
+    move-result-wide v21
+
+    .line 9
+    invoke-virtual/range {p1 .. p1}, Lorg/xbet/domain/betting/coupon/models/LoadCouponEventModel;->getKind()I
+
+    move-result v0
+
+    const/4 v8, 0x1
+
+    if-ne v0, v8, :cond_0
+
+    const/16 v17, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x3
+
+    const/16 v17, 0x3
+
+    .line 10
+    :goto_0
+    new-instance v33, Lcom/xbet/zip/model/zip/BetZip;
+
+    move-object/from16 v0, v33
+
+    const/4 v8, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v13, 0x0
+
+    const-wide/16 v14, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v23, 0x0
+
+    const/16 v24, 0x0
+
+    const/16 v25, 0x0
+
+    const/16 v26, 0x0
+
+    const/16 v27, 0x0
+
+    const/16 v28, 0x0
+
+    const/16 v29, 0x0
+
+    const/16 v30, 0x0
+
+    const v31, 0xff4ed0
+
+    const/16 v32, 0x0
+
+    invoke-direct/range {v0 .. v32}, Lcom/xbet/zip/model/zip/BetZip;-><init>(JDJFLjava/lang/String;ZLjava/lang/String;Ljava/lang/String;Lcom/xbet/zip/model/zip/BetPlayerZip;IJIIJIJZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;IZZZILkotlin/jvm/internal/h;)V
+
+    return-object v33
+.end method

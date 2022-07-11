@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:padding="@dimen/padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/quest_image" android:layout_width="70.0dip" android:layout_height="70.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <org.xbet.ui_common.viewcomponents.views.RoundRectangleTextView android:textSize="@dimen/text_10" android:textColor="@color/white" android:gravity="center" android:id="@id/quest_status" android:padding="@dimen/padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bingo_bonus_used" android:maxLines="1" android:layout_marginStart="@dimen/padding" app:backgroundRectangleColor="@color/red_soft_new" app:layout_constraintStart_toEndOf="@id/quest_image" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/quest_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginTop="@dimen/padding_half" android:layout_marginRight="@dimen/padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/quest_image" app:layout_constraintTop_toBottomOf="@id/quest_status" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

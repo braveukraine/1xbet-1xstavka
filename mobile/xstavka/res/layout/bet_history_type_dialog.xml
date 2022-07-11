@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/parent" android:background="?contentBackgroundNew" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="vertical" android:id="@id/hide_history_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" app:layout_constraintTop_toBottomOf="@id/recycler">
+        <View android:id="@id/divider" android:background="@color/separator_new_opacity_30" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <ImageView android:id="@id/iv_hide_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_history_dialog_hide" />
+            <TextView android:textAppearance="?textAppearanceSubtitle1New" android:textColor="?textColorPrimaryNew" android:gravity="center_vertical" android:id="@id/tv_hide_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16" android:text="@string/history_hide" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

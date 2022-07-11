@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_content_inset_material">24.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">80.0dip</dimen>
+    <dimen name="abc_action_bar_default_height_material">64.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
+    <dimen name="baccarat_card_size">120.0dip</dimen>
+    <dimen name="baccarat_field_offset">130.0dip</dimen>
+    <dimen name="bet_appbar_height">220.0dip</dimen>
+    <dimen name="bet_header_host_guest_logo_size">32.0dip</dimen>
+    <dimen name="bet_header_host_guest_text_size">16.0sp</dimen>
+    <dimen name="bet_header_icon_height">58.0dip</dimen>
+    <dimen name="bet_video_height">400.0dip</dimen>
+    <dimen name="cases_button_open_height">50.0dip</dimen>
+    <dimen name="cases_image_size">120.0dip</dimen>
+    <dimen name="cases_present_text_size">16.0sp</dimen>
+    <dimen name="cases_top_item_text_size">14.0sp</dimen>
+    <item type="dimen" name="cases_wheel_bottom">0.455</item>
+    <item type="dimen" name="cases_wheel_plt_bottom">0.3755</item>
+    <dimen name="choose_lines_text_bottom_margin">14.0dip</dimen>
+    <dimen name="choose_lines_text_size">22.0sp</dimen>
+    <dimen name="circles_text_size">18.0sp</dimen>
+    <dimen name="coin_text_size">28.0sp</dimen>
+    <dimen name="default_card_height">120.0dip</dimen>
+    <dimen name="design_navigation_max_width">320.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="design_snackbar_max_width">576.0dip</dimen>
+    <dimen name="design_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</item>
+    <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="floating_video_height">300.0dip</dimen>
+    <dimen name="floating_video_width">450.0dip</dimen>
+    <dimen name="fruit_cocktail_coeffs_text_size">28.0sp</dimen>
+    <dimen name="fruit_cocktail_slot_padding">22.0dip</dimen>
+    <dimen name="fruit_cocktail_start_text_size">24.0sp</dimen>
+    <dimen name="keno_cell_text_size">22.0sp</dimen>
+    <item type="dimen" name="keno_table_view_bottom">0.78</item>
+    <dimen name="lucky_slot_main_text_size">14.0sp</dimen>
+    <item type="dimen" name="lucky_slot_slots_end">0.876</item>
+    <item type="dimen" name="lucky_slot_slots_start">0.124</item>
+    <dimen name="lucky_slot_sum_text_size">18.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_text_size">16.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_x20_text_size">14.0sp</dimen>
+    <dimen name="mazzetti_text_size">18.0sp</dimen>
+    <item type="dimen" name="mr_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="mr_dialog_fixed_width_minor">90.0%</item>
+    <dimen name="mtrl_bottomappbar_height">64.0dip</dimen>
+    <dimen name="mtrl_toolbar_default_height">64.0dip</dimen>
+    <dimen name="name_bet_fragment_size">18.0sp</dimen>
+    <item type="dimen" name="odyssey_end_coefs_guideline">0.8</item>
+    <item type="dimen" name="odyssey_end_field_guideline">0.79</item>
+    <item type="dimen" name="odyssey_start_coefs_guideline">0.2</item>
+    <item type="dimen" name="odyssey_start_field_guideline">0.21</item>
+    <dimen name="resident_extinguisher_size">95.0dip</dimen>
+    <dimen name="resident_men_extinguisher_size">70.0dip</dimen>
+    <dimen name="resident_men_height">225.0dip</dimen>
+    <dimen name="resident_men_width">150.0dip</dimen>
+    <dimen name="resident_safe_height">133.0dip</dimen>
+    <dimen name="resident_safe_width">110.0dip</dimen>
+    <dimen name="slots_showcase_item_size">160.0dip</dimen>
+    <dimen name="slots_showcase_item_width">270.0dip</dimen>
+    <dimen name="slots_with_win_lines_margin">60.0dip</dimen>
+    <dimen name="slots_with_win_lines_padding">6.0dip</dimen>
+    <dimen name="text_bet_fragment_height">30.0sp</dimen>
+    <item type="dimen" name="wild_fruits_bonus_rotation_text">@dimen/text_16</item>
+</resources>

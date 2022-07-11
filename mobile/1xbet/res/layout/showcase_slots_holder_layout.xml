@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="@dimen/slots_showcase_item_width" android:layout_height="@dimen/slots_showcase_item_size" android:layout_marginLeft="@dimen/space_4" android:layout_marginTop="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:layout_marginBottom="@dimen/space_4" app:cardBackgroundColor="@color/transparent" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/slot_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.FreeSpinsView android:layout_gravity="end|bottom|center" android:id="@id/freeSpins" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4" app:countFontSize="@dimen/text_16" app:labelFontSize="@dimen/text_14" />
+    <ImageView android:layout_gravity="start|center|top" android:id="@id/ivRibbon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="60.0dip" android:adjustViewBounds="true" />
+</com.google.android.material.card.MaterialCardView>

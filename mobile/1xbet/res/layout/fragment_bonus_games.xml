@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingLeft="@dimen/space_8" android:paddingRight="@dimen/space_8" android:paddingBottom="@dimen/space_16" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:file_name="@string/lottie_some_error" app:textColor="?secondaryTextColor" app:text_res="@string/data_retrieval_error" />
+    <FrameLayout android:id="@id/loading_container" android:background="?card_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="10.0dip">
+        <org.xbet.ui_common.viewcomponents.layouts.frame.ProgressBarWithSendClock android:layout_gravity="center" android:id="@id/iv_loader" android:layout_width="60.0dip" android:layout_height="60.0dip" app:isAnimation="true" />
+    </FrameLayout>
+</FrameLayout>

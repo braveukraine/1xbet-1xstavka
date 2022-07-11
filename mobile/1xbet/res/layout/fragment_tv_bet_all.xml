@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height_size" android:elevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/tv_bet" style="@style/Widget.AppTheme.Toolbar.New" />
+    <org.xbet.ui_common.viewcomponents.layouts.coordinator.NestedCoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:background="@color/transparent_new" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_gravity="center" android:id="@id/collapsingToolbarLayout" android:background="@color/transparent_new" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|enterAlways">
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/banner_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="@id/jackpot_status" app:layout_constraintEnd_toEndOf="@id/jackpot_status" app:layout_constraintStart_toStartOf="@id/jackpot_status" app:layout_constraintTop_toTopOf="@id/jackpot_status" />
+                    <com.turturibus.slot.tvbet.custom.TvJackpotView android:id="@id/jackpot_status" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <org.xbet.ui_common.viewcomponents.tabs.TabLayoutRectangle android:layout_gravity="center_vertical" android:id="@id/tab_layout" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height_size" app:tabIndicatorFullWidth="true" style="@style/Widget.AppTheme.TabLayout.New" />
+            <View android:id="@id/tabsDivider" android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="@dimen/one" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <org.xbet.ui_common.viewcomponents.viewpager.BaseViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </org.xbet.ui_common.viewcomponents.layouts.coordinator.NestedCoordinatorLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

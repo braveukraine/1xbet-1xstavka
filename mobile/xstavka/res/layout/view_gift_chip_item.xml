@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/shadow_container" android:background="@drawable/shape_chip" android:paddingBottom="@dimen/chip_shadow_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginEnd="6.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:id="@id/fl_chip" android:background="@drawable/shape_chip_checked_mode" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textAppearance="?textAppearanceSubtitle2New" android:textColor="?textColorLightNew" android:gravity="center" android:id="@id/tv_chip_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:maxLines="1" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_chip_count" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <View android:layout_gravity="center" android:background="@drawable/white_circle" android:layout_width="15.0dip" android:layout_height="15.0dip" android:backgroundTint="?contentBackgroundNew" />
+        <View android:layout_gravity="center" android:background="@drawable/white_circle" android:layout_width="12.0dip" android:layout_height="12.0dip" android:backgroundTint="?primaryColorNew" />
+        <TextView android:textAppearance="?textAppearanceBody1New" android:textSize="@dimen/text_8" android:textColor="?textColorLightNew" android:layout_gravity="center" android:id="@id/tv_chip_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

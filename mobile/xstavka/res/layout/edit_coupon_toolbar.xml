@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height_size" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar_edit_coupon" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height_size" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_toolbar_info" android:background="?contentBackgroundNew" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?textAppearanceHeadline6MediumNew" android:textColor="?textColorSecondaryNew" android:id="@id/tv_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/iv_toolbar_icons_container" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_toolbar_title" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:id="@id/iv_toolbar_title_arrow" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginEnd="@dimen/padding_double_half" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_arrow_down_controls_color" app:tint="?controlsBackgroundNew" />
+                <ImageView android:id="@id/iv_toolbar_more" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="@dimen/padding_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_action_more" app:tint="?controlsBackgroundNew" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+</com.google.android.material.appbar.AppBarLayout>

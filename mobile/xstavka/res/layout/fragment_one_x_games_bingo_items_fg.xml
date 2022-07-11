@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height_size" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/promo_bingo" style="@style/Widget.AppTheme.Toolbar.New">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:id="@id/info" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:layout_marginEnd="@dimen/margin_16" app:srcCompat="@drawable/ic_info_cashback" />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <FrameLayout android:id="@id/progress_view" android:background="@color/black_15" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:id="@id/empty_view_error" android:background="?window_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:file_name="@string/lottie_data_error" app:text_res="@string/data_retrieval_error" />
+    <org.xbet.games_section.feature.bingo.presentation.common.BingoInfoView android:id="@id/min_bet_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

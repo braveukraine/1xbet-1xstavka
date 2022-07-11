@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle1New" android:gravity="center_vertical" android:id="@id/tv_action_favorite" android:paddingLeft="@dimen/space_16" android:paddingRight="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/favorites_add" android:drawablePadding="@dimen/space_16" app:drawableLeftCompat="@drawable/ic_favorite_inactive_dialog" app:drawableTint="@color/text_color_secondary_new" />
+    <View android:id="@id/divider" android:background="?separatorNewOpacity" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_16" android:layout_marginRight="@dimen/space_16" />
+    <TextView android:textAppearance="?textAppearanceSubtitle1New" android:gravity="center_vertical" android:id="@id/tv_add_to_home_screen" android:paddingLeft="@dimen/space_16" android:paddingRight="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/add_to_home_screen" android:drawablePadding="@dimen/space_16" app:drawableLeftCompat="@drawable/ic_add_to_home_screen_new" app:drawableTint="@color/text_color_secondary_new" />
+</LinearLayout>

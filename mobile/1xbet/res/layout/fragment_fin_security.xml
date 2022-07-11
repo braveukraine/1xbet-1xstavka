@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/elevation_4" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_arrow_back" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/financial_security" style="@style/Widget.AppTheme.Toolbar.New" />
+    <androidx.core.widget.NestedScrollView android:id="@id/container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_16" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?textAppearanceSubtitle1MediumNew" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/set_financial_security" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" />
+            <TextView android:textAppearance="?textAppearanceBody2New" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:text="@string/financial_security_description" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" />
+            <LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16">
+                <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="?primaryColorNew" android:id="@id/limitBetTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:text="@string/deposit_bets_title" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rvBetLimits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:overScrollMode="never" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8">
+                <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="?primaryColorNew" android:id="@id/limitLossTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:text="@string/deposit_losses_title" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rvLossLimits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:overScrollMode="never" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:padding="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8">
+                <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="?primaryColorNew" android:id="@id/blockUserTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_title" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llBlockUser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16">
+                    <ImageView android:background="@drawable/white_radius" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="center" android:backgroundTint="?backgroundNew" app:srcCompat="@drawable/ic_office_block_user" />
+                    <TextView android:textAppearance="?textAppearanceSubtitle1New" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/block_account" android:layout_marginStart="@dimen/space_16" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

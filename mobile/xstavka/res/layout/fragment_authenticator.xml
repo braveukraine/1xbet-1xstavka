@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/main_container" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/toolbar_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar_new" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textAppearance="?textAppearanceHeadline6MediumNew" android:textColor="?textColorSecondaryNew" android:gravity="center" android:id="@id/toolbar_title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+        <include layout="@layout/include_shadow" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recyclerViewFilters" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6" android:layout_marginBottom="@dimen/margin_6" android:layout_marginStart="@dimen/margin_8" android:layout_marginEnd="@dimen/margin_8" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar_layout" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/recyclerViewFilters">
+        <include android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fragment_authenticator_recycler" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar_layout" layout="@layout/view_progress_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

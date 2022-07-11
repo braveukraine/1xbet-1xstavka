@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:padding="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/quest_image" android:layout_width="70.0dip" android:layout_height="70.0dip" app:cardCornerRadius="6.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/quest_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/quest_image" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/quest_progress_group" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/quest_image">
+            <ProgressBar android:id="@id/quest_progress" android:layout_width="0.0dip" android:layout_height="8.0dip" android:layout_marginTop="@dimen/space_4" android:progressDrawable="@drawable/progress_daily_quest" android:layout_weight="208.0" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+            <TextView android:textAppearance="?textAppearanceBody2New" android:gravity="end" android:id="@id/quest_points" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="38.0" android:layout_marginStart="@dimen/space_4" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,132 @@
+.class final Lg90/i$a;
+.super Ljava/util/concurrent/atomic/AtomicReference;
+.source "ObservableCombineLatest.java"
+
+# interfaces
+.implements Lv80/t;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lg90/i;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        "R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/util/concurrent/atomic/AtomicReference<",
+        "Lx80/c;",
+        ">;",
+        "Lv80/t<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x42f1490d3f05c855L
+
+
+# instance fields
+.field final a:Lg90/i$b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lg90/i$b<",
+            "TT;TR;>;"
+        }
+    .end annotation
+.end field
+
+.field final b:I
+
+
+# direct methods
+.method constructor <init>(Lg90/i$b;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lg90/i$b<",
+            "TT;TR;>;I)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lg90/i$a;->a:Lg90/i$b;
+
+    .line 3
+    iput p2, p0, Lg90/i$a;->b:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lx80/c;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lz80/c;->j(Ljava/util/concurrent/atomic/AtomicReference;Lx80/c;)Z
+
+    return-void
+.end method
+
+.method public b()V
+    .locals 0
+
+    invoke-static {p0}, Lz80/c;->a(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    return-void
+.end method
+
+.method public onComplete()V
+    .locals 2
+
+    iget-object v0, p0, Lg90/i$a;->a:Lg90/i$b;
+
+    iget v1, p0, Lg90/i$a;->b:I
+
+    invoke-virtual {v0, v1}, Lg90/i$b;->f(I)V
+
+    return-void
+.end method
+
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 2
+
+    iget-object v0, p0, Lg90/i$a;->a:Lg90/i$b;
+
+    iget v1, p0, Lg90/i$a;->b:I
+
+    invoke-virtual {v0, v1, p1}, Lg90/i$b;->g(ILjava/lang/Throwable;)V
+
+    return-void
+.end method
+
+.method public onNext(Ljava/lang/Object;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lg90/i$a;->a:Lg90/i$b;
+
+    iget v1, p0, Lg90/i$a;->b:I
+
+    invoke-virtual {v0, v1, p1}, Lg90/i$b;->h(ILjava/lang/Object;)V
+
+    return-void
+.end method

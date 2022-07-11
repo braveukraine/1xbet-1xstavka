@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="?primaryColorNew" android:id="@id/tv_benefit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:text="@string/your_benefit_title" android:layout_marginStart="@dimen/space_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_shimmer_benefit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_benefit">
+        <include android:id="@id/shimmer_promo_codes" layout="@layout/item_shimmer_settings" />
+        <include android:id="@id/shimmer_cash_back" layout="@layout/item_shimmer_settings" />
+        <include android:id="@id/shimmer_vip_cash_back" layout="@layout/item_shimmer_settings" />
+        <include android:id="@id/shimmer_bonus_promotions" layout="@layout/item_shimmer_settings" />
+    </LinearLayout>
+    <View android:background="?backgroundNew" android:layout_width="wrap_content" android:layout_height="8.0dip" android:layout_marginTop="@dimen/space_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_shimmer_benefit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

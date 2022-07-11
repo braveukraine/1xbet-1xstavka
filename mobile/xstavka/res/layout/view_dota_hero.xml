@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="68.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/heroImage" android:background="?contentBackgroundNew" android:layout_width="92.0dip" android:layout_height="52.0dip" android:adjustViewBounds="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/kda" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/playerName" android:layout_alignBottom="@id/playerName" android:layout_alignParentEnd="true" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:ellipsize="end" android:id="@id/playerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:maxLines="1" android:layout_centerVertical="true" android:layout_toStartOf="@id/kda" android:layout_toEndOf="@id/heroImage" />
+    <View android:id="@id/divider" android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

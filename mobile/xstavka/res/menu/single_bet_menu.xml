@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_single_bet_notifications_none" android:id="@id/action_notification" android:title="@string/single_bet_notification_name" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_settings" android:id="@id/action_settings" android:title="@string/bets_settings" app:showAsAction="ifRoom" />
+</menu>

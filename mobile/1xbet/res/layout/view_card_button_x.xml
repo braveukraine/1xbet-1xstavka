@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/card" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:stateListAnimator="@animator/lift_on_touch" app:cardBackgroundColor="@color/lucky_card_button_white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:id="@id/image_layout" android:layout_width="wrap_content" android:layout_height="60.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/icon1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="4.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/icon2" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="4.0dip" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@id/icon_text" android:layout_width="fill_parent" android:layout_height="60.0dip" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+        <TextView android:textColor="@color/light_checkable_selector" android:gravity="center" android:id="@id/text" android:background="?primaryColor_to_dark" android:layout_width="fill_parent" android:layout_height="30.0dip" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

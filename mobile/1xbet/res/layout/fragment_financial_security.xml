@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/financial_security" style="@style/Widget.AppTheme.Toolbar" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <androidx.core.widget.NestedScrollView android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/space_16" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/space_8" android:paddingEnd="@dimen/space_8">
+                <androidx.constraintlayout.widget.Group android:id="@id/headerGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" app:constraint_referenced_ids="title,description" />
+                <TextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/set_financial_security" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:text="@string/financial_security_description" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+                <com.google.android.material.card.MaterialCardView android:id="@id/limitCard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/description">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?textAppearanceSubtitle2" android:id="@id/limitTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:text="@string/deposit_limits_title" />
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvLimits" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <View android:id="@id/divider" android:background="@color/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                        <TextView android:textSize="@dimen/text_14" android:textColor="@color/red_soft" android:id="@id/limitError" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@id/additionalLimitCard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/limitCard">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?textAppearanceSubtitle2" android:id="@id/additionalLimitTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:text="@string/additional_limits_title" />
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvAdditionalLimits" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@id/blockButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="@dimen/space_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/additionalLimitCard">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16">
+                        <ImageView android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/ic_office_security" />
+                        <TextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/block_account" android:layout_marginStart="@dimen/space_16" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <View android:layout_width="fill_parent" android:layout_height="64.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/blockButton" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/buttonContainer" android:background="?card_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/saveButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16" android:text="@string/save_changes" style="@style/Widget.AppTheme.SolidButton" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

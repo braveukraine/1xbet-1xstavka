@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <TextView android:textSize="42.0sp" android:textColor="@color/satta_matka_text" android:gravity="center" android:id="@id/tv_number" android:layout_width="fill_parent" android:layout_height="fill_parent" app:autoSizeTextType="uniform" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_foreground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+</FrameLayout>

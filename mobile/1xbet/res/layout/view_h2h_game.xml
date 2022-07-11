@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/std_margin" android:paddingTop="@dimen/half_std_margin" android:paddingRight="@dimen/std_margin" android:paddingBottom="@dimen/half_std_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:gravity="start" android:id="@id/teams" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+        <TextView android:textAppearance="?textAppearanceBody2New" android:gravity="start" android:id="@id/time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+        <TextView android:textAppearance="?textAppearanceBody2New" android:gravity="start" android:id="@id/score" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+    </LinearLayout>
+    <View android:orientation="horizontal" android:id="@id/lllli_llDivider" android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

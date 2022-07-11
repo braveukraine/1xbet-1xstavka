@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@color/games_control_background" android:layout_width="fill_parent" android:layout_height="?actionBarSize" style="@style/Widget.AppTheme.Toolbar">
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/toolbar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.xbet.core.presentation.bonuses.views.CasinoBonusButtonView1 android:id="@id/bonus_button" android:visibility="invisible" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginEnd="@dimen/space_16" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/rules_button" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginEnd="@dimen/space_16" app:srcCompat="@drawable/ic_info_white" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/surrender_button" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginEnd="@dimen/space_16" app:srcCompat="@drawable/ic_surrender" />
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+</LinearLayout>

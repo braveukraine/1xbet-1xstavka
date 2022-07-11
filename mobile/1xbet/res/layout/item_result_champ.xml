@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="@dimen/space_4" android:layout_marginStart="@dimen/space_4" android:layout_marginEnd="@dimen/space_4" app:cardBackgroundColor="?groupBackgroundNew" app:cardUseCompatPadding="false" app:contentPadding="@dimen/space_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?groupBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/space_8" android:paddingEnd="@dimen/space_8">
+        <ImageView android:id="@id/header_icon" android:layout_width="@dimen/icon_size_32" android:layout_height="@dimen/icon_size_32" android:contentDescription="@null" app:tint="@color/text_color_secondary_70_new" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1MediumNew" android:ellipsize="end" android:gravity="start" android:layout_gravity="center" android:id="@id/header_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:textAllCaps="false" android:layout_marginStart="@dimen/half_std_margin" />
+        <ImageView android:id="@id/ivExpand" android:layout_width="24.0dip" android:layout_height="wrap_content" android:contentDescription="@null" android:layout_marginStart="@dimen/space_12" app:tint="@color/text_color_secondary_new" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

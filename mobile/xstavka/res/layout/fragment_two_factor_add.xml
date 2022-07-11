@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/padding_double" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle1MediumNew" android:id="@id/step_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tfa_step_1" />
+    <TextView android:textAppearance="?textAppearanceBody2New" android:textSize="@dimen/text_16" android:textColor="?textColorPrimaryNew" android:id="@id/tvHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:text="@string/tfa_add_hint" android:letterSpacing="0.032" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24">
+        <ImageView android:layout_gravity="center" android:id="@id/google_logo" android:background="@drawable/circle" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="center" app:backgroundTint="?primaryColorNew" app:srcCompat="@drawable/ic_tfa_google_logo" app:tint="@color/white_new" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="?primaryColorNew" android:layout_gravity="center" android:id="@id/btnAuthenticator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" android:layout_marginStart="@dimen/margin_8" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16">
+        <ImageView android:layout_gravity="center" android:id="@id/tfa_qr_code" android:background="@drawable/circle" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="center" android:backgroundTint="?primaryColorNew" app:srcCompat="@drawable/ic_tfa_qr_code" app:tint="@color/white_new" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="?primaryColorNew" android:layout_gravity="center" android:id="@id/show_qr_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tfa_show_qr_code" android:textAllCaps="true" android:layout_marginStart="@dimen/margin_8" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/input_tfa_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_24" android:hint="@string/tfa_code" style="@style/Widget.AppTheme.TextInputLayout.New">
+        <EditText android:theme="@style/ThemeOverlay.AppTheme.EditText.New" android:id="@id/tfa_code" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" style="@style/Widget.AppTheme.EditText.New" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

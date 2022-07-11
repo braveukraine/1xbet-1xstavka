@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatCheckBox android:textColor="@color/white" android:id="@id/do_not_change_bet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:checked="true" android:text="@string/pf_do_not_change_bet" app:buttonTint="@color/white" />
+    <androidx.appcompat.widget.AppCompatCheckBox android:textColor="@color/white" android:id="@id/return_to_base_bet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/pf_return_to_base_bet" app:buttonTint="@color/white" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/increase_bet" android:layout_width="wrap_content" android:layout_height="wrap_content" app:buttonTint="@color/white" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/increase_bet_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/pf_increase_bet">
+            <androidx.appcompat.widget.AppCompatEditText android:enabled="false" android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/increase_bet_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:backgroundTint="?ikchDiceFieldBgColor" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/decrease_bet" android:layout_width="wrap_content" android:layout_height="wrap_content" app:buttonTint="@color/white" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/decrease_bet_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/pf_decrease_bet" style="@style/Widget.AppTheme.TextInputLayout">
+            <androidx.appcompat.widget.AppCompatEditText android:enabled="false" android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/decrease_bet_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:backgroundTint="?ikchDiceFieldBgColor" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

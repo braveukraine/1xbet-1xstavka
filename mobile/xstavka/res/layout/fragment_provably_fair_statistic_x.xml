@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?window_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/statistic_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="2.0dip" app:navigationIcon="@drawable/ic_back_games" style="@style/Widget.AppTheme.Toolbar" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/navigation_view" android:layout_below="@id/statistic_toolbar" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/padding_double" android:layout_marginEnd="@dimen/padding_double" app:file_name="@string/lottie_universal_error" app:textColor="?secondaryTextColor" app:text_res="@string/history_bet_is_empty" />
+    <include android:id="@id/progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" layout="@layout/view_progress_bar" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/navigation_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:itemBackground="?primaryColor" app:itemIconTint="@drawable/bottom_navigation_selector" app:itemTextColor="@drawable/bottom_navigation_selector" app:menu="@menu/menu_provably_statistic" />
+</RelativeLayout>

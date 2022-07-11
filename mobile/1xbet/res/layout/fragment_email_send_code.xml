@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle1New" android:id="@id/email_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.TextInputEditTextNew android:theme="@style/ThemeOverlay.AppTheme.EditText.New" android:id="@id/input_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24" android:hint="@string/sms_code_hint" android:inputType="textEmailAddress" app:colorEditText="?textColorPrimaryNew" style="@style/Widget.AppTheme.TextInputLayout.New" />
+    <TextView android:textAppearance="?textAppearanceBody1New" android:id="@id/resend_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24" android:text="@string/offers_and_events_info" android:textAlignment="center" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" />
+    <com.google.android.material.button.MaterialButton android:id="@id/button_resend" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24" android:text="@string/send_sms_again" style="@style/Widget.AppTheme.OutlinedButton.New" />
+</LinearLayout>

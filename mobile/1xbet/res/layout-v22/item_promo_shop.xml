@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.imageview.RoundCornerImageView android:id="@id/iv_promo_shop_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" app:cornerRadiusImageView="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="@drawable/bonus_game_gradient" android:layout_width="fill_parent" android:layout_height="50.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView android:textAppearance="?textAppearanceCaptionMediumNew" android:textColor="@color/white" android:id="@id/tv_promo_shop_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8" android:layout_marginRight="@dimen/space_8" android:layout_marginBottom="@dimen/space_8" android:textAlignment="viewStart" android:layout_marginHorizontal="@dimen/space_8" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/padding" android:layout_marginBottom="@dimen/padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceCaptionNew" android:id="@id/market_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceCaptionPrimaryNew" android:id="@id/coef" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding_half" />
+</LinearLayout>

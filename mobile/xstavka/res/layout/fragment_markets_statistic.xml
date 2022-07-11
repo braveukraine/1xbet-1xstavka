@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" app:title="@string/markets_move" style="@style/Widget.AppTheme.Toolbar.New" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/graphs_buttons_recycler_view" android:paddingLeft="@dimen/padding_half" android:paddingRight="@dimen/padding_half" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:overScrollMode="never" android:paddingStart="@dimen/padding_half" android:elevation="0.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <FrameLayout android:background="@color/white" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/graphs_buttons_recycler_view">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <org.xbet.market_statistic.ui.statisticwidget.LineChartView android:id="@id/chart" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/markets_table" android:background="@drawable/markets_table_back" android:padding="@dimen/padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceCaptionNew" android:textStyle="normal" android:textColor="?primaryColorNew" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_half" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/progress_bar" android:background="@color/black_15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="9.0dip">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle1New" android:textColor="@color/profile_edit_item_selector" android:id="@id/tv_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_check" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_check" android:visibility="gone" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:layout_marginEnd="@dimen/space_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_reg_check_new" />
+    <View android:id="@id/divider" android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.xbet.client1.statistic.ui.view.StageTeamView android:id="@id/team" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" />
+    <View android:orientation="horizontal" android:id="@id/lllli_llDivider" android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_play" android:id="@id/action_play_zone" android:orderInCategory="1" android:title="@string/zone" app:iconTint="@color/white" />
+    <item android:icon="@drawable/ic_stop" android:id="@id/action_stop_zone" android:orderInCategory="1" android:title="@string/stop" app:iconTint="@color/white" />
+    <item android:icon="@drawable/ic_play" android:id="@id/action_play_video" android:orderInCategory="2" android:title="@string/video" app:iconTint="@color/white" />
+    <item android:icon="@drawable/ic_stop" android:id="@id/action_stop_video" android:orderInCategory="2" android:title="@string/stop" app:iconTint="@color/white" />
+</menu>

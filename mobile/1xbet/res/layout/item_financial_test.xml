@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:animateLayoutChanges="true" app:cardCornerRadius="@dimen/space_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubtitle2" android:id="@id/question" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:animateLayoutChanges="true" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/question">
+            <RadioButton android:textSize="@dimen/text_14" android:textColor="?primaryTextColor" android:gravity="center" android:id="@id/positive" android:background="@drawable/test_button_selector" android:layout_width="wrap_content" android:layout_height="40.0dip" android:button="@color/transparent" android:text="@string/yes" android:layout_weight="1.0" android:layout_marginEnd="@dimen/space_8" />
+            <RadioButton android:textSize="@dimen/text_14" android:textColor="?primaryTextColor" android:gravity="center" android:id="@id/negative" android:background="@drawable/test_button_selector" android:layout_width="wrap_content" android:layout_height="40.0dip" android:button="@color/transparent" android:text="@string/no" android:layout_weight="1.0" android:layout_marginStart="@dimen/space_8" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

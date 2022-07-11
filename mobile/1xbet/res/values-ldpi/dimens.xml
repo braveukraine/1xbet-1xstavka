@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_view_padding">0.0dip</dimen>
+    <dimen name="baccarat_card_size">56.0dip</dimen>
+    <dimen name="baccarat_field_offset">100.0dip</dimen>
+    <dimen name="default_card_height">56.0dip</dimen>
+    <dimen name="float_margin_16">0.0dip</dimen>
+    <dimen name="float_margin_32">0.0dip</dimen>
+    <dimen name="float_margin_8">0.0dip</dimen>
+    <dimen name="fruit_cocktail_coeffs_text_size">22.0sp</dimen>
+    <dimen name="fruit_cocktail_slot_padding">12.0dip</dimen>
+    <dimen name="fruit_cocktail_start_text_size">16.0sp</dimen>
+    <item type="dimen" name="keno_table_view_bottom">0.62</item>
+    <dimen name="lottery_header_margin">2.0dip</dimen>
+    <dimen name="lottie_empty_size">140.0dip</dimen>
+    <dimen name="lottie_empty_text_size">16.0sp</dimen>
+    <dimen name="lucky_slot_main_text_size">12.0sp</dimen>
+    <item type="dimen" name="lucky_slot_slots_end">0.876</item>
+    <item type="dimen" name="lucky_slot_slots_start">0.124</item>
+    <dimen name="lucky_slot_sum_text_size">16.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_text_size">12.0sp</dimen>
+    <dimen name="lucky_slot_win_lines_x20_text_size">10.0sp</dimen>
+    <dimen name="memory_view_margin">4.0dip</dimen>
+    <dimen name="nine_view_label_size">0.0sp</dimen>
+    <dimen name="nine_view_margin">2.0dip</dimen>
+    <item type="dimen" name="number_button_padding">@dimen/space_16</item>
+    <dimen name="number_button_size">65.0dip</dimen>
+    <item type="dimen" name="number_button_text_main">@dimen/text_24</item>
+    <dimen name="number_button_text_secondary">0.0sp</dimen>
+    <dimen name="ticket_action_view_width">180.0dip</dimen>
+    <item type="dimen" name="wheel_margin">0.0</item>
+    <dimen name="wheel_selector_margin">0.0dip</dimen>
+    <item type="dimen" name="coin_c">1.0</item>
+    <dimen name="coin_size">100.0px</dimen>
+    <dimen name="durak_action_label_margin_bottom">20.0dip</dimen>
+    <dimen name="durak_bot_label_margin_top">10.0dip</dimen>
+    <dimen name="durak_opponent_margin_bottom">128.0dip</dimen>
+    <dimen name="games_text_padding">0.0dip</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search" android:id="@id/search" android:visible="true" android:title="@string/search" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_multiselect" android:id="@id/multiselect" android:visible="true" android:title="@string/multiselect" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_calendar_range" android:id="@id/calendar" android:visible="true" android:title="@string/multiselect" app:showAsAction="always" />
+</menu>

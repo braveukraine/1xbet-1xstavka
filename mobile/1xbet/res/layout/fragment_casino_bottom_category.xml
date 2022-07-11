@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/main_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/aggregator_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_navigation" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@id/bottom_navigation" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentBottom="true" android:elevation="2.0dip" app:itemBackground="@drawable/bet_bottom_navigation_background_new" app:itemIconTint="@drawable/bet_bottom_navigation_selector_new" app:itemTextColor="@drawable/bet_bottom_navigation_selector_new" />
+    </RelativeLayout>
+</FrameLayout>

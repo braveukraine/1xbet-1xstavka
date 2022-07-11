@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/cases_switch_compat_back" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double" android:text="@string/cases_increase_sum_winning" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double" android:layout_weight="0.5">
+            <CheckBox android:textSize="@dimen/text_12" android:textColor="@color/light_text_selector" android:id="@id/notRaising" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cases_checkbox_no_increase" android:layout_marginStart="16.0dip" style="@style/Widget.AppTheme.CheckBox.Light" />
+            <CheckBox android:textSize="@dimen/text_12" android:textColor="@color/light_text_selector" android:id="@id/raising20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding_double" style="@style/Widget.AppTheme.CheckBox.Light" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_double" android:layout_marginBottom="@dimen/padding_double" android:layout_weight="0.5">
+            <CheckBox android:textSize="@dimen/text_12" android:textColor="@color/light_text_selector" android:id="@id/raising10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding_double" style="@style/Widget.AppTheme.CheckBox.Light" />
+            <CheckBox android:textSize="@dimen/text_12" android:textColor="@color/light_text_selector" android:id="@id/raising30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding_double" style="@style/Widget.AppTheme.CheckBox.Light" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

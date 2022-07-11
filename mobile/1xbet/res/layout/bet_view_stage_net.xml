@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="200.0dip" android:layout_height="48.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle2" android:ellipsize="end" android:id="@id/bet_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2" android:gravity="end" android:layout_gravity="center" android:id="@id/coefficient_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8.0dip" android:layout_marginEnd="@dimen/space_8" app:layout_constraintEnd_toStartOf="@id/item_divider" app:layout_constraintTop_toTopOf="parent" />
+    <View android:layout_gravity="end" android:id="@id/item_divider" android:background="?divider" android:layout_width="1.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

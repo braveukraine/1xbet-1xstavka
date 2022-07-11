@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/one_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="1" />
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/two_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="2" />
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/three_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="3" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/four_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="4" />
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/five_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="5" />
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/six_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="6" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/seven_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="7" />
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/eight_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="8" />
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/nine_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="9" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:padding="@dimen/padding_double" android:layout_width="@dimen/number_button_size" android:layout_height="@dimen/number_button_size" />
+        <org.xbet.ui_common.viewcomponents.views.NumberItemView android:id="@id/zero_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:digit="0" />
+        <ImageView android:id="@id/erase_button" android:background="@drawable/ripple_circle" android:padding="@dimen/number_button_padding" android:focusable="true" android:clickable="true" android:layout_width="@dimen/number_button_size" android:layout_height="@dimen/number_button_size" app:srcCompat="@drawable/ic_erase_symbol" app:tint="?textColorSecondaryNew" />
+    </LinearLayout>
+</LinearLayout>

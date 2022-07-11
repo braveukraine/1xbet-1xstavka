@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$cs_c4__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="body" android:animation="@drawable/$cs_c4__1" />
+    <target android:name="path_2" android:animation="@drawable/$cs_c4__2" />
+    <target android:name="path_3" android:animation="@drawable/$cs_c4__3" />
+    <target android:name="path_4" android:animation="@drawable/$cs_c4__4" />
+    <target android:name="path_5" android:animation="@drawable/$cs_c4__5" />
+    <target android:name="path_6" android:animation="@drawable/$cs_c4__6" />
+    <target android:name="path_7" android:animation="@drawable/$cs_c4__7" />
+    <target android:name="path_8" android:animation="@drawable/$cs_c4__8" />
+    <target android:name="path_9" android:animation="@drawable/$cs_c4__9" />
+    <target android:name="path_10" android:animation="@drawable/$cs_c4__10" />
+</animated-vector>

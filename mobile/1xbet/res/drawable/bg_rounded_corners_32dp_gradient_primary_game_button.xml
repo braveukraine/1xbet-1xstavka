@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?rippleNew"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="32.0dip" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="?promoCardGradientStartNew" android:endColor="?promoCardGradientEndNew" android:angle="0.0" android:type="linear" />
+            <corners android:radius="32.0dip" />
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/toto_chose_outcome_layout" android:paddingBottom="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?secondaryColor" android:gravity="center" android:id="@id/toto_chose_outcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</FrameLayout>

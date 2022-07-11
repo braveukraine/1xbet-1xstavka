@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_stage_table_divider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/event_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/name_container">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/circleImage" android:layout_width="40.0dip" android:layout_height="40.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/white_circle_border_new" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="?textColorPrimaryNew" android:gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:layout_constraintBottom_toBottomOf="@id/circleImage" app:layout_constraintEnd_toEndOf="@id/circleImage" app:layout_constraintStart_toStartOf="@id/circleImage" app:layout_constraintTop_toTopOf="@id/circleImage" />
+            <TextView android:textAppearance="?textAppearanceSubtitle2BoldNew" android:gravity="end|center" android:id="@id/firstType" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/circleImage" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textAppearance="?textAppearanceSubtitle2BoldNew" android:gravity="start|center" android:id="@id/secondType" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/circleImage" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_std_margin" android:layout_marginBottom="@dimen/half_std_margin" android:layout_weight="1.0" android:layout_marginStart="20.0dip" android:layout_marginEnd="30.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/first_player_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?textAppearanceCaptionPrimaryNew" android:gravity="end" android:id="@id/firstPlayer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/space_8" />
+                    <ImageView android:id="@id/firstPlayerPhoto" android:layout_width="30.0dip" android:layout_height="30.0dip" app:srcCompat="@drawable/no_photo" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/first_assistant_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_std_margin">
+                    <TextView android:textAppearance="?textAppearanceCaptionPrimaryNew" android:gravity="end" android:id="@id/firstAssistant" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:alpha="0.5" android:layout_marginEnd="@dimen/half_std_margin" />
+                    <ImageView android:id="@id/firstAssistantPhoto" android:layout_width="30.0dip" android:layout_height="30.0dip" android:alpha="0.3" app:srcCompat="@drawable/no_photo" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="?separatorNew" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_std_margin" android:layout_marginBottom="@dimen/half_std_margin" android:layout_weight="1.0" android:layout_marginStart="30.0dip" android:layout_marginEnd="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/second_player_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/secondPlayerPhoto" android:layout_width="30.0dip" android:layout_height="30.0dip" app:srcCompat="@drawable/no_photo" />
+                    <TextView android:textAppearance="?textAppearanceCaptionPrimaryNew" android:id="@id/secondPlayer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/half_std_margin" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/second_assistant_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_std_margin">
+                    <ImageView android:id="@id/secondAssistantPhoto" android:layout_width="30.0dip" android:layout_height="30.0dip" android:alpha="0.3" app:srcCompat="@drawable/no_photo" />
+                    <TextView android:textAppearance="?textAppearanceCaptionPrimaryNew" android:id="@id/secondAssistant" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" android:layout_marginStart="@dimen/half_std_margin" />
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/half_std_margin" android:layout_marginBottom="@dimen/std_margin">
+                    <ImageView android:id="@id/secondGif" android:visibility="gone" android:layout_width="132.0dip" android:layout_height="58.0dip" android:alpha="0.5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView android:id="@id/secondPlay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_play" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

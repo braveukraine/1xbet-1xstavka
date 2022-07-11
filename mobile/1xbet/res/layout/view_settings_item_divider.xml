@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?card_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2Medium" android:textColor="?text_color_highlight" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_8" android:layout_marginRight="@dimen/space_16" android:layout_marginBottom="@dimen/space_8" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" />
+</LinearLayout>

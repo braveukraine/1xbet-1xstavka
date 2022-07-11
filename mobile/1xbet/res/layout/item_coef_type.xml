@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_container" android:background="@drawable/coef_type_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+    <TextView android:textAppearance="?textAppearanceBody2New" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_16" app:layout_constraintBottom_toTopOf="@id/line_1" app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:textAppearance="?textAppearanceSubtitle1MediumNew" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/space_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/line_1" />
+    <RadioButton android:id="@id/rb_check" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:buttonTint="@drawable/radio_button_tint_color_coef_type" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

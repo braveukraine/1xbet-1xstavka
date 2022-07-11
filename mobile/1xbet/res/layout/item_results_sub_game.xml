@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="@dimen/text_12" android:id="@id/info" android:padding="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/roboto_medium" />
+</LinearLayout>

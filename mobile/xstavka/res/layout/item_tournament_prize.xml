@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceHeadline5MediumNew" android:gravity="center" android:id="@id/text_prize_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_marginStart="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/image_prize" android:layout_width="0.0dip" android:layout_height="140.0dip" android:layout_marginTop="@dimen/margin_8" android:scaleType="fitCenter" android:contentDescription="@string/prize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_prize_name" />
+    <View android:background="?backgroundNew" android:layout_width="0.0dip" android:layout_height="@dimen/margin_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image_prize" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_log_out" android:layout_width="fill_parent" android:layout_height="56.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_log_out" android:background="@drawable/white_radius" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/margin_8" android:scaleType="center" android:layout_marginStart="@dimen/margin_16" android:backgroundTint="@color/red_soft_10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_log_out" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:textColor="@color/red_soft" android:id="@id/tv_log_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logout_title" android:layout_marginStart="@dimen/margin_16" app:layout_constraintBottom_toBottomOf="@id/iv_log_out" app:layout_constraintStart_toEndOf="@id/iv_log_out" app:layout_constraintTop_toTopOf="@id/iv_log_out" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="?backgroundNew" android:layout_width="wrap_content" android:layout_height="8.0dip" android:layout_marginTop="@dimen/margin_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cl_log_out" />
+</androidx.constraintlayout.widget.ConstraintLayout>

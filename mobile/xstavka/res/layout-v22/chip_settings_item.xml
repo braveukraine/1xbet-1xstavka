@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/scroll_shadow" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/clFilter" android:background="@drawable/rounded_corner_white" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding_half_min" android:paddingRight="@dimen/padding" android:paddingBottom="@dimen/padding_half_min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_2" android:layout_marginRight="@dimen/margin_2" android:elevation="@dimen/margin_2" android:layout_marginHorizontal="@dimen/margin_2" android:paddingHorizontal="@dimen/padding">
+        <ImageView android:layout_gravity="center" android:id="@id/filter" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_games_filter" />
+    </FrameLayout>
+</FrameLayout>

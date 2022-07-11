@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="?primaryColorNew" android:id="@id/tv_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:text="@string/other_title" android:layout_marginStart="@dimen/space_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_shimmer_other" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_other">
+        <include android:id="@id/shimmer_social" layout="@layout/item_shimmer_settings" />
+    </LinearLayout>
+    <View android:background="?backgroundNew" android:layout_width="wrap_content" android:layout_height="8.0dip" android:layout_marginTop="@dimen/space_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_shimmer_other" />
+</androidx.constraintlayout.widget.ConstraintLayout>

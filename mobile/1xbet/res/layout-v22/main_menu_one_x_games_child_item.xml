@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_12" android:paddingRight="@dimen/space_12" android:layout_width="120.0dip" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/space_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:layout_width="96.0dip" android:layout_height="96.0dip" app:cardBackgroundColor="?contentBackgroundNew" app:cardCornerRadius="@dimen/corner_radius_16">
+        <ImageView android:id="@id/iv_game_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:adjustViewBounds="true" />
+    </com.google.android.material.card.MaterialCardView>
+    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textSize="@dimen/text_12" android:ellipsize="end" android:gravity="center" android:id="@id/tv_game_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:maxLines="2" android:lines="2" />
+</LinearLayout>

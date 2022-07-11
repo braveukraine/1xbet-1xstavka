@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="?window_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/item_tournament_table_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/divider" layout="@layout/item_tournament_table_header" />
+    <View android:id="@id/divider2" android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toBottomOf="@id/item_tournament_table_header" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="@dimen/match_constraints" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/divider2" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="@dimen/match_constraints" app:file_name="@string/lottie_history_empty" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/divider2" app:textColor="?secondaryTextColor" app:text_res="@string/please_wait" />
+    <View android:id="@id/shadow_view" android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" app:layout_constraintTop_toTopOf="@id/recycler_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

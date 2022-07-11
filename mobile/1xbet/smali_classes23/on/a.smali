@@ -1,0 +1,41 @@
+.class public final Lon/a;
+.super Lorg/xbet/core/data/models/cards/CasinoCard;
+.source "BuraCard.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0004"
+    }
+    d2 = {
+        "Lon/a;",
+        "Lorg/xbet/core/data/models/cards/CasinoCard;",
+        "<init>",
+        "()V",
+        "games_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x3
+
+    invoke-direct {p0, v0, v1, v2, v0}, Lorg/xbet/core/data/models/cards/CasinoCard;-><init>(Lorg/xbet/core/data/models/cards/CardSuit;IILkotlin/jvm/internal/h;)V
+
+    return-void
+.end method

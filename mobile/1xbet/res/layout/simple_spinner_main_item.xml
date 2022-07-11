@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="?primaryTextColor" android:id="@android:id/text1" android:background="@drawable/login_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

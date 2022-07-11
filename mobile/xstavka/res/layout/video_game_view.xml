@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_container" android:background="@color/black" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:keepScreenOn="true" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.xbet.client1.presentation.view.video.VideoViewSafe android:layout_gravity="center" android:id="@id/video_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <org.xbet.client1.presentation.view.video.ZoneWebView android:layout_gravity="center" android:id="@id/zone_view" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminateOnly="true" />
+    <View android:id="@id/container" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <org.xbet.client1.presentation.view.video.VideoControlsView android:layout_gravity="bottom|center" android:id="@id/video_controls_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:translationY="60.0dip" />
+</FrameLayout>

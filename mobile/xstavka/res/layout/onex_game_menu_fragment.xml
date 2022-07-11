@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/onex_menu_restart_options" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/btnPlayAgain" android:text="@string/lose_message" style="@style/Widget.AppTheme.SolidButton" />
+        <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/btnNewRate" android:layout_marginBottom="8.0dip" android:text="@string/new_bet" style="@style/Widget.AppTheme.SolidButton" />
+    </LinearLayout>
+    <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/btnPlay" android:visibility="gone" android:text="@string/play" style="@style/Widget.AppTheme.SolidButton" />
+    <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/btn_free_play" android:visibility="gone" android:text="@string/play" style="@style/Widget.AppTheme.SolidButton" />
+    <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/onex_game_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

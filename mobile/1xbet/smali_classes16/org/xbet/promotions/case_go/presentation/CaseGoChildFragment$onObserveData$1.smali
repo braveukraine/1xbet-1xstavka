@@ -1,0 +1,303 @@
+.class final Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;
+.super Lkotlin/coroutines/jvm/internal/l;
+.source "CaseGoChildFragment.kt"
+
+# interfaces
+.implements Lz90/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;->onObserveData()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/l;",
+        "Lz90/p<",
+        "Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event;",
+        "Lkotlin/coroutines/d<",
+        "-",
+        "Lr90/x;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\u008a@"
+    }
+    d2 = {
+        "Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event;",
+        "event",
+        "Lr90/x;",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/f;
+    c = "org.xbet.promotions.case_go.presentation.CaseGoChildFragment$onObserveData$1"
+    f = "CaseGoChildFragment.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field synthetic L$0:Ljava/lang/Object;
+
+.field label:I
+
+.field final synthetic this$0:Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;
+
+
+# direct methods
+.method constructor <init>(Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;Lkotlin/coroutines/d;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;",
+            "Lkotlin/coroutines/d<",
+            "-",
+            "Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->this$0:Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/l;-><init>(ILkotlin/coroutines/d;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/d;)Lkotlin/coroutines/d;
+    .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Lkotlin/coroutines/d;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/d<",
+            "*>;)",
+            "Lkotlin/coroutines/d<",
+            "Lr90/x;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    new-instance v0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;
+
+    iget-object v1, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->this$0:Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;
+
+    invoke-direct {v0, v1, p2}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;-><init>(Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;Lkotlin/coroutines/d;)V
+
+    iput-object p1, v0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->L$0:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event;
+
+    check-cast p2, Lkotlin/coroutines/d;
+
+    invoke-virtual {p0, p1, p2}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->invoke(Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event;Lkotlin/coroutines/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event;Lkotlin/coroutines/d;)Ljava/lang/Object;
+    .locals 0
+    .param p1    # Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Lkotlin/coroutines/d;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event;",
+            "Lkotlin/coroutines/d<",
+            "-",
+            "Lr90/x;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    invoke-virtual {p0, p1, p2}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->create(Ljava/lang/Object;Lkotlin/coroutines/d;)Lkotlin/coroutines/d;
+
+    move-result-object p1
+
+    check-cast p1, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;
+
+    sget-object p2, Lr90/x;->a:Lr90/x;
+
+    invoke-virtual {p1, p2}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    invoke-static {}, Lt90/b;->d()Ljava/lang/Object;
+
+    .line 1
+    iget v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->label:I
+
+    if-nez v0, :cond_2
+
+    invoke-static {p1}, Lr90/o;->b(Ljava/lang/Object;)V
+
+    iget-object p1, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->L$0:Ljava/lang/Object;
+
+    check-cast p1, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event;
+
+    .line 2
+    instance-of v0, p1, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event$TournamentLoaded;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->this$0:Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;
+
+    check-cast p1, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event$TournamentLoaded;
+
+    invoke-virtual {p1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event$TournamentLoaded;->getTournaments()Ll5/k;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ll5/k;->b()Ll5/l;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;->access$setupInventory(Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;Ll5/l;)V
+
+    .line 4
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->this$0:Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;
+
+    invoke-virtual {p1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event$TournamentLoaded;->getTournaments()Ll5/k;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ll5/k;->b()Ll5/l;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;->access$setupTitle(Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;Ll5/l;)V
+
+    .line 5
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->this$0:Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;
+
+    invoke-static {v0}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;->access$setupTickets(Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;)V
+
+    .line 6
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->this$0:Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;
+
+    invoke-virtual {p1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event$TournamentLoaded;->getTournaments()Ll5/k;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ll5/k;->e()Ll5/m;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;->access$setupTournamentState(Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;Ll5/m;)V
+
+    .line 7
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->this$0:Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;
+
+    invoke-virtual {p1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event$TournamentLoaded;->getTournaments()Ll5/k;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ll5/k;->c()Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;->access$updateInfoAdapter(Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;Ljava/util/List;)V
+
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    instance-of v0, p1, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event$CaseGoStarsLoaded;
+
+    if-eqz v0, :cond_1
+
+    .line 9
+    iget-object v0, p0, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment$onObserveData$1;->this$0:Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;
+
+    check-cast p1, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event$CaseGoStarsLoaded;
+
+    invoke-virtual {p1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildViewModel$Event$CaseGoStarsLoaded;->getStarsState()Ll5/i;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;->access$setupStars(Lorg/xbet/promotions/case_go/presentation/CaseGoChildFragment;Ll5/i;)V
+
+    .line 10
+    :cond_1
+    :goto_0
+    sget-object p1, Lr90/x;->a:Lr90/x;
+
+    return-object p1
+
+    :cond_2
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method

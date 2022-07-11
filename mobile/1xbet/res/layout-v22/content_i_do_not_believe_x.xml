@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.core.presentation.views.cards.LuckyCardNewWidget android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:card_count="4" />
+    <org.xbet.i_do_not_believe.presentation.views.IDoNotBelieveChoiceView android:id="@id/choiceView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_marginHorizontal="@dimen/space_16" />
+</RelativeLayout>

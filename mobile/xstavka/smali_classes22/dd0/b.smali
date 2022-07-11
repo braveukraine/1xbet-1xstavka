@@ -1,0 +1,34 @@
+.class public final synthetic Ldd0/b;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Lj90/g;
+
+
+# instance fields
+.field public final synthetic a:Lorg/xbet/customerio/CustomerIOInteractor;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lorg/xbet/customerio/CustomerIOInteractor;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ldd0/b;->a:Lorg/xbet/customerio/CustomerIOInteractor;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Ldd0/b;->a:Lorg/xbet/customerio/CustomerIOInteractor;
+
+    invoke-static {v0, p1}, Lorg/xbet/customerio/CustomerIOInteractor;->g(Lorg/xbet/customerio/CustomerIOInteractor;Ljava/lang/Object;)V
+
+    return-void
+.end method

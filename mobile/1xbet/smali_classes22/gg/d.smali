@@ -1,0 +1,110 @@
+.class public final Lgg/d;
+.super Ljava/lang/Object;
+.source "CommonConfigMapper_Factory.java"
+
+# interfaces
+.implements Lj80/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj80/d<",
+        "Lgg/c;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Lgg/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lo90/a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lo90/a<",
+            "Lgg/e;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lgg/d;->a:Lo90/a;
+
+    return-void
+.end method
+
+.method public static a(Lo90/a;)Lgg/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lo90/a<",
+            "Lgg/e;",
+            ">;)",
+            "Lgg/d;"
+        }
+    .end annotation
+
+    new-instance v0, Lgg/d;
+
+    invoke-direct {v0, p0}, Lgg/d;-><init>(Lo90/a;)V
+
+    return-object v0
+.end method
+
+.method public static c(Lgg/e;)Lgg/c;
+    .locals 1
+
+    new-instance v0, Lgg/c;
+
+    invoke-direct {v0, p0}, Lgg/c;-><init>(Lgg/e;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public b()Lgg/c;
+    .locals 1
+
+    iget-object v0, p0, Lgg/d;->a:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lgg/e;
+
+    invoke-static {v0}, Lgg/d;->c(Lgg/e;)Lgg/c;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lgg/d;->b()Lgg/c;
+
+    move-result-object v0
+
+    return-object v0
+.end method

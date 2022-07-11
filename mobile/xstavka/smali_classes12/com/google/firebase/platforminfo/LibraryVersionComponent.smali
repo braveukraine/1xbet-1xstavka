@@ -1,0 +1,131 @@
+.class public Lcom/google/firebase/platforminfo/LibraryVersionComponent;
+.super Ljava/lang/Object;
+.source "LibraryVersionComponent.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/firebase/platforminfo/LibraryVersionComponent$VersionExtractor;
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic a(Ljava/lang/String;Lcom/google/firebase/platforminfo/LibraryVersionComponent$VersionExtractor;Lcom/google/firebase/components/ComponentContainer;)Lcom/google/firebase/platforminfo/LibraryVersion;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lcom/google/firebase/platforminfo/LibraryVersionComponent;->d(Ljava/lang/String;Lcom/google/firebase/platforminfo/LibraryVersionComponent$VersionExtractor;Lcom/google/firebase/components/ComponentContainer;)Lcom/google/firebase/platforminfo/LibraryVersion;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static b(Ljava/lang/String;Ljava/lang/String;)Lcom/google/firebase/components/Component;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/google/firebase/components/Component<",
+            "*>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/google/firebase/platforminfo/LibraryVersion;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/firebase/platforminfo/LibraryVersion;
+
+    move-result-object p0
+
+    const-class p1, Lcom/google/firebase/platforminfo/LibraryVersion;
+
+    invoke-static {p0, p1}, Lcom/google/firebase/components/Component;->i(Ljava/lang/Object;Ljava/lang/Class;)Lcom/google/firebase/components/Component;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static c(Ljava/lang/String;Lcom/google/firebase/platforminfo/LibraryVersionComponent$VersionExtractor;)Lcom/google/firebase/components/Component;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lcom/google/firebase/platforminfo/LibraryVersionComponent$VersionExtractor<",
+            "Landroid/content/Context;",
+            ">;)",
+            "Lcom/google/firebase/components/Component<",
+            "*>;"
+        }
+    .end annotation
+
+    .line 1
+    const-class v0, Lcom/google/firebase/platforminfo/LibraryVersion;
+
+    invoke-static {v0}, Lcom/google/firebase/components/Component;->j(Ljava/lang/Class;)Lcom/google/firebase/components/Component$Builder;
+
+    move-result-object v0
+
+    const-class v1, Landroid/content/Context;
+
+    .line 2
+    invoke-static {v1}, Lcom/google/firebase/components/Dependency;->j(Ljava/lang/Class;)Lcom/google/firebase/components/Dependency;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/google/firebase/components/Component$Builder;->b(Lcom/google/firebase/components/Dependency;)Lcom/google/firebase/components/Component$Builder;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/google/firebase/platforminfo/b;
+
+    invoke-direct {v1, p0, p1}, Lcom/google/firebase/platforminfo/b;-><init>(Ljava/lang/String;Lcom/google/firebase/platforminfo/LibraryVersionComponent$VersionExtractor;)V
+
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/google/firebase/components/Component$Builder;->f(Lcom/google/firebase/components/ComponentFactory;)Lcom/google/firebase/components/Component$Builder;
+
+    move-result-object p0
+
+    .line 4
+    invoke-virtual {p0}, Lcom/google/firebase/components/Component$Builder;->d()Lcom/google/firebase/components/Component;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static synthetic d(Ljava/lang/String;Lcom/google/firebase/platforminfo/LibraryVersionComponent$VersionExtractor;Lcom/google/firebase/components/ComponentContainer;)Lcom/google/firebase/platforminfo/LibraryVersion;
+    .locals 1
+
+    .line 1
+    const-class v0, Landroid/content/Context;
+
+    invoke-interface {p2, v0}, Lcom/google/firebase/components/ComponentContainer;->a(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/content/Context;
+
+    invoke-interface {p1, p2}, Lcom/google/firebase/platforminfo/LibraryVersionComponent$VersionExtractor;->a(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Lcom/google/firebase/platforminfo/LibraryVersion;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/firebase/platforminfo/LibraryVersion;
+
+    move-result-object p0
+
+    return-object p0
+.end method

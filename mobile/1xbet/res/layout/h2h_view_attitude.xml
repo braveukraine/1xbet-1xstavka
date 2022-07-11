@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:paddingLeft="@dimen/std_margin" android:paddingTop="@dimen/half_std_margin" android:paddingRight="@dimen/std_margin" android:paddingBottom="@dimen/half_std_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.client1.statistic.ui.view.h2hAttitudeTextView android:id="@id/h2h_attitude_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:textColor="?textColorPrimaryNew" />
+</FrameLayout>

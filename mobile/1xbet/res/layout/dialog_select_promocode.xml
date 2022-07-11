@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_shimmer_promo_code" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/shimmer_promo_code_name" layout="@layout/item_select_promocode_shimmer" />
+            <include android:id="@id/shimmer_promo_code_name_sum" layout="@layout/item_select_promocode_shimmer" />
+            <include android:id="@id/shimmer_promo_code_status" layout="@layout/item_select_promocode_shimmer" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_no_promo_codes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="240.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/white_circle" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginTop="60.0dip" android:scaleType="center" android:backgroundTint="?textColorSecondary50New" app:srcCompat="@drawable/ic_promo_code" />
+            <TextView android:textAppearance="?textAppearanceBody2New" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:text="@string/no_promo_codes" android:textAlignment="center" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="104.0dip" android:layout_height="104.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/red_circle" android:layout_width="56.0dip" android:layout_height="56.0dip" android:elevation="2.0dip" android:stateListAnimator="@animator/lift_on_touch_scale">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:src="@drawable/ic_phone_hangup" />
+    </FrameLayout>
+</FrameLayout>

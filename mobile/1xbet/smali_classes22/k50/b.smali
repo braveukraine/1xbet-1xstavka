@@ -1,0 +1,34 @@
+.class public final Lk50/b;
+.super Ljava/lang/Object;
+.source "DaggerPopularEventsComponent.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lk50/b$b;,
+        Lk50/b$a;
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lk50/d$a;
+    .locals 2
+
+    new-instance v0, Lk50/b$a;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lk50/b$a;-><init>(Lk50/a;)V
+
+    return-object v0
+.end method

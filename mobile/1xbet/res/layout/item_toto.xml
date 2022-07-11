@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?card_mask_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/toto_header_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceSubtitle2" android:id="@id/toto_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/toto_nested_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

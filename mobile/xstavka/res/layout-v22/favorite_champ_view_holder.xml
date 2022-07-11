@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_rounded_corners_10dp_content_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="17.0dip" android:layout_marginStart="@dimen/margin_8">
+        <ImageView android:id="@id/country_icon" android:paddingTop="@dimen/padding_min" android:layout_width="37.0dip" android:layout_height="37.0dip" android:paddingEnd="@dimen/padding_half_min" />
+        <org.xbet.ui_common.viewcomponents.layouts.frame.CircleBorderImageView android:layout_gravity="right" android:id="@id/champ_top" android:layout_width="@dimen/margin_16" android:layout_height="@dimen/margin_16" />
+    </FrameLayout>
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:layout_gravity="center_vertical" android:id="@id/champ_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:layout_marginBottom="@dimen/margin_8" android:layout_weight="1.0" android:textAllCaps="false" android:layout_marginStart="@dimen/margin_6" android:layout_marginEnd="@dimen/margin_8" android:layout_marginVertical="@dimen/margin_8" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/clear_view" android:padding="@dimen/padding" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_star_liked_new" app:tint="?primaryColorNew" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cs_stat_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.client1.presentation.view.bet.MaxWidthRelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="100.0dip" app:rl_maxWidth="381.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout3" android:background="?window_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="24.0dip" android:layout_toEndOf="@id/icons">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/head" android:background="?primaryColor_to_dark" android:layout_width="fill_parent" android:layout_height="24.0dip" android:elevation="2.0dip">
+                <TextView android:textAppearance="?textAppearanceCaption" android:textColor="@color/white" android:id="@id/map" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textAllCaps="true" android:layout_marginStart="8.0dip" android:layout_alignParentStart="true" />
+                <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="-2.0dip" android:layout_alignParentEnd="true">
+                    <TextView android:textAppearance="?textAppearanceCaption" android:textColor="@color/white" android:id="@id/round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" android:layout_marginStart="8.0dip" />
+                    <ImageView android:id="@id/bomb" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/black_50" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <org.xbet.client1.statistic.ui.view.CSIconsLineView android:gravity="end" android:orientation="horizontal" android:id="@id/upper" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="4.0dip" />
+            <View android:background="@color/black_50" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="4.0dip" />
+            <org.xbet.client1.statistic.ui.view.CSIconsLineView android:gravity="end" android:orientation="horizontal" android:id="@id/lower" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/icons" android:layout_width="24.0dip" android:layout_height="fill_parent" android:layout_alignBottom="@id/linearLayout3" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/up_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="6.5dip" android:layout_marginBottom="7.0dip" />
+            <ImageView android:id="@id/low_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="6.5dip" android:layout_marginBottom="6.5dip" />
+        </LinearLayout>
+    </org.xbet.client1.presentation.view.bet.MaxWidthRelativeLayout>
+</FrameLayout>

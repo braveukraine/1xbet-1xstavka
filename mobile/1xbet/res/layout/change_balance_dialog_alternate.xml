@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_pay_in" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_pay_in" android:background="@drawable/circle" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="@dimen/space_20" android:layout_marginBottom="@dimen/space_20" android:layout_marginStart="@dimen/space_20" android:backgroundTint="@color/white_new" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_icon_plus_white" app:tint="?callToActionBgNew" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1MediumNew" android:id="@id/tv_pay_in" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:layout_marginBottom="@dimen/space_16" android:text="@string/refill_account" android:layout_marginStart="@dimen/text_16" app:layout_constraintBottom_toBottomOf="@id/iv_pay_in" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_pay_in" app:layout_constraintTop_toTopOf="@id/iv_pay_in" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/separator_new_opacity_30" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space_16" android:layout_marginRight="@dimen/space_16" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

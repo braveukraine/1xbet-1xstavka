@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cards_container" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerViewCards" android:paddingTop="@dimen/space_6" android:paddingBottom="@dimen/space_8" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layoutEmpty" android:padding="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageViewShield" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/textViewEmptyDescription" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" app:srcCompat="@drawable/ic_shield_with_bg" app:tint="?textColorSecondary50New" />
+        <TextView android:textAppearance="?textAppearanceBody1New" android:gravity="center" android:id="@id/textViewEmptyDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:text="@string/authenticator_empty_description" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/imageViewShield" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

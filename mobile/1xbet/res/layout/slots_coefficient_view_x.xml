@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xbet.onexgames.features.slots.onerow.common.views.OneRowSlotsView android:id="@id/slot_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_4" android:layout_weight="1.0" />
+    <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0" android:fontFamily="sans-serif-medium" />
+</LinearLayout>

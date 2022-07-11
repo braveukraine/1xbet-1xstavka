@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/killer_clubs_green" />
+    <corners android:topLeftRadius="70.0dip" android:topRightRadius="70.0dip" />
+    <stroke android:width="0.70000005dip" android:color="@android:color/white" />
+</shape>

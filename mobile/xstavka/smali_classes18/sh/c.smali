@@ -1,0 +1,42 @@
+.class public final synthetic Lsh/c;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# static fields
+.field public static final synthetic a:Lsh/c;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lsh/c;
+
+    invoke-direct {v0}, Lsh/c;-><init>()V
+
+    sput-object v0, Lsh/c;->a:Lsh/c;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p1}, Lsh/d;->a(Landroid/view/View;)V
+
+    return-void
+.end method

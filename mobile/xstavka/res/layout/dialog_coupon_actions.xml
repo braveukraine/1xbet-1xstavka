@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_save" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_save_coupon" app:tint="?textColorSecondaryNew" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/coupon_save" android:layout_marginStart="16.0dip" />
+    </LinearLayout>
+    <View android:background="@color/separator_new_opacity_30" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/padding_double" android:layout_marginEnd="@dimen/padding_double" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_upload" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_upload_coupon" app:tint="?textColorSecondaryNew" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/coupon_load" android:layout_marginStart="16.0dip" />
+    </LinearLayout>
+    <View android:background="@color/separator_new_opacity_30" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/padding_double" android:layout_marginEnd="@dimen/padding_double" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_generate" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_coupon_generation" app:tint="?textColorSecondaryNew" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/generate_coupon" android:layout_marginStart="16.0dip" />
+    </LinearLayout>
+</LinearLayout>

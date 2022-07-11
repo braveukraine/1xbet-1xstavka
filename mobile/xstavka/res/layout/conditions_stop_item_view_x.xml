@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/increase_break" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppTheme.CheckBox.Light" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/increase_break_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/pf_break_increase">
+            <EditText android:enabled="false" android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/increase_break_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:backgroundTint="?ikchDiceFieldBgColor" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/decrease_break" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppTheme.CheckBox.Light" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/decrease_break_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/pf_break_decrease">
+            <EditText android:enabled="false" android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/decrease_break_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:backgroundTint="?ikchDiceFieldBgColor" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

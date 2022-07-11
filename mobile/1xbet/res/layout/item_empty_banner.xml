@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_4" android:layout_marginEnd="@dimen/space_4" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_vertical_70" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.7" />
+        <View android:id="@id/market_big_1" android:background="@drawable/stub_rectangle_corn" android:layout_width="0.0dip" android:layout_height="@dimen/banner_item_size" android:layout_marginTop="@dimen/space_8" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/market_2" android:background="@drawable/stub_rectangle" android:layout_width="0.0dip" android:layout_height="@dimen/space_32" android:layout_marginLeft="8.0dip" android:layout_marginTop="@dimen/space_8" android:layout_marginStart="8.0dip" app:layout_constraintEnd_toEndOf="@id/guideline_vertical_70" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/market_big_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

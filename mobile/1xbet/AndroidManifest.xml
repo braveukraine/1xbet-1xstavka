@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="32" android:compileSdkVersionCodename="12" package="org.xbet.client1" platformBuildVersionCode="32" platformBuildVersionName="12">
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_SIP"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission-sdk-23 android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_ALL_DOWNLOADS"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.software.sip" android:required="false"/>
+    <uses-feature android:name="android.hardware.sip.voip" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <queries>
+        <package android:name="com.google.android.apps.authenticator2"/>
+        <package android:name="ru.ok.android"/>
+        <package android:name="com.vkontakte.android"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="com.vkontakte.android.action.SDK_AUTH"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.oem.PRELOAD_PROVIDER"/>
+        </intent>
+        <intent>
+            <action android:name="com.yandex.auth.action.YA_SDK_LOGIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <permission android:name="org.xbet.client1.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="org.xbet.client1.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:name="org.xbet.client1.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="org.xbet.client1.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="org.xbet.client1.permission.PUSH_PROVIDER"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="@xml/appsflyer_backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="org.xbet.client1.presentation.application.ApplicationLoader" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round" android:supportsPictureInPicture="false" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_launcher"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/primaryColor"/>
+        <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="face"/>
+        <meta-data android:name="push_kit_auto_init_enabled" android:value="true"/>
+        <activity android:exported="true" android:hardwareAccelerated="true" android:name="org.xbet.starter.ui.starter.StarterActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/appsflyer_host" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="openapp" android:scheme="@string/deeplink_scheme"/>
+                <data android:host="open" android:scheme="@string/deeplink_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_event" android:label="@string/app_name" android:name="org.xbet.client1.StarterActivityEvent" android:roundIcon="@mipmap/ic_launcher_event_round" android:targetActivity="org.xbet.starter.ui.starter.StarterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_new_year" android:label="@string/app_name" android:name="org.xbet.client1.StarterActivityNewYear" android:roundIcon="@mipmap/ic_launcher_new_year_round" android:targetActivity="org.xbet.starter.ui.starter.StarterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="org.xbet.client1.StarterActivityDefault" android:roundIcon="@mipmap/ic_launcher_round" android:targetActivity="org.xbet.starter.ui.starter.StarterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="org.xbet.starter.ui.fingerprint.FingerPrintActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="org.xbet.client1.presentation.activity.AppActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="org.xbet.feature.office.payment.presentation.PaymentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="org.xbet.feature.office.reward_system.RewardSystemActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.onex.feature.info.rules.presentation.RulesWebActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.onex.feature.info.rules.presentation.InfoWebActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="org.xbet.client1.presentation.activity.video.FullScreenVideoActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.Light.FullScreen.Video"/>
+        <activity android:name="com.onex.sip.presentation.SipCallActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.xbet.registration.registration.ui.registration.RegistrationRulesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.xbet.client1.statistic.presentation.F1StatisticActivity" android:screenOrientation="portrait"/>
+        <activity android:name="org.xbet.client1.statistic.presentation.CSStatisticActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="org.xbet.starter.ui.prophylaxis.ProphylaxisActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.xbet.appupdate.ui.AppUpdateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name="org.xbet.authqr.QrActivity" android:screenOrientation="portrait"/>
+        <activity android:name="org.xbet.authqr.BarcodeActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="org.xbet.client1.util.notification.XbetFirebaseMessagingService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.onex.sip.services.SipCallService">
+            <intent-filter>
+                <action android:name="com.onex.sip.services.SipCallService.STOP_CALL"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="org.xbet.client1.presentation.view.video.FloatingVideoService"/>
+        <service android:exported="false" android:name="org.xbet.appupdate.service.presentation.DownloadService"/>
+        <service android:exported="false" android:name="org.xbet.starter.ui.prophylaxis.ProphylaxisService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="org.xbet.starter.ui.prophylaxis.PingService" android:stopWithTask="true"/>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="org.xbet.client1.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="CHANNEL" android:value="@string/appsflyer_channel"/>
+        <receiver android:enabled="true" android:exported="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="org.xbet.client1.new_arch.xbet.features.widget.ui.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="update_time_broadcast"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_provider"/>
+        </receiver>
+        <receiver android:name="org.xbet.client1.new_arch.util.icon.AlarmReceiver"/>
+        <receiver android:enabled="false" android:exported="true" android:name="org.xbet.client1.new_arch.util.icon.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="org.xbet.client1.new_arch.util.icon.ChangeDateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="org.xbet.client1.new_arch.xbet.features.widget.ui.top.WidgetRemoteService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:exported="false" android:name="org.xbet.client1.new_arch.xbet.features.widget.ui.favorites.WidgetFavoriteRemoteService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:enabled="true" android:exported="false" android:name="org.xbet.client1.util.notification.XbetHmsMessagingService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xbet.social.socials.mailru.MailruLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xbet.social.socials.instagram.InstagramLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xbet.social.socials.telegram.TelegramLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="ru.ok.android.sdk.OkAuthActivity" android:theme="@style/AppTheme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="okauth"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.turturibus.slot.gameslist.ui.ChromeTabsLoadingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Light.FullScreen.Slots"/>
+        <activity android:name="com.turturibus.slot.gamesingle.CasinoOneGameActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.turturibus.slot.gamesingle.WalletOneGameActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.turturibus.slot.gamesingle.WalletAddGetMoneyActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name="com.xbet.proxy.ProxySettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Light"/>
+        <activity android:name="com.xbet.onexgames.features.promo.memories.MemoriesGameActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="com.xbet.onexgames.features.killerclubs.KillerClubsActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="layoutDirection|orientation|screenLayout|screenSize|uiMode" android:name="com.xbet.onexgames.features.solitaire.SolitaireActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="com.xbet.onexgames.features.seabattle.SeaBattleActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xbet.onexgames.features.crystal.CrystalActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xbet.onexgames.features.nervesofsteal.NervesOfStealActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xbet.onexgames.features.pharaohskingdom.PharaohsKingdomActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="layoutDirection|orientation|screenLayout|screenSize|uiMode" android:name="com.xbet.onexgames.features.spinandwin.SpinAndWinActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="layoutDirection|orientation|screenLayout|screenSize|uiMode" android:name="com.xbet.onexgames.features.africanroulette.AfricanRouletteActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:hardwareAccelerated="true" android:name="com.onex.finbet.FinBetFragment" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="org.xbet.core.presentation.GameRulesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Light"/>
+        <service android:name="com.onex.supplib.presentation.service.SendSupportImageJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.sumsub.sns.presentation.screen.SNSAppActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sumsub.sns.camera.photo.presentation.SNSPhotoDocumentPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sumsub.sns.camera.photo.presentation.SNSDocumentSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sumsub.sns.camera.video.presentation.SNSVideoSelfieActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sumsub.camera.selfie.with.document.presentation.SNSSelfieWithDocumentPickerActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <provider android:authorities="org.xbet.client1.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.sumsub.sns.core.common.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name="com.vk.api.sdk.ui.VKWebViewAuthActivity" android:theme="@style/VK.Transparent"/>
+        <activity android:name="com.vk.api.sdk.ui.VKCaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.vk.api.sdk.ui.VKConfirmationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="org.xbet.client1.VKInitProvider" android:enabled="@bool/com_vk_sdk_init_provider_enabled" android:exported="false" android:name="com.vk.api.sdk.internal.VKInitProvider"/>
+        <meta-data android:name="VKSdkVersion" android:value="3.5.0"/>
+        <meta-data android:name="VKSdkVersionCode" android:value="30"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.twitter.sdk.android.tweetui.PlayerActivity" android:theme="@style/MediaTheme"/>
+        <activity android:name="com.twitter.sdk.android.tweetui.GalleryActivity" android:theme="@style/MediaTheme"/>
+        <activity android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <service android:enabled="true" android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.twitter.sdk.android.core.identity.OAuthActivity"/>
+        <provider android:authorities="org.xbet.client1.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:name="saschpe.android.customtabs.WebViewActivity"/>
+        <meta-data android:name="android.webkit.WebView.MetricsOptOut" android:value="true"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="org.xbet.client1.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:label="" android:name="com.yandex.authsdk.internal.AuthSdkActivity" android:theme="@style/Theme.AuthSdk.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.yandex.authsdk.internal.BrowserLoginActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.yandex.authsdk.internal.WebViewLoginActivity" android:theme="@style/Theme.AuthSdk"/>
+        <activity android:exported="true" android:name="com.yandex.authsdk.internal.BrowserDataActivity" android:theme="@style/Theme.AuthSdk.Transparent">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="yxa088414ac82149538dd816fd742c7526.oauth.yandex.ru" android:path="/auth/finish" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:path="/auth/finish" android:scheme="yxa088414ac82149538dd816fd742c7526"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.yandex.auth.CLIENT_ID" android:value="a088414ac82149538dd816fd742c7526"/>
+        <meta-data android:name="com.yandex.auth.OAUTH_HOST" android:value="oauth.yandex.ru"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.39.302"/>
+        <activity android:name="com.jakewharton.processphoenix.ProcessPhoenix" android:process=":phoenix" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="org.xbet.client1.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="org.xbet.client1.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="org.xbet.client1.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="org.xbet.client1.permission.PUSH_PROVIDER" android:writePermission="org.xbet.client1.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.5.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <activity android:exported="false" android:name="com.huawei.hms.support.api.push.TransActivity"/>
+        <provider android:authorities="org.xbet.client1.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <activity android:configChanges="fontScale|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.hms.hwid.internal.ui.activity.HwIdSignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.hms.account.internal.ui.activity.AccountSignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:hwid" android:value="hwid:5.2.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:hwid:hwid" android:value="1"/>
+        <provider android:authorities="org.xbet.client1.aaidinitprovider" android:exported="false" android:initOrder="500" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.3.0.305"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.5.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <provider android:authorities="org.xbet.client1.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=104403761"/>
+    </application>
+</manifest>

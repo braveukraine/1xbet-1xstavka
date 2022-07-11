@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/bet_history_item_info_toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <FrameLayout android:background="?backgroundLightNew" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textAppearance="?textAppearanceSubtitle2BoldNew" android:textColor="?textColorPrimaryNew" android:layout_gravity="center" android:id="@id/tv_title_game" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="?backgroundNew" android:paddingBottom="@dimen/space_4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/empty_view" android:background="?backgroundNew" android:paddingLeft="@dimen/space_16" android:paddingRight="@dimen/space_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/space_16" app:file_name="@string/lottie_history_empty" app:textColor="?textColorSecondaryNew" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateTint="?controlsBackgroundNew" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

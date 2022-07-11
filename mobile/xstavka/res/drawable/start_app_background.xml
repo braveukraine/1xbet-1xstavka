@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/splash_background_new" />
+    <item>
+        <nine-patch android:gravity="center" android:src="@drawable/logo_patch" android:dither="false" android:tileMode="disabled" />
+    </item>
+</layer-list>

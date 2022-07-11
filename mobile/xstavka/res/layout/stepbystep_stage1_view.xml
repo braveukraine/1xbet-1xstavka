@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivObject" android:layout_width="@dimen/resident_safe_width" android:layout_height="@dimen/resident_safe_height" />
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tvScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" android:fontFamily="sans-serif-medium" />
+</FrameLayout>

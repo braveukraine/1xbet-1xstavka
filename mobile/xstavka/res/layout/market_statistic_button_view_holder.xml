@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/market_chips" android:background="@drawable/promo_status_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/padding" android:paddingEnd="@dimen/padding" android:elevation="@dimen/padding_half"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody2New" android:textColor="@color/white_new" android:id="@id/graph_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:id="@id/graph_coef" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip" app:layout_constraintBaseline_toBaselineOf="@id/graph_name" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/graph_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

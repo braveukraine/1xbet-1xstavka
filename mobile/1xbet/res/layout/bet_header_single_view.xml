@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:textSize="@dimen/text_12" android:gravity="center" android:id="@id/subtitle" android:background="@drawable/bg_rounded_corners_8dp_background" android:padding="@dimen/space_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/space_16" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginTop="@dimen/space_8" android:layout_marginRight="@dimen/space_16" android:layout_marginBottom="@dimen/space_16">
+        <TextView android:textAppearance="?textAppearanceCaptionNew" android:gravity="start" android:id="@id/date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?textAppearanceCaptionNew" android:gravity="end" android:id="@id/timer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

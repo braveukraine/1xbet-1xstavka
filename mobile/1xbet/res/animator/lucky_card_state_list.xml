@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:state_blackout="true">
+        <objectAnimator android:duration="@integer/rapid_animation" android:valueTo="0.5" android:valueType="floatType" android:propertyName="alpha" />
+    </item>
+    <item app:state_blackout="false">
+        <objectAnimator android:duration="@integer/rapid_animation" android:valueTo="1" android:valueType="floatType" android:propertyName="alpha" />
+    </item>
+</selector>

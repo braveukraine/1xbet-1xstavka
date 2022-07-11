@@ -1,0 +1,44 @@
+.class public final synthetic Lorg/xbet/domain/betting/interactors/s;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Ly80/l;
+
+
+# instance fields
+.field public final synthetic a:D
+
+.field public final synthetic b:Lorg/xbet/domain/betting/interactors/BetSettingsInteractor;
+
+
+# direct methods
+.method public synthetic constructor <init>(DLorg/xbet/domain/betting/interactors/BetSettingsInteractor;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-wide p1, p0, Lorg/xbet/domain/betting/interactors/s;->a:D
+
+    iput-object p3, p0, Lorg/xbet/domain/betting/interactors/s;->b:Lorg/xbet/domain/betting/interactors/BetSettingsInteractor;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    iget-wide v0, p0, Lorg/xbet/domain/betting/interactors/s;->a:D
+
+    iget-object v2, p0, Lorg/xbet/domain/betting/interactors/s;->b:Lorg/xbet/domain/betting/interactors/BetSettingsInteractor;
+
+    check-cast p1, Ljava/lang/Double;
+
+    invoke-static {v0, v1, v2, p1}, Lorg/xbet/domain/betting/interactors/BetSettingsInteractor;->b(DLorg/xbet/domain/betting/interactors/BetSettingsInteractor;Ljava/lang/Double;)Lr90/x;
+
+    move-result-object p1
+
+    return-object p1
+.end method

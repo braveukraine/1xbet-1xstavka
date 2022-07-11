@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/player_info_transfer_constraint" />
+    <LinearLayout android:paddingLeft="@dimen/margin_16" android:paddingTop="@dimen/margin_4" android:paddingRight="@dimen/margin_16" android:paddingBottom="@dimen/margin_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginBottom="@dimen/margin_12" android:text="@string/player_info_transfer_type" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:id="@id/transition_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginBottom="@dimen/margin_12" />
+    </LinearLayout>
+    <View android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

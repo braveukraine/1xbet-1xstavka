@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/fragment_security_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?textAppearanceHeadline6MediumNew" android:textColor="?textColorSecondaryNew" android:gravity="start|center" android:id="@id/toolbar_title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <LinearLayout android:orientation="vertical" android:id="@id/security_content" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/fragment_security_toolbar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_gift" android:background="@drawable/top_shape_material_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip">
+            <com.google.android.material.button.MaterialButton android:id="@id/get_gift" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/space_16" android:text="@string/security_get_promotion" style="@style/Widget.AppTheme.SolidButton.New" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_progress" android:background="@color/black_50" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/error_view" android:background="?backgroundNew" android:paddingLeft="@dimen/space_8" android:paddingRight="@dimen/space_8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/space_8" app:file_name="@string/lottie_data_error" app:textColor="?secondaryTextColor" app:text_res="@string/data_retrieval_error" />
+</androidx.constraintlayout.widget.ConstraintLayout>

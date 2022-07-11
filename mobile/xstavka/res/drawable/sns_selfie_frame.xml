@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/sns_frame_border" android:drawable="@drawable/sns_selfie_border" />
+    <item android:id="@id/sns_frame_mask" android:drawable="@drawable/sns_selfie_mask" />
+</layer-list>

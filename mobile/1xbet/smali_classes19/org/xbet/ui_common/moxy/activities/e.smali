@@ -1,0 +1,34 @@
+.class public final synthetic Lorg/xbet/ui_common/moxy/activities/e;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lorg/xbet/ui_common/moxy/activities/WebPageMoxyActivity;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lorg/xbet/ui_common/moxy/activities/WebPageMoxyActivity;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lorg/xbet/ui_common/moxy/activities/e;->a:Lorg/xbet/ui_common/moxy/activities/WebPageMoxyActivity;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object v0, p0, Lorg/xbet/ui_common/moxy/activities/e;->a:Lorg/xbet/ui_common/moxy/activities/WebPageMoxyActivity;
+
+    invoke-static {v0, p1}, Lorg/xbet/ui_common/moxy/activities/WebPageMoxyActivity;->jh(Lorg/xbet/ui_common/moxy/activities/WebPageMoxyActivity;Landroid/view/View;)V
+
+    return-void
+.end method

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/toto_chip_layout" android:background="@drawable/shape_toto_chip_unchecked" android:paddingLeft="@dimen/space_16" android:paddingTop="@dimen/space_6" android:paddingRight="@dimen/space_16" android:paddingBottom="@dimen/space_6" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:gravity="center" android:id="@id/score_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</FrameLayout>

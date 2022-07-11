@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_profile" android:background="@drawable/ic_profile" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginStart="@dimen/padding_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="?textAppearanceHeadline6New" android:id="@id/tv_account_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_profile" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_select_account" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="@dimen/padding_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_select" app:tint="?primaryColorNew" />
+</androidx.constraintlayout.widget.ConstraintLayout>

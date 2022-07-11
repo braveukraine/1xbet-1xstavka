@@ -1,0 +1,105 @@
+.class public final Lorg/xbet/client1/new_arch/di/app/DataModule_Companion_ResponseNotificatorsHolderMaxBetResponseFactory;
+.super Ljava/lang/Object;
+.source "DataModule_Companion_ResponseNotificatorsHolderMaxBetResponseFactory.java"
+
+# interfaces
+.implements Lu80/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/xbet/client1/new_arch/di/app/DataModule_Companion_ResponseNotificatorsHolderMaxBetResponseFactory$InstanceHolder;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lu80/d<",
+        "Lg10/e<",
+        "Lorg/xbet/data/betting/models/responses/MaxBetResponse;",
+        ">;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static create()Lorg/xbet/client1/new_arch/di/app/DataModule_Companion_ResponseNotificatorsHolderMaxBetResponseFactory;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lorg/xbet/client1/new_arch/di/app/DataModule_Companion_ResponseNotificatorsHolderMaxBetResponseFactory$InstanceHolder;->a()Lorg/xbet/client1/new_arch/di/app/DataModule_Companion_ResponseNotificatorsHolderMaxBetResponseFactory;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static responseNotificatorsHolderMaxBetResponse()Lg10/e;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lg10/e<",
+            "Lorg/xbet/data/betting/models/responses/MaxBetResponse;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lorg/xbet/client1/new_arch/di/app/DataModule;->Companion:Lorg/xbet/client1/new_arch/di/app/DataModule$Companion;
+
+    invoke-virtual {v0}, Lorg/xbet/client1/new_arch/di/app/DataModule$Companion;->responseNotificatorsHolderMaxBetResponse()Lg10/e;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lu80/g;->e(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lg10/e;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public get()Lg10/e;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lg10/e<",
+            "Lorg/xbet/data/betting/models/responses/MaxBetResponse;",
+            ">;"
+        }
+    .end annotation
+
+    .line 2
+    invoke-static {}, Lorg/xbet/client1/new_arch/di/app/DataModule_Companion_ResponseNotificatorsHolderMaxBetResponseFactory;->responseNotificatorsHolderMaxBetResponse()Lg10/e;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lorg/xbet/client1/new_arch/di/app/DataModule_Companion_ResponseNotificatorsHolderMaxBetResponseFactory;->get()Lg10/e;
+
+    move-result-object v0
+
+    return-object v0
+.end method

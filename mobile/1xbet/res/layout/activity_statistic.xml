@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/statistic_content" android:background="?window_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pflToolbarContainer" android:transitionGroup="true" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/levEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pflToolbarContainer" app:file_name="@string/lottie_no_internet_connection" app:textColor="?secondaryTextColor" app:text_res="@string/information_absent" />
+    <include layout="@layout/statistiv_header" />
+    <ProgressBar android:id="@id/pbProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+</RelativeLayout>

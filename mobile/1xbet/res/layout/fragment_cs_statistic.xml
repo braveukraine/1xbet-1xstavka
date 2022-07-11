@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:file_name="@string/lottie_some_error" app:textColor="?textColorSecondaryNew" />
+    <ScrollView android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceBody2New" android:id="@id/log_button" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/game_log" android:elevation="2.0dip" />
+            <TextView android:textAppearance="?textAppearanceBody2MediumNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="4.0dip" android:text="@string/team_points" android:textAllCaps="true" android:layout_marginStart="24.0dip" android:elevation="2.0dip" />
+            <org.xbet.client1.statistic.ui.view.cs_go.CSTeamView android:id="@id/first" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" />
+            <org.xbet.client1.statistic.ui.view.cs_go.CSTeamView android:id="@id/second" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

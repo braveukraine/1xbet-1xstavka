@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="?backgroundNew" android:paddingLeft="@dimen/std_margin" android:paddingTop="@dimen/half_std_margin" android:paddingRight="@dimen/std_margin" android:paddingBottom="@dimen/half_std_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2New" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <org.xbet.client1.statistic.ui.view.GameScoreView android:id="@id/team_one" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <org.xbet.client1.statistic.ui.view.GameScoreView android:id="@id/team_two" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

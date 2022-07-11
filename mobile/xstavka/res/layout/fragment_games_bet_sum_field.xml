@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/make_bet_button" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <View android:layout_gravity="right" android:id="@id/right_divider" android:background="?divider" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+    </LinearLayout>
+    <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/make_bet_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/make_bet" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.AppTheme.SolidButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

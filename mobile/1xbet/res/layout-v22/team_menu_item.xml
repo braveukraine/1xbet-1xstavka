@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceSubtitle1New" android:ellipsize="end" android:gravity="start" android:paddingLeft="@dimen/space_24" android:paddingRight="@dimen/space_24" android:paddingBottom="@dimen/space_24" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:paddingHorizontal="@dimen/space_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

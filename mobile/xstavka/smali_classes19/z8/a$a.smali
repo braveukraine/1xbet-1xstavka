@@ -1,0 +1,84 @@
+.class Lz8/a$a;
+.super Ljava/lang/Object;
+.source "Camera1Engine.java"
+
+# interfaces
+.implements Ljava/util/Comparator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lz8/a;->o2(Ljava/util/List;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "[I>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lz8/a;
+
+
+# direct methods
+.method constructor <init>(Lz8/a;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lz8/a$a;->a:Lz8/a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a([I[I)I
+    .locals 3
+
+    const/4 v0, 0x1
+
+    .line 1
+    aget v1, p2, v0
+
+    const/4 v2, 0x0
+
+    aget p2, p2, v2
+
+    sub-int/2addr v1, p2
+
+    aget p2, p1, v0
+
+    aget p1, p1, v2
+
+    sub-int/2addr p2, p1
+
+    sub-int/2addr v1, p2
+
+    return v1
+.end method
+
+.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
+
+    .line 1
+    check-cast p1, [I
+
+    check-cast p2, [I
+
+    invoke-virtual {p0, p1, p2}, Lz8/a$a;->a([I[I)I
+
+    move-result p1
+
+    return p1
+.end method

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8" app:cardBackgroundColor="?backgroundNew">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8">
+            <TextView android:textAppearance="?textAppearanceSubtitle1New" android:ellipsize="end" android:id="@id/tv_bet_type" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="@dimen/space_16" app:layout_constraintEnd_toStartOf="@id/tv_coeff" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textAppearance="?textAppearanceBody2New" android:ellipsize="end" android:id="@id/tv_teams" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:text="@string/betconstructor_teams" android:maxLines="1" android:layout_marginEnd="@dimen/space_16" app:layout_constraintEnd_toStartOf="@id/tv_coeff" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_bet_type" />
+            <TextView android:textAppearance="?textAppearanceHeadline6BoldNew" android:id="@id/tv_coeff" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <org.xbet.ui_common.viewcomponents.tabs.TabLayoutRectangleScrollable android:id="@id/tl_bet" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" style="@style/Widget.AppTheme.TabLayout.New" />
+    <View android:background="?separatorNew" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp_bet" android:background="?contentBackgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

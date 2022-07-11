@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceSubtitle2MediumNew" android:textColor="@color/content_background_new" android:id="@id/tvTabTitle" android:background="@drawable/bg_rounded_corners_8dp" android:paddingLeft="@dimen/space_16" android:paddingTop="@dimen/space_8" android:paddingRight="@dimen/space_16" android:paddingBottom="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_6" android:layout_marginRight="@dimen/space_6" android:text="@string/case_go_iem_cologne" android:backgroundTint="@color/primary_color_new"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

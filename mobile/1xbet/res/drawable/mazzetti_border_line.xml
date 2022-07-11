@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/space_2" android:color="@color/white_50" android:dashWidth="@dimen/space_8" android:dashGap="@dimen/space_4" />
+    <padding android:left="@dimen/space_2" android:top="@dimen/space_2" android:right="@dimen/space_2" android:bottom="@dimen/space_2" />
+    <corners android:radius="@dimen/space_4" />
+</shape>

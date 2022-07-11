@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="@raw/lets_encrypt_x1" />
+            <certificates src="@raw/lets_encrypt_x2" />
+            <certificates src="@raw/lets_encrypt_x3" />
+            <certificates src="@raw/lets_encrypt_e1" />
+            <certificates src="@raw/lets_encrypt_r3" />
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">livetex.ru</domain>
+        <domain includeSubdomains="true">chls.pro</domain>
+        <domain includeSubdomains="true">ipv4.fiddler</domain>
+        <domain includeSubdomains="true">charlesproxy.com</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

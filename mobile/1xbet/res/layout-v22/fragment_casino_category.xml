@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?backgroundNew" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar_categories" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="?textColorSecondaryNew" style="@style/Widget.AppTheme.Toolbar.New" />
+    <androidx.core.widget.NestedScrollView android:id="@id/content" android:paddingLeft="@dimen/space_12" android:paddingTop="@dimen/space_12" android:paddingRight="@dimen/space_12" android:paddingBottom="@dimen/space_12" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:overScrollMode="never" android:paddingHorizontal="@dimen/space_12" android:paddingVertical="@dimen/space_12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar_categories">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar_categories" layout="@layout/view_progress_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

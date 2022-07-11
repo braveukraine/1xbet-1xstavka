@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/parent_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/vertical_start" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.0" />
+    <View android:id="@id/view_v_1" android:background="@color/black_30" android:layout_width="2.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="@id/view_v_2" app:layout_constraintStart_toStartOf="parent" />
+    <View android:id="@id/view_v_2" android:background="@color/black_30" android:layout_width="2.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="@id/view_v_3" app:layout_constraintStart_toStartOf="@id/view_v_1" />
+    <View android:id="@id/view_v_3" android:background="@color/black_30" android:layout_width="2.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="@id/view_v_4" app:layout_constraintStart_toStartOf="@id/view_v_2" />
+    <View android:id="@id/view_v_4" android:background="@color/black_30" android:layout_width="2.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="@id/view_v_5" app:layout_constraintStart_toStartOf="@id/view_v_3" />
+    <View android:id="@id/view_v_5" android:background="@color/black_30" android:layout_width="2.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/view_v_4" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/vertical_end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="1.0" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/horisontal_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.0" />
+    <View android:id="@id/view_h_1" android:background="@color/black_30" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintBottom_toBottomOf="@id/view_h_2" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/view_h_2" android:background="@color/black_30" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintBottom_toBottomOf="@id/view_h_3" app:layout_constraintTop_toTopOf="@id/view_h_1" />
+    <View android:id="@id/view_h_3" android:background="@color/black_30" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintBottom_toBottomOf="@id/view_h_4" app:layout_constraintTop_toTopOf="@id/view_h_2" />
+    <View android:id="@id/view_h_4" android:background="@color/black_30" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintBottom_toBottomOf="@id/view_h_5" app:layout_constraintTop_toTopOf="@id/view_h_3" />
+    <View android:id="@id/view_h_5" android:background="@color/black_30" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="@id/view_h_4" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/horisontal_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

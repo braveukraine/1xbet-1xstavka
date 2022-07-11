@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="?window_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:layout_gravity="center" android:id="@id/empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8" android:layout_marginRight="@dimen/space_8" app:file_name="@string/lottie_reading_file_permission_denied" app:textColor="?secondaryTextColor" app:text_res="@string/permission_message_read_files" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2" android:textStyle="bold" android:textColor="?secondaryColor" android:layout_gravity="center" android:id="@id/allow_permissions_button" android:background="@color/white" android:padding="@dimen/space_12" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/permission_allow" android:textAllCaps="true" />
+</LinearLayout>

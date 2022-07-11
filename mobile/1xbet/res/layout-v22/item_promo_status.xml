@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceSubtitle2New" android:id="@id/tv_promo_status" android:background="@drawable/shape_chip_shadow_checked" android:paddingLeft="@dimen/space_12" android:paddingTop="@dimen/space_8" android:paddingRight="@dimen/space_12" android:paddingBottom="@dimen/space_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:layout_marginHorizontal="@dimen/space_4" android:paddingHorizontal="@dimen/space_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

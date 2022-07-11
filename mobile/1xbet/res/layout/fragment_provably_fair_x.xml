@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?gameWindowBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+        <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/space_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:paddingBottom="@dimen/float_margin_32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/float_margin_16">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/balance1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.AppCompat.Medium" />
+                <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/casinoBetView" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.xbet.onexgames.features.provablyfair.views.ProvablyFairSettingsView android:gravity="center" android:id="@id/settings_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/float_margin_16" />
+                <com.xbet.onexgames.features.provablyfair.views.NumberCounterView android:gravity="center" android:id="@id/counter_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/float_margin_32" />
+                <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/stop_game_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:text="@string/stop" style="@style/Widget.AppTheme.SolidButton" />
+                <Button android:enabled="false" android:id="@id/roll_dice_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="@dimen/float_margin_16" android:layout_marginRight="8.0dip" android:text="@string/play_button" style="@style/Widget.AppTheme.SolidButton" />
+                <com.xbet.onexgames.features.common.views.MdHashView android:id="@id/hash_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/progress" android:background="@color/black_15" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</FrameLayout>

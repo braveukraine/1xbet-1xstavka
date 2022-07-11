@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back_games" style="@style/Widget.AppTheme.Toolbar">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/web_balance_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/web_balance_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/web_balance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_16" app:srcCompat="@drawable/ic_arrow_down" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <org.xbet.core.presentation.bonuses.views.CasinoBonusButtonView1 android:layout_gravity="center_vertical" android:id="@id/web_bonus_button" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginEnd="@dimen/space_16" />
+        </FrameLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+</androidx.constraintlayout.widget.ConstraintLayout>

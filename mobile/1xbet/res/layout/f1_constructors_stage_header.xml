@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view" android:background="?divider" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="?divider" android:gravity="start" android:background="?card_background" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/team" android:lines="1" android:textAlignment="gravity" android:layout_marginStart="44.0dip" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+        <TextView android:textSize="12.0sp" android:textColor="?divider" android:gravity="center" android:background="?card_background" android:layout_width="20.0dip" android:layout_height="wrap_content" android:text="@string/point_abr" android:lines="1" android:textAlignment="gravity" android:layout_marginStart="4.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintLeft_toLeftOf="@id/guideline2" app:layout_constraintRight_toLeftOf="@id/guideline" />
+    </LinearLayout>
+</RelativeLayout>

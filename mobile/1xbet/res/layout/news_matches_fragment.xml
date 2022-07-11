@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?window_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_4" android:layout_marginBottom="@dimen/space_4" />
+    <org.xbet.ui_common.viewcomponents.layouts.linear.LottieEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_64" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="@dimen/space_8" app:file_name="@string/lottie_history_empty" app:textColor="?secondaryTextColor" app:text_res="@string/no_events_in_current_time" />
+    <FrameLayout android:id="@id/progress" android:background="@color/black_50" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</FrameLayout>

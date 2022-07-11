@@ -1,0 +1,110 @@
+.class public final Lzg/a1;
+.super Ljava/lang/Object;
+.source "DatabaseMigrationRepository_Factory.java"
+
+# interfaces
+.implements Lj80/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj80/d<",
+        "Lzg/z0;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Lo90/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo90/a<",
+            "Log/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lo90/a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lo90/a<",
+            "Log/a;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lzg/a1;->a:Lo90/a;
+
+    return-void
+.end method
+
+.method public static a(Lo90/a;)Lzg/a1;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lo90/a<",
+            "Log/a;",
+            ">;)",
+            "Lzg/a1;"
+        }
+    .end annotation
+
+    new-instance v0, Lzg/a1;
+
+    invoke-direct {v0, p0}, Lzg/a1;-><init>(Lo90/a;)V
+
+    return-object v0
+.end method
+
+.method public static c(Log/a;)Lzg/z0;
+    .locals 1
+
+    new-instance v0, Lzg/z0;
+
+    invoke-direct {v0, p0}, Lzg/z0;-><init>(Log/a;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public b()Lzg/z0;
+    .locals 1
+
+    iget-object v0, p0, Lzg/a1;->a:Lo90/a;
+
+    invoke-interface {v0}, Lo90/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Log/a;
+
+    invoke-static {v0}, Lzg/a1;->c(Log/a;)Lzg/z0;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lzg/a1;->b()Lzg/z0;
+
+    move-result-object v0
+
+    return-object v0
+.end method

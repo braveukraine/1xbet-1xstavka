@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/account_selector" android:visible="false" android:title="" app:actionViewClass="com.turturibus.slot.gamesbycategory.ui.account_selector.AccountSelectorView" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_search" android:id="@id/search" android:title="@string/search" app:actionViewClass="org.xbet.ui_common.viewcomponents.views.search.SearchMaterialView" app:showAsAction="always|collapseActionView" />
+</menu>

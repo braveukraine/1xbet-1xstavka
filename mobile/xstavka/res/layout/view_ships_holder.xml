@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/submarine_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="submarine" />
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/submarine_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="submarine" />
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/submarine_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="submarine" />
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/submarine_4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="submarine" />
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/destroyer_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="destroyer" />
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/destroyer_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="destroyer" />
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/destroyer_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="destroyer" />
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/cruiser_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="cruiser" />
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/cruiser_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="cruiser" />
+    <com.xbet.onexgames.features.seabattle.views.ship.ShipsView android:id="@id/battleship_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="battleship" />
+</FrameLayout>

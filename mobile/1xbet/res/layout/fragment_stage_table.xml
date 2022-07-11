@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/additional_content" android:background="?contentBackgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip" />
+        <org.xbet.client1.statistic.ui.view.PinnedFrameLayout android:id="@id/table_header" android:background="?contentBackgroundNew" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/pinned_state_list" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/padding" />
+    <gradient android:startColor="@color/lottery_ticket_multiple_start" android:endColor="@color/lottery_ticket_multiple_end" android:angle="0.0" />
+    <stroke android:width="3.0dip" android:color="@color/white" />
+</shape>

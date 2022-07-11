@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_24" android:paddingRight="@dimen/space_24" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubtitle2" android:textColor="?text_color_highlight" android:paddingTop="@dimen/space_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/from_" />
+    <TextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/from_date" android:paddingTop="@dimen/space_4" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2" android:textColor="?text_color_highlight" android:paddingTop="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to_" />
+    <TextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/to_date" android:paddingTop="@dimen/space_4" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/coeff_border" android:background="@drawable/hot_dice_coeff_border" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/current_coeff" android:background="@drawable/hot_dice_current_coeff" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_margin="@dimen/space_4" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/hot_dice_coeff" android:id="@id/coeff_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_4" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

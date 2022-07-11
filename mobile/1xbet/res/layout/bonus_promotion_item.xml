@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="@dimen/space_8" app:contentPadding="@dimen/space_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.xbet.ui_common.viewcomponents.imageview.RoundCornerImageView android:id="@id/image" android:background="@drawable/bonus_promotion_ph_bg" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_margin="@dimen/space_4" android:scaleType="centerCrop" app:cornerRadiusImageView="6.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/activated" android:background="@drawable/circle_card_back" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/status_activated" />
+            </FrameLayout>
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/space_8">
+            <TextView android:textAppearance="?textAppearanceSubtitle1Medium" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textAppearance="?textAppearanceSubtitle1Medium" android:textColor="?primaryColorNightLight" android:id="@id/activate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activate" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:letterSpacing="0.02" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+    <ImageView android:id="@id/backgroundIv" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="@dimen/space_8" android:layout_marginStart="@dimen/space_2" android:layout_marginEnd="@dimen/space_2" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" app:layout_constraintWidth_percent="0.9">
+        <com.xbet.onexgames.features.promo.wheeloffortune.views.WheelView android:id="@id/wheelView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/wheelCover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/wheel_of_fortune_cover" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/boughtContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/casinoBetView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="@dimen/space_8" app:layout_constraintBottom_toBottomOf="parent" app:maxWidth="@dimen/casino_bet_view_max_width" />
+    <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+</androidx.constraintlayout.widget.ConstraintLayout>

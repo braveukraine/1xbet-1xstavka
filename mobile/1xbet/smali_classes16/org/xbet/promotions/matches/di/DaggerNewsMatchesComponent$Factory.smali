@@ -1,0 +1,56 @@
+.class final Lorg/xbet/promotions/matches/di/DaggerNewsMatchesComponent$Factory;
+.super Ljava/lang/Object;
+.source "DaggerNewsMatchesComponent.java"
+
+# interfaces
+.implements Lorg/xbet/promotions/matches/di/NewsMatchesComponent$Factory;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/xbet/promotions/matches/di/DaggerNewsMatchesComponent;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "Factory"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lorg/xbet/promotions/matches/di/a;)V
+    .locals 0
+
+    invoke-direct {p0}, Lorg/xbet/promotions/matches/di/DaggerNewsMatchesComponent$Factory;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public create(Lorg/xbet/promotions/matches/di/NewsMatchesDependencies;Lorg/xbet/promotions/matches/di/NewsMatchesModule;)Lorg/xbet/promotions/matches/di/NewsMatchesComponent;
+    .locals 2
+
+    .line 1
+    invoke-static {p1}, Lj80/g;->b(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    invoke-static {p2}, Lj80/g;->b(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    new-instance v0, Lorg/xbet/promotions/matches/di/DaggerNewsMatchesComponent$NewsMatchesComponentImpl;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p2, p1, v1}, Lorg/xbet/promotions/matches/di/DaggerNewsMatchesComponent$NewsMatchesComponentImpl;-><init>(Lorg/xbet/promotions/matches/di/NewsMatchesModule;Lorg/xbet/promotions/matches/di/NewsMatchesDependencies;Lorg/xbet/promotions/matches/di/b;)V
+
+    return-object v0
+.end method

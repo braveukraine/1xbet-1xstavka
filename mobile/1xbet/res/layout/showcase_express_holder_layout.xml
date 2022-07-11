@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:focusable="true" android:clickable="true" android:layout_width="@dimen/showcase_card_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_4" android:layout_marginTop="@dimen/space_4" android:layout_marginRight="@dimen/space_4" android:layout_marginBottom="@dimen/space_4" android:stateListAnimator="@animator/lift_on_touch"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_12" android:paddingTop="@dimen/space_8" android:paddingRight="@dimen/space_12" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/express_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+        <org.xbet.dayexpress.presentation.views.ShowcaseExpressView android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/showcase_express_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8">
+            <TextView android:textAppearance="?textAppearanceBody2" android:ellipsize="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/final_coef" android:lines="1" android:layout_weight="1.0" android:textAllCaps="true" android:layout_marginEnd="@dimen/space_8" />
+            <TextView android:textAppearance="?textAppearanceSubtitle2" android:id="@id/final_coef" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

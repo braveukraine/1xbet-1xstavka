@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xbet.registration.registration.ui.registration.FieldIndicator android:id="@id/document_type_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginRight="@dimen/margin_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/document_type_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5">
+        <ImageView android:layout_gravity="end" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="22.0dip" app:srcCompat="@drawable/ic_arrow_expand" />
+        <org.xbet.ui_common.viewcomponents.layouts.linear.TextInputEditTextNew android:theme="@style/Widget.AppTheme.TextInputLayout.New.Primary" android:enabled="false" android:id="@id/document_type" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/document_type" />
+    </FrameLayout>
+</org.xbet.registration.registration.ui.registration.FieldIndicator>

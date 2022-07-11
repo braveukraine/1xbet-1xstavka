@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubtitle1" android:textStyle="normal" android:paddingLeft="@dimen/space_24" android:paddingTop="@dimen/space_8" android:paddingRight="@dimen/space_24" android:paddingBottom="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet_name_too_long" android:fontFamily="sans-serif-medium" />
+</FrameLayout>

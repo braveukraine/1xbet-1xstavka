@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_chip" android:paddingBottom="@dimen/chip_shadow_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:layout_marginStart="@dimen/space_8" android:layout_marginEnd="@dimen/space_8">
+        <View android:id="@id/main_holder" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textAppearance="?textAppearanceSubtitle1New" android:textColor="?textColorPrimaryNew" android:id="@id/ticket_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:layout_constraintBottom_toBottomOf="@id/main_holder" app:layout_constraintEnd_toEndOf="@id/main_holder" app:layout_constraintStart_toStartOf="@id/main_holder" app:layout_constraintTop_toTopOf="@id/main_holder" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/container" android:background="@drawable/balance_view_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:id="@id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding" android:layout_marginEnd="@dimen/padding" />
+    <ImageView android:background="@drawable/balance_icon_background" android:padding="@dimen/padding_half" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_account_hange" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+</LinearLayout>

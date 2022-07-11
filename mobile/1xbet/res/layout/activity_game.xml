@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/background_image" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+    <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/btnPlayAgain" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tools">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/llFirstStage" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <SuitContainer android:layout_gravity="center" android:id="@id/vSuits" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvStartDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/crown_and_anchor_start_hint" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llSecondStage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginStart="4.0dip">
+            <SuitPresentationContainer android:id="@id/vResultSuits" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <org.xbet.core.presentation.common.DiceLayout android:id="@id/vDiceView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0" android:layout_marginStart="4.0dip" app:initial_count="0" />
+        </LinearLayout>
+    </FrameLayout>
+    <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/btnPlayAgain" android:text="@string/lose_message" app:layout_constraintBottom_toTopOf="@id/btnNewRate" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Widget.AppTheme.SolidButton" />
+    <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/btnNewRate" android:layout_marginBottom="8.0dip" android:text="@string/new_bet" app:layout_constraintBottom_toTopOf="@id/casinoBetView" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Widget.AppTheme.SolidButton" />
+    <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@id/btnPlay" android:text="@string/play_button" app:layout_constraintBottom_toTopOf="@id/casinoBetView" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Widget.AppTheme.SolidButton" />
+    <com.xbet.onexgames.features.common.views.CasinoBetView android:id="@id/casinoBetView" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</FrameLayout>

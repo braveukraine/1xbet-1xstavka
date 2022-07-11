@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_rounded_16dp_white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/ivStartIcon" android:background="@drawable/red_circle" android:padding="@dimen/space_2" android:layout_width="@dimen/icon_size_16" android:layout_height="@dimen/icon_size_16" android:layout_marginTop="@dimen/space_2" android:layout_marginBottom="@dimen/space_2" android:layout_marginStart="3.0dip" app:srcCompat="@drawable/ic_champ_top" />
+    <TextView android:textAppearance="?textAppearanceBody1Bold" android:textSize="@dimen/text_10" android:textColor="@color/primaryColor" android:layout_gravity="center" android:id="@id/tvSportName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:layout_marginBottom="@dimen/space_4" android:layout_marginStart="@dimen/space_4" android:layout_marginEnd="@dimen/space_8" />
+</LinearLayout>

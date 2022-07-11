@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d سیکنڈز تیزی سے فارورڈ کریں</item>
+        <item quantity="one">%d سیکنڈ تیزی سے فارورڈ کریں</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d سیکنڈز ریوائنڈ کریں</item>
+        <item quantity="one">%d سیکنڈ ریوائنڈ کریں</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d نئی اطلاعات</item>
+        <item quantity="one">%d نئی اطلاع</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="other">%d گھنٹے</item>
+        <item quantity="one">1 گھنٹہ</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="other">%dمنٹ</item>
+        <item quantity="one">1منٹ</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="other">%dسیکنڈ</item>
+        <item quantity="one">پہلا</item>
+    </plurals>
+</resources>

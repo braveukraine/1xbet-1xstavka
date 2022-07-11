@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentPadding="12.0dip" style="@style/Widget.AppTheme.CardView.New"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/support_frame" android:layout_width="48.0dip" android:layout_height="48.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/iv_icon_background" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srcCompat="@drawable/primary_circle" app:tint="?backgroundNew" />
+            <ImageView android:layout_gravity="center" android:id="@id/support_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="12.0dip" app:tint="?primaryColorNew" />
+        </FrameLayout>
+        <TextView android:textAppearance="?textAppearanceSubtitle1MediumNew" android:id="@id/support_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toTopOf="@id/support_subtitle" app:layout_constraintStart_toEndOf="@id/support_frame" app:layout_constraintTop_toTopOf="@id/support_frame" app:layout_constraintVertical_chainStyle="packed" />
+        <TextView android:textAppearance="?textAppearanceCaptionNew" android:id="@id/support_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toBottomOf="@id/support_frame" app:layout_constraintStart_toEndOf="@id/support_frame" app:layout_constraintTop_toBottomOf="@id/support_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

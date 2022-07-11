@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="allowWindowFullScreenFloating">true</bool>
+    <bool name="allowWindowFullScreenTranslucent">true</bool>
+    <bool name="com_vk_sdk_init_provider_enabled">true</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="has_friend_transfer">false</bool>
+    <bool name="hdpi">false</bool>
+    <bool name="isLand">false</bool>
+    <bool name="isTablet">false</bool>
+    <bool name="is_tablet">false</bool>
+    <bool name="landscape">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+</resources>

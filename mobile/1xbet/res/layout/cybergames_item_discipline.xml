@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="84.0dip" android:layout_height="122.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.xbet.ui_common.viewcomponents.imageview.RoundCornerImageView android:id="@id/ivBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:cornerRadiusImageView="@dimen/corner_radius_10" />
+    <TextView android:textAppearance="?textAppearanceBody1Bold" android:textColor="@color/white" android:layout_gravity="bottom|center|left" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8" />
+</FrameLayout>

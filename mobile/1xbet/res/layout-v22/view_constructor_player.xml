@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view" android:background="@drawable/bg_rounded_corners_10dp" android:paddingLeft="@dimen/space_8" android:paddingTop="@dimen/space_12" android:paddingRight="@dimen/space_8" android:paddingBottom="@dimen/space_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_4" android:backgroundTint="?contentBackgroundNew" android:paddingHorizontal="@dimen/space_8" android:paddingVertical="@dimen/space_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_logo" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    <TextView android:textAppearance="?textAppearanceSubtitle2New" android:ellipsize="end" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8" android:layout_marginRight="@dimen/space_8" android:maxLines="1" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/space_8" />
+    <ImageView android:id="@id/replace" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_swap" app:tint="?textColorSecondaryNew" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivError" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/llMessage" app:layout_constraintEnd_toStartOf="@id/llMessage" app:layout_constraintTop_toTopOf="@id/llMessage" app:srcCompat="@drawable/ic_error_message" />
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/llMessage" android:background="@drawable/message_incoming_bg" android:paddingTop="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_12" android:textColor="?primaryColorNew" android:autoLink="phone|web" android:id="@id/tvOperatorName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding" />
+            <TextView android:textColor="?textColorPrimaryNew" android:autoLink="phone|web" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:paddingBottom="@dimen/padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/padding_half">
+            <ImageView android:layout_gravity="end" android:id="@id/status" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_message_status_waiting" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="?textColorSecondaryNew" android:id="@id/time" android:padding="@dimen/padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_min" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

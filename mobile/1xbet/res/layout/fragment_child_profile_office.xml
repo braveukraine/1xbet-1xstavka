@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_need_auth" android:background="?backgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_need_auth" android:layout_width="52.0dip" android:layout_height="52.0dip" android:scaleType="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.26" app:srcCompat="@drawable/ic_lock_icon_unauth" />
+        <TextView android:textAppearance="?textAppearanceBody1New" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:text="@string/access_only_for_authorized" android:textAlignment="center" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_need_auth" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView android:orientation="vertical" android:id="@id/nsv_profile_content" android:background="?backgroundNew" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_profile_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/layout_account_management" layout="@layout/item_account_management_office" />
+                <include android:id="@id/layout_payment_system" android:visibility="gone" layout="@layout/item_payment_system_office" />
+                <include android:id="@id/layout_account_transactions" layout="@layout/item_account_transactions_office" />
+                <include android:id="@id/layout_user_info" layout="@layout/item_user_info_office" />
+                <include android:id="@id/layout_other" layout="@layout/item_other_office" />
+                <include android:id="@id/layout_log_out" layout="@layout/item_log_out_office" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_shimmer_profile_content" android:background="?contentBackgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/layout_shimmer_account_management" layout="@layout/item_shimmer_account_management_office" />
+                <include android:id="@id/layout_shimmer_account_transactions" layout="@layout/item_shimmer_account_transactions_office" />
+                <include android:id="@id/layout_shimmer_user_info" layout="@layout/item_shimmer_user_info_office" />
+                <include android:id="@id/layout_shimmer_other" layout="@layout/item_shimmer_other_office" />
+                <include android:id="@id/layout_shimmer_log_out" layout="@layout/item_shimmer_log_out_office" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_error_info" android:background="?backgroundNew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.xbet.ui_common.viewcomponents.layouts.constraint.ErrorInfoView android:id="@id/error_info_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

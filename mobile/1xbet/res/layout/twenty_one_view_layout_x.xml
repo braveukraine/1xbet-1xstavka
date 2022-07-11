@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="100.0" android:layout_marginStart="@dimen/space_4" android:layout_marginEnd="@dimen/space_4">
+        <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/white_50" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="3.0" android:textAllCaps="true" />
+        <View android:layout_gravity="center" android:background="@color/white_50" android:layout_width="@dimen/space_8" android:layout_height="1.0dip" android:layout_weight="87.0" android:layout_marginEnd="@dimen/space_4" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/white" android:gravity="center" android:id="@id/current_rank_text" android:background="@drawable/twenty_one_back_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="1" android:layout_weight="10.0" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/content_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/content_cards" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

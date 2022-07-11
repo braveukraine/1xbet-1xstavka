@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/transparent" android:id="@id/game_id" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/game_toolbar" />
+    <include android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/game_header_one_player_background" />
+    <View android:background="@drawable/gradient_black_toolbar_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="-30.0dip" app:layout_constraintBottom_toBottomOf="@id/game_toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/game_toolbar" android:background="@color/transparent_new" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@drawable/ic_back_games" app:navigationIconTint="@color/white" style="@style/Widget.AppTheme.Toolbar.New">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/game_toolbar_view" />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="88.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/game_toolbar">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/appbar_not_elevated">
+            <View android:id="@id/v_appBarContent" android:layout_width="fill_parent" android:layout_height="@dimen/screens_container_height_one_player" app:layout_scrollFlags="scroll|snap" />
+            <include android:id="@id/border_buttons" layout="@layout/main_game_border_buttons" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:id="@id/nested_scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <include layout="@layout/sport_game_tabs" />
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/game_header_one_player_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/game_toolbar">
+        <include layout="@layout/game_header_one_player_info" />
+    </FrameLayout>
+    <org.xbet.client1.new_arch.presentation.ui.game.customview.CollapsingLinearLayout android:orientation="vertical" android:id="@id/collapsing_info_block_layout" android:layout_width="fill_parent" android:layout_height="@dimen/screens_container_height" app:collapsing_height="@dimen/screens_container_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/game_toolbar">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager_screens" android:layout_width="fill_parent" android:layout_height="@dimen/sport_game_info_item_height" />
+        <org.xbet.ui_common.viewcomponents.layouts.linear.CircleIndicatorTwoPager android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="4.0dip" app:ci_animator="@animator/scale_with_alpha" app:ci_height="4.0dip" app:ci_width="4.0dip" />
+    </org.xbet.client1.new_arch.presentation.ui.game.customview.CollapsingLinearLayout>
+    <FrameLayout android:id="@id/video_zone_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/main_game_video_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/game_toolbar" />
+    <org.xbet.client1.new_arch.presentation.ui.game.customview.SportGameFabSpeedDial android:id="@id/fab_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fab_fabDrawable="@drawable/ic_play" app:fab_fabDrawableTint="#ffffffff" app:fab_fabRippleColor="@color/transparent_new" app:fab_menu="@menu/sport_game_fab_menu" app:fab_miniFabDrawableTint="@color/white" app:fab_miniFabTextBackground="@drawable/bet_fab_label" app:fab_miniFabTextColor="?textColorPrimaryNew" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    <FrameLayout android:id="@id/lock_progress" android:background="@color/black_50" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

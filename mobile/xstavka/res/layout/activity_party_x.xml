@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <TextView android:textSize="@dimen/text_18" android:textColor="@color/white" android:gravity="center" android:id="@id/text" android:padding="@dimen/padding_double_part" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/party_banner_title" app:layout_constraintTop_toBottomOf="@id/balance_view" />
+        <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginBottom="8.0dip" app:layout_constraintBottom_toTopOf="@id/casinoBetView" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/balance_view" app:srcCompat="@drawable/ic_party_cocktail" />
+        <com.xbet.onexgames.features.common.views.CasinoBetView android:layout_gravity="center" android:id="@id/casinoBetView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:maxWidth="@dimen/casino_bet_view_max_width" />
+        <FrameLayout android:id="@id/game_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/balance_view" />
+        <include android:id="@id/tools" layout="@layout/new_view_casino_toolbar" />
+        <com.xbet.balance.change_balance.views.GamesBalanceView android:layout_gravity="end" android:id="@id/balance_view" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tools" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/progress" android:background="@color/black_15" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</FrameLayout>

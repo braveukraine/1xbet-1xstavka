@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/webGameView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar_web_game_x1" />
+        <org.xbet.core.presentation.views.BaseWebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+        <FrameLayout android:id="@id/splashLayout" android:background="@color/black" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+            <org.xbet.ui_common.viewcomponents.layouts.frame.ProgressBarWithGamePad android:layout_gravity="center" android:id="@id/loaderView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/progressView" android:background="@color/black_15" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/webGameBonuses" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
