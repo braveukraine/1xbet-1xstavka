@@ -22,10 +22,8 @@
 | main footer | ![1xbet.com головна футер](/scr/1xbet.com-main-footer.png) | ![1xstavka.ru головна футер](/scr/1xstavka.ru-main-footer.png) |
 | odds format | ![1xbet.com live](/scr/1xbet.com-format.png) | ![1xstavka.ru live](/scr/1xstavka.ru-format.png) |
 | registration | ![1xbet.com](/scr/1xbet.com-regform.png) | ![1xstavka.ru](/scr/1xstavka.ru-regform.png) |
-| settings.js | ![1xbet](/scr/1xbet.com-settings.js.png) | ![https://www.1xstavka.ru/settings.js](/scr/1xstavka.ru-settings.js.png) |
 | live | ![1xbet.com live](/scr/1xbet.com-eventslist.png) | ![1xstavka.ru live](/scr/1xstavka.ru-eventslist.png) |
 | login form | ![1xbet.com](/scr/1xbet.com-loginform.png) | ![1xstavka.ru головна футер](/scr/1xstavka.ru-loginform.png) |
-| login by phone | ![1xbet.com](/scr/1xbet.com-loginbyphone.png) | ![1xstavka.ru](/scr/1xstavka.ru-loginbyphone.png) |
 | download mobile | ![1xbet.com](/scr/1xbet.com-mobilelanding.png) | ![https://www.1xstavka.ru/apps/](/scr/1xstavka.ru-mobilelanding.png) |
 | password recorvery form | ![1xbet.com](/scr/1xbet.com-passwordrecovery.png) | ![1xstavka.ru](/scr/1xstavka.ru-passwordrecovery.png) |
 
