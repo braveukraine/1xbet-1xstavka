@@ -1,5 +1,5 @@
 # Порівняння 1xbet та 1xstavka
-![1xbet logo](/1xbet.svg) ![1xstavka logo](/xstavka.svg)
+![1xbet logo](/1xbet.svg | width=300 ) ![1xstavka logo](/xstavka.svg | width=300)
 
 * У ході дослідження було виконано порівняння дизайну, технологічного стеку веб-сайтів, бекенду та мобільних додатків (Android, iOS) на прикладі eGaming операторів [1xbet.com](https://1xbet.com) та [1xstavka.ru](https://1xstavka.ru). 
 * дата проведення дослідження 10.07.2022 - 11.07.2022
