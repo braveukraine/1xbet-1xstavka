@@ -22,7 +22,7 @@
 
 | page  | 1xbet.com| 1xstavka.ru |
 | --- | --- | --- |
-| main | ![1xbet.com головна](/scr/1xbet-main.png) | ![1xstavka.ru головна](/scr/1xstavka.ru-main.png) |
+| main | ![1xbet.com головна](/scr/1xbet.com-main.png) | ![1xstavka.ru головна](/scr/1xstavka.ru-main.png) |
 | main footer | ![1xbet.com головна футер](/scr/1xbet.com-main-footer.png) | ![1xstavka.ru головна футер](/scr/1xstavka.ru-main-footer.png) |
 | odds format | ![1xbet.com live](/scr/1xbet.com-format.png) | ![1xstavka.ru live](/scr/1xstavka.ru-format.png) |
 | registration | ![1xbet.com](/scr/1xbet.com-regform.png) | ![1xstavka.ru](/scr/1xstavka.ru-regform.png) |
